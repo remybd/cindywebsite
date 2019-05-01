@@ -1,0 +1,144 @@
+* {
+  --width-dash: 160px;
+  --height-dash: 2px;
+
+  --color-start: white;
+  --color-middle: white;
+  --color-middle2: var(--color-middle);
+  --color-stop: white;
+  --percent-start: 33%;
+  --percent-middle: 100%;
+  --percent-middle2: 100%;
+  --percent-stop: 100%;
+}
+
+.global-container {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: darkslategrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container {
+  background-color: transparent;
+  padding: 6px;
+
+
+  background-image:
+    linear-gradient(to right, var(--color-start) var(--percent-start), var(--color-middle) var(--percent-middle), var(--color-middle2) var(--percent-middle2), var(--color-stop) var(--percent-stop)),
+    linear-gradient(to left, var(--color-start) var(--percent-start), var(--color-middle) var(--percent-middle), var(--color-middle2) var(--percent-middle2), var(--color-stop) var(--percent-stop)),
+    linear-gradient(to top, var(--color-start) var(--percent-start), var(--color-middle) var(--percent-middle), var(--color-middle2) var(--percent-middle2), var(--color-stop) var(--percent-stop)),
+    linear-gradient(to bottom, var(--color-start) var(--percent-start), var(--color-middle) var(--percent-middle), var(--color-middle2) var(--percent-middle2), var(--color-stop) var(--percent-stop));
+
+
+  background-position: left top, right bottom, left bottom, right top;
+  background-repeat: no-repeat;
+  background-size: var(--width-dash) 2px, var(--width-dash) 2px, 2px var(--width-dash), 2px var(--width-dash);
+}
+
+
+.button-container:hover {
+  animation-name: dash-move;
+  animation-duration: 0.4s;
+}
+
+@keyframes dash-move {
+  10% {
+    --color-start: white;
+    --color-middle: transparent;
+    --color-stop: white;
+
+    --percent-start: 78%;
+    --percent-middle: 78%;
+    --percent-middle2: 100%;
+    --percent-stop: 100%;
+  }
+  20% {
+    --color-start: white;
+    --color-middle: transparent;
+    --color-stop: white;
+
+    --percent-start: 66%;
+    --percent-middle: 66%;
+    --percent-middle2: 94%;
+    --percent-stop: 94%;
+  }
+  30% {
+    --color-start: white;
+    --color-middle: transparent;
+    --color-stop: white;
+
+    --percent-start: 54%;
+    --percent-middle: 54%;
+    --percent-middle2: 90%;
+    --percent-stop: 90%;
+  }
+  40% {
+    --color-start: white;
+    --color-middle: transparent;
+    --color-stop: white;
+
+    --percent-start: 42%;
+    --percent-middle: 42%;
+    --percent-middle2: 78%;
+    --percent-stop: 78%;
+  }
+  50% {
+    --color-start: white;
+    --color-middle: transparent;
+    --color-stop: white;
+
+    --percent-start: 33%;
+    --percent-middle: 33%;
+    --percent-middle2: 66%;
+    --percent-stop: 66%;
+  }
+  60% {
+    --color-start: white;
+    --color-middle: transparent;
+    --color-stop: white;
+
+    --percent-start: 22%;
+    --percent-middle: 22%;
+    --percent-middle2: 58%;
+    --percent-stop: 58%;
+  }
+  70% {
+    --color-start: white;
+    --color-middle: transparent;
+    --color-stop: white;
+
+    --percent-start: 10%;
+    --percent-middle: 10%;
+    --percent-middle2: 46%;
+    --percent-stop: 46%;
+  }
+  80% {
+    --color-start: white;
+    --color-middle: transparent;
+    --color-stop: white;
+
+    --percent-start: 0%;
+    --percent-middle: 0%;
+    --percent-middle2: 34%;
+    --percent-stop: 34%;
+  }
+  90% {
+    --color-start: white;
+    --color-middle: transparent;
+    --color-stop: white;
+
+    --percent-start: 0%;
+    --percent-middle: 0%;
+    --percent-middle2: 22%;
+    --percent-stop: 22%;
+  }
+}
+
+.button {
+  background-color: white;
+  height: 150px;
+  width: 150px;
+}
