@@ -46,8 +46,10 @@
 /* === button and background image === */
 
 .button {
-  --image-url: url("https://www.2min.fr/wp-content/uploads/2018/05/Voilier.jpg");
-
+/*
+video for the animation
+https://www.youtube.com/watch?v=cccc9HjiUwo&t=21s
+*/
   color: white;
   height: var(--width-button);
   width: var(--width-button);
