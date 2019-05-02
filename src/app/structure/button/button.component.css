@@ -1,5 +1,10 @@
+
+/* === button container for dashed animation === */
+
 .button-container {
-  --width-dash: 160px;
+  --width-button: 200px;
+  --padding-button: 8px;
+  --width-dash: calc(var(--width-button) + 2*var(--padding-button));
   --height-dash: 2px;
 
   --color-start: white;
@@ -13,7 +18,7 @@
   --percent-stop: 100%;
 
   background-color: transparent;
-  padding: 6px;
+  padding: var(--padding-button);
   cursor: pointer;
 
   background-image:
@@ -26,6 +31,8 @@
   background-position: left top, right bottom, left bottom, right top;
   background-repeat: no-repeat;
   background-size: var(--width-dash) var(--height-dash), var(--width-dash) var(--height-dash), var(--height-dash) var(--width-dash), var(--height-dash) var(--width-dash);
+
+  position: relative;
 }
 
 
@@ -34,15 +41,88 @@
   animation-duration: 0.4s;
 }
 
+
+
+/* === button and background image === */
+
 .button {
-  background-color: white;
-  height: 150px;
-  width: 150px;
+  --image-url: url("https://www.2min.fr/wp-content/uploads/2018/05/Voilier.jpg");
+
+  color: white;
+  height: var(--width-button);
+  width: var(--width-button);
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: var(--image-url);
 }
 
+.button-container:hover .button {
+  background-image: none;
+}
+
+.button-container:hover .button:before{
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: var(--image-url);
+
+  filter: blur(2px);
+}
+
+
+/* === button text content === */
+
+.button-content {
+  display: flex;
+}
+
+.button-container:hover .button-content {
+  display: none;
+}
+
+
+
+
+
+/* === plus button on hover === */
+
+.rounded-plus {
+  display: flex;
+  background-color: var(--background-main);
+  color: white;
+  font-size: 24px;
+  border-radius: 50%;
+  border: 2px white solid;
+  filter: none;
+
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 13px);
+  opacity: 0;
+
+  transition: opacity linear 0.2s, top ease-out 0.4s;
+}
+
+.button-container:hover .rounded-plus {
+  filter: none;
+  transition: opacity linear 0.15s, top ease-out 0.4s;
+  transition-delay: 0.1s, 0s;
+  opacity: 1;
+  top: calc(50% - 13px);
+}
 
 
 
