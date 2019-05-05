@@ -2,8 +2,8 @@
 /* === button container for dashed animation === */
 
 .button-container {
-  --width-button: 200px;
-  --padding-button: 8px;
+  --width-button: 280px;
+  --padding-button: 16px;
   --width-dash: calc(var(--width-button) + 2*var(--padding-button));
   --height-dash: 2px;
 
@@ -22,10 +22,10 @@
   cursor: pointer;
 
   background-image:
-    linear-gradient(to right, var(--color-start) var(--percent-start), var(--color-middle) var(--percent-middle), var(--color-middle2) var(--percent-middle2), var(--color-stop) var(--percent-stop)),
     linear-gradient(to left, var(--color-start) var(--percent-start), var(--color-middle) var(--percent-middle), var(--color-middle2) var(--percent-middle2), var(--color-stop) var(--percent-stop)),
-    linear-gradient(to top, var(--color-start) var(--percent-start), var(--color-middle) var(--percent-middle), var(--color-middle2) var(--percent-middle2), var(--color-stop) var(--percent-stop)),
-    linear-gradient(to bottom, var(--color-start) var(--percent-start), var(--color-middle) var(--percent-middle), var(--color-middle2) var(--percent-middle2), var(--color-stop) var(--percent-stop));
+    linear-gradient(to right, var(--color-start) var(--percent-start), var(--color-middle) var(--percent-middle), var(--color-middle2) var(--percent-middle2), var(--color-stop) var(--percent-stop)),
+    linear-gradient(to bottom, var(--color-start) var(--percent-start), var(--color-middle) var(--percent-middle), var(--color-middle2) var(--percent-middle2), var(--color-stop) var(--percent-stop)),
+    linear-gradient(to top, var(--color-start) var(--percent-start), var(--color-middle) var(--percent-middle), var(--color-middle2) var(--percent-middle2), var(--color-stop) var(--percent-stop));
 
 
   background-position: left top, right bottom, left bottom, right top;
@@ -38,7 +38,7 @@
 
 .button-container:hover {
   animation-name: dash-move;
-  animation-duration: 0.4s;
+  animation-duration: 0.3s;
 }
 
 
@@ -115,12 +115,12 @@ https://www.youtube.com/watch?v=cccc9HjiUwo&t=21s
   left: calc(50% - 13px);
   opacity: 0;
 
-  transition: opacity linear 0.2s, top ease-out 0.4s;
+  transition: opacity linear 0.2s, top ease-out 0.3s;
 }
 
 .button-container:hover .rounded-plus {
   filter: none;
-  transition: opacity linear 0.15s, top ease-out 0.4s;
+  transition: opacity linear 0.15s, top ease-out 0.3s;
   transition-delay: 0.1s, 0s;
   opacity: 1;
   top: calc(50% - 13px);

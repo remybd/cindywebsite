@@ -1,0 +1,21 @@
+.header-container {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 16px;
+  padding: 32px 0px;
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
+}
+
+.header-link {
+  margin-right: 48px;
+  cursor: pointer;
+}
+
+.header-link.icon {
+  font-size: 24px;
+}
+

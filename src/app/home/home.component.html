@@ -1,7 +1,18 @@
 <div class="home-container">
-  <a href="/">
-    <app-button imageUrl="https://www.2min.fr/wp-content/uploads/2018/05/Voilier.jpg">
-      Test Button
-    </app-button>
-  </a>
+  <div class="logo-container">
+    <img class="logo" alt="cindy-tang-logo" src="/assets/img/logo/logo.png">
+  </div>
+
+  <h1 class="main-title">
+    Graphic design & art direction.
+  </h1>
+
+  <div class="entry-button-container">
+    <a *ngFor="let entryButton of entryButtonArray"
+       [routerLink]="entryButton.link" class="entry-button">
+      <app-button-moving-dashes [imageUrl]="entryButton.imageUrl">
+        {{ entryButton.name }}
+      </app-button-moving-dashes>
+    </a>
+  </div>
 </div>
