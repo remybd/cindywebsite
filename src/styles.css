@@ -2,15 +2,16 @@
 
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @import url(https://use.fontawesome.com/releases/v5.8.1/css/all.css);
-@import url('https://fonts.googleapis.com/css?family=Heebo');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 :root {
   --background-main: #000000;
+  --hover-main: #fffc00;
 }
 
 body {
   margin: 0px;
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 a {

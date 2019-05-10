@@ -27,3 +27,24 @@
   margin: 42px;
 }
 
+.entry-button .entry-button-title, .entry-button .entry-button-subtitle,
+.entry-button .entry-button-separator, .entry-button .entry-button-type{
+  margin: 0px;
+  font-size: 22px;
+}
+
+.entry-button-title, .entry-button-subtitle {
+  text-transform: uppercase;
+}
+
+.entry-button-title {
+  font-weight: 900;
+}
+
+.entry-button-subtitle, .entry-button-separator, .entry-button-type {
+  font-weight: normal;
+}
+
+.entry-button-type {
+  font-style: italic;
+}

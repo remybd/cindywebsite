@@ -11,7 +11,18 @@
     <a *ngFor="let entryButton of entryButtonArray"
        [routerLink]="entryButton.link" class="entry-button">
       <app-button-moving-dashes [imageUrl]="entryButton.imageUrl">
-        {{ entryButton.name }}
+        <h2 *ngIf="entryButton.title" class="entry-button-title">
+          {{ entryButton.title }}
+        </h2>
+        <h3 *ngIf="entryButton.subtitle" class="entry-button-subtitle">
+          {{ entryButton.subtitle }}
+        </h3>
+        <h3 *ngIf="(entryButton.title || entryButton.subtitle) && entryButton.type" class="entry-button-separator">
+          -
+        </h3>
+        <h3 *ngIf="entryButton.type" class="entry-button-type">
+          <i>{{ entryButton.type }}</i>
+        </h3>
       </app-button-moving-dashes>
     </a>
   </div>

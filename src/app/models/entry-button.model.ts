@@ -1,11 +1,16 @@
 
 export class EntryButtonModel{
-  name: string = "";
+  title: string = "";
+  subtitle: string = "";
+  type: string = "";
   imageUrl: string = "";
   link: string = "";
 
-  constructor(name, imageUrl, link) {
-    this.name = name;
+  constructor(title: string = "", subtitle : string = "", type : string = "",
+              imageUrl : string = "", link : string = "") {
+    this.title = title;
+    this.subtitle = subtitle;
+    this.type = type;
     this.imageUrl = imageUrl;
     this.link = link;
   }
