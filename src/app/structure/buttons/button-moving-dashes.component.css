@@ -87,7 +87,7 @@ https://www.youtube.com/watch?v=cccc9HjiUwo&t=21s
   background-size: cover;
   background-image: var(--image-url);
 
-  filter: blur(2px) brightness(50%);;
+  filter: blur(3px) grayscale(100%) brightness(90%);
 }
 
 
@@ -101,6 +101,8 @@ https://www.youtube.com/watch?v=cccc9HjiUwo&t=21s
   align-items: center;
   z-index: 1;
   text-align: center;
+  letter-spacing: 1.5px;
+  word-spacing: 2px;
 }
 
 .button-container:hover .button-content {
