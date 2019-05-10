@@ -13,9 +13,29 @@
 .header-link {
   margin-right: 48px;
   cursor: pointer;
+  position: relative;
+}
+
+.header-link-text:after {
+  content: "";
+  height: 1px;
+  width: 0px;
+  display: flex;
+  background-color: white;
+}
+
+.header-link-text:hover:after {
+  transition: width ease 0.5s;
+  width: 100%;
 }
 
 .header-link.icon {
   font-size: 24px;
 }
 
+
+.fa-instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
