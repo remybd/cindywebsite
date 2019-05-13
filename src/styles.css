@@ -21,3 +21,23 @@ a {
 a:visited {
   text-decoration: none;
 }
+
+
+.link-text-underline:after {
+  content: "";
+  height: 1px;
+  width: 0px;
+  display: flex;
+  background-color: var(--hover-main);
+}
+
+.link-text-underline:hover:after {
+  transition: width ease 0.5s;
+  width: 100%;
+}
+
+.link-text-underline:hover {
+  transition: width ease 0.5s;
+  width: 100%;
+  color: var(--hover-main);
+}
