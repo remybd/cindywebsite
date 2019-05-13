@@ -1,0 +1,8 @@
+.falling-item {
+  display: flex;
+  width: 10px;
+  height: 20px;
+  background-color: #fffc00;
+
+  position: absolute;
+}

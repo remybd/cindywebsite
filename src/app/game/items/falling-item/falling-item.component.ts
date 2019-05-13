@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {FallingItem} from "./falling-item.model";
 
 @Component({
   selector: 'app-falling-item',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./falling-item.component.css']
 })
 export class FallingItemComponent implements OnInit {
+  @Input("fallingItem") item : FallingItem = new FallingItem();
 
   constructor() { }
 

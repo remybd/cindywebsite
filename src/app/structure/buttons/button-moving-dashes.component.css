@@ -55,7 +55,7 @@
 video for the animation
 https://www.youtube.com/watch?v=cccc9HjiUwo&t=21s
 */
-  color: white;
+  color: var(--text-color-main);
   height: var(--width-button);
   width: var(--width-button);
   display: flex;
@@ -95,7 +95,7 @@ https://www.youtube.com/watch?v=cccc9HjiUwo&t=21s
 
 .button-content {
   display: none;
-  color: white;
+  color: var(--text-color-main);
   flex-direction: column;
   justify-content: center;
   align-items: center;

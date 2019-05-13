@@ -3,7 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  game: {
+    nbFallingItems: 4,
+    initialTimerDelay: 0,
+    period: 500, //ms
+    fallingItemHeight: 20,
+  }
 };
 
 /*

@@ -1,3 +1,4 @@
-<p>
-  falling-item works!
-</p>
+<div class="falling-item"
+     [style.left]="(item.left$ | async) + 'px'"
+     [style.top]="(item.top$ | async) + 'px'">
+</div>
