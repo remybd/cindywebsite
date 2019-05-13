@@ -4,6 +4,7 @@ import {HomeComponent} from "./home/home.component";
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
+  { path: 'game', loadChildren: './game/game.module#GameModule' },
 
   { path: '**', redirectTo: '/home' },
 ];
