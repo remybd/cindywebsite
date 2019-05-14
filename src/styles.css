@@ -44,4 +44,5 @@ a:visited {
   transition: width ease 0.5s;
   width: 100%;
   color: var(--hover-main);
+  text-align: center;
 }

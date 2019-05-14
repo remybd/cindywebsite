@@ -7,8 +7,9 @@ export const environment = {
   game: {
     nbFallingItems: 4,
     initialTimerDelay: 0,
-    period: 500, //ms
+    period: 200, //ms
     fallingItemHeight: 20,
+    delayBetweenLevel: 4000
   }
 };
 

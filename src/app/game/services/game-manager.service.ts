@@ -2,26 +2,30 @@ import {HostListener, Injectable} from '@angular/core';
 import {environment} from "../../../environments/environment";
 import {BehaviorSubject, Observable, timer} from "rxjs";
 import {FallingItem} from "../items/falling-item/falling-item.model";
+import {Router} from "@angular/router";
 
 @Injectable({
   providedIn: 'root'
 })
 export class GameManagerService {
-  _nbFallingItemsSubject$ = new BehaviorSubject<number>(environment.game.nbFallingItems);
+  _nbFallingItemsSubject$ = new BehaviorSubject<number>(0);
   nbFallingItems$ = this._nbFallingItemsSubject$.asObservable();
 
   _fallingItemArraySubject$ = new BehaviorSubject<FallingItem[]>([]);
   fallingItemArray$ = this._fallingItemArraySubject$.asObservable();
 
   timer = timer(environment.game.initialTimerDelay, environment.game.period);
-  timer$
+  timer$;
+
+  level: number = 1;
 
   maxHeight: number = window.innerHeight;
   currentHeight: number = 0;
 
-  constructor() {
+
+  constructor(private router: Router) {
     this.updateFallingItemArray();
-    this.startGame();
+    this.resetGame();
   }
 
 
@@ -61,9 +65,9 @@ export class GameManagerService {
       // Your API call, which will be performed every period
       this.currentHeight += environment.game.fallingItemHeight;
 
-      console.log(this.currentHeight, this.maxHeight)
+      //console.log(this.currentHeight, this.maxHeight)
       if(this.currentHeight >= this.maxHeight) {
-        this.stopGame();
+        this.stopLevel();
       }
 
       this.updateFallingItems();
@@ -76,13 +80,37 @@ export class GameManagerService {
 
   // Global Game management
 
-  startGame() {
+  resetGame() {
+    this._nbFallingItemsSubject$.next(0);
+    this._fallingItemArraySubject$.next([]);
+    this.maxHeight = window.innerHeight;
+    this.currentHeight = 0;
+    this.timer = timer(environment.game.initialTimerDelay, environment.game.period);
+  }
+
+  stopLevel() {
+    this.timer$.unsubscribe();
+    const newLevel : number = this.level + 1;
+    this.resetGame();
+
+    if(newLevel > 3) {
+      this.router.navigateByUrl('/game/game-over');
+    } else {
+      this.router.navigateByUrl('/game/level/' + newLevel);
+    }
+  }
+
+
+  setLevel(level: number = 1) {
+    if(level > 0)
+      this.level = level;
+  }
+
+  startLevel() {
+    this.resetGame();
+    this._nbFallingItemsSubject$.next(environment.game.nbFallingItems * this.level);
+    this.timer = timer(environment.game.initialTimerDelay,
+      environment.game.period / this.level);
     this.subscribeTimer();
   }
-
-  stopGame() {
-    this.timer$.unsubscribe();
-    console.log("game over")
-  }
-
 }
