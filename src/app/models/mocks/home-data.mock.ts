@@ -1,6 +1,6 @@
-import {EntryButtonModel} from "./entry-button.model";
+import {EntryButtonModel} from "../entry-button.model";
 
-export class MockData {
+export class HomeDataMock {
   static entryButtonVerresNikon: EntryButtonModel = new EntryButtonModel("Nikon Verres Optiques", "Totebag",
     "Illustration",
     "/assets/img/home/toteBagNikon@2x.png",
@@ -19,7 +19,7 @@ export class MockData {
   static entryButtonCaisseEpargne: EntryButtonModel = new EntryButtonModel("Caisse d'Épargne", "Handball",
     "Affiche et déclinaison",
     "/assets/img/home/caisseEpargneHandball@2x.png",
-    "");
+    "/content/caisse-epargne");
 
   static entryButtonRadioCanada: EntryButtonModel = new EntryButtonModel("Ici radio Canada", "Affiches",
     "Affiches",
@@ -54,10 +54,10 @@ export class MockData {
 
 
   static entryButtonArray = [
-    MockData.entryButtonVerresNikon, MockData.entryButtonTheErable,
-    MockData.entryButtonCentrePompidou, MockData.entryButtonCaisseEpargne,
-    MockData.entryButtonRadioCanada, MockData.entryButtonAmbigu,
-    MockData.entryButtonEpiderme, MockData.entryButtonEnMouvement,
-    MockData.entryButtonDentifrice, MockData.entryButtonRencontresChoregraphie
+    HomeDataMock.entryButtonVerresNikon, HomeDataMock.entryButtonTheErable,
+    HomeDataMock.entryButtonCentrePompidou, HomeDataMock.entryButtonCaisseEpargne,
+    HomeDataMock.entryButtonRadioCanada, HomeDataMock.entryButtonAmbigu,
+    HomeDataMock.entryButtonEpiderme, HomeDataMock.entryButtonEnMouvement,
+    HomeDataMock.entryButtonDentifrice, HomeDataMock.entryButtonRencontresChoregraphie
   ]
 }

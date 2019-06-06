@@ -1,0 +1,23 @@
+<div *ngIf="content" class="content-container">
+
+  <div class="content-list-images">
+    <div *ngFor="let img of content.imageList" class="content-image-container">
+      <img *ngIf="img.url" class="content-image"  [src]="img.url" [alt]="img.legend">
+      <p *ngIf="img.legend" class="content-image-subtitle" >
+        {{ img.legend }}
+      </p>
+    </div>
+  </div>
+
+  <footer class="content-footer">
+    <h1 *ngIf="content.title" class="content-title">
+      {{content.title}}
+    </h1>
+    <h2 *ngIf="content.subtitle" class="content-subtitle">
+      {{content.subtitle}}
+    </h2>
+    <p *ngIf="content.credits" class="content-credits">
+      {{content.credits}}
+    </p>
+  </footer>
+</div>

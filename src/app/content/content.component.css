@@ -1,0 +1,45 @@
+.content-container {
+  position: relative;
+  color: var(--hover-main);
+}
+
+
+/* images */
+
+.content-list-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.content-image-container {
+  margin: 32px;
+}
+
+
+/*footer */
+.content-footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding: 40px 0px;
+
+  background-color: var(--background-main);
+}
+
+.content-title {
+  font-size: 34px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.content-subtitle {
+  font-size: 27px;
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.content-credits {
+  font-size: 14px;
+  text-align: center;
+}

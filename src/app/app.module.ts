@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './structure/header/header.component';
 import {ButtonMovingDashesComponent} from "./structure/buttons/button-moving-dashes.component";
 import { FooterComponent } from './structure/footer/footer.component';
+import { ContentComponent } from './content/content.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FooterComponent } from './structure/footer/footer.component';
     ButtonMovingDashesComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,
