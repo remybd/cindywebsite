@@ -6,3 +6,11 @@
 .logo {
   width: 64px;
 }
+
+svg {
+  stroke: var(--font-color-main);
+}
+
+svg:hover {
+  stroke: var(--font-color-hover-main);
+}
