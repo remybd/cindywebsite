@@ -53,11 +53,19 @@ export class HomeDataMock {
     "");
 
 
+  static entryButtonAbbePierre: EntryButtonModel = new EntryButtonModel("\"Fondation\" Abbé Pierre",
+    "Les Pics D'or",
+    "Motion Design",
+    "/assets/img/home/abbe-pierre@2x.png",
+    "/content/abbe-pierre");
+
+
   static entryButtonArray = [
     HomeDataMock.entryButtonVerresNikon, HomeDataMock.entryButtonTheErable,
     HomeDataMock.entryButtonCentrePompidou, HomeDataMock.entryButtonCaisseEpargne,
     HomeDataMock.entryButtonRadioCanada, HomeDataMock.entryButtonAmbigu,
     HomeDataMock.entryButtonEpiderme, HomeDataMock.entryButtonEnMouvement,
-    HomeDataMock.entryButtonDentifrice, HomeDataMock.entryButtonRencontresChoregraphie
+    HomeDataMock.entryButtonDentifrice, HomeDataMock.entryButtonRencontresChoregraphie,
+    HomeDataMock.entryButtonAbbePierre
   ]
 }

@@ -10,10 +10,11 @@ import { FooterComponent } from './structure/footer/footer.component';
 import { ContentComponent } from './content/content.component';
 import { BlockImageComponent } from './content/blocks/block-image/block-image.component';
 import { BlockSearchComponent } from './content/blocks/block-search/block-search.component';
-import { LayoutHeaderWithLogoComponent } from './structure/layouts/header-with-logo/layout-header-with-logo.component';
-import { LayoutHeaderWithoutLogoComponent } from './structure/layouts/header-without-logo/layout-header-without-logo.component';
+import { LayoutHomePageComponent } from './structure/layouts/home-page/layout-home-page.component';
+import { LayoutEmptyComponent } from './structure/layouts/empty/layout-empty.component';
 import { HeaderLogoComponent } from './structure/header/header-logo/header-logo.component';
 import { HeaderNavComponent } from './structure/header/header-nav/header-nav.component';
+import { BlockVideoComponent } from './content/blocks/block-video/block-video.component';
 
 @NgModule({
   declarations: [
@@ -25,10 +26,11 @@ import { HeaderNavComponent } from './structure/header/header-nav/header-nav.com
     ContentComponent,
     BlockImageComponent,
     BlockSearchComponent,
-    LayoutHeaderWithLogoComponent,
-    LayoutHeaderWithoutLogoComponent,
+    LayoutHomePageComponent,
+    LayoutEmptyComponent,
     HeaderLogoComponent,
-    HeaderNavComponent
+    HeaderNavComponent,
+    BlockVideoComponent
   ],
   imports: [
     BrowserModule,

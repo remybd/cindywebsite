@@ -4,6 +4,7 @@ import {ContentDataMock} from "../mocks/content-data.mock";
 import {ContentPageModel} from "./models/content-page.model";
 import {ContentSearchModel} from './models/content-search.model';
 import {ContentImageModel} from './models/content-image.model';
+import {ContentVideoModel} from './models/content-video.model';
 
 @Component({
   selector: 'app-content',
@@ -15,6 +16,7 @@ export class ContentComponent implements OnInit {
 
   searchBlockType = ContentSearchModel.name;
   imageBlockType = ContentImageModel.name;
+  videoBlockType = ContentVideoModel.name;
 
   constructor(private route: ActivatedRoute) { }
 

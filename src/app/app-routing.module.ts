@@ -2,15 +2,15 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {HomeComponent} from "./home/home.component";
 import {ContentComponent} from "./content/content.component";
-import {LayoutHeaderWithoutLogoComponent} from './structure/layouts/header-without-logo/layout-header-without-logo.component';
-import {LayoutHeaderWithLogoComponent} from './structure/layouts/header-with-logo/layout-header-with-logo.component';
+import {LayoutEmptyComponent} from './structure/layouts/empty/layout-empty.component';
+import {LayoutHomePageComponent} from './structure/layouts/home-page/layout-home-page.component';
 
 const routes: Routes = [
-/*
+
   // page with header but no logo
   {
     path: '',
-    component: LayoutHeaderWithoutLogoComponent,
+    component: LayoutEmptyComponent,
     children: [
       { path: 'home', component: HomeComponent },
       { path: '',  redirectTo: '/home', pathMatch: 'full'},
@@ -21,15 +21,12 @@ const routes: Routes = [
   // page with header but no logo
   {
     path: '',
-    component: LayoutHeaderWithLogoComponent,
+    component: LayoutHomePageComponent,
     children: [
       { path: 'content/:key', component: ContentComponent },
     ]
-  },*/
+  },
 
-  { path: 'content/:key', component: ContentComponent },
-  { path: 'home', component: HomeComponent },
-  { path: '',  redirectTo: '/home', pathMatch: 'full'},
 
   { path: '**', redirectTo: '/home' },
 ];

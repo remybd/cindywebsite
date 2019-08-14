@@ -33,6 +33,7 @@
 
 .content-footer-text {
   color: var(--font-color-hover-main);
+  margin: 0px 32px;
 }
 
 .content-title {

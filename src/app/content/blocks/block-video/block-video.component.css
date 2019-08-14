@@ -1,0 +1,7 @@
+.video {
+  margin: 0px  32px;
+  max-width: calc(100% - 64px);
+  max-height: calc(100vh - 200px);
+  outline: none;
+}
+
