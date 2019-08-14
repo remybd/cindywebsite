@@ -2,7 +2,17 @@
   display: flex;
   justify-content: flex-end;
   font-size: 16px;
-  padding: 32px 0px;
+  padding: 16px 0px;
+  min-height: 68px;
+}
+
+.header-logo {
+  margin-left: 48px;
+  flex: 1;
+}
+
+.logo {
+  width: 64px;
 }
 
 .header-links {

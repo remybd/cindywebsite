@@ -1,9 +1,43 @@
-.search-list-images{
+.search-list-images {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  --nb-img-by-line: 2;
+  --img-width: 652px;
+}
+
+.search-legend {
+  max-width: calc( (var( --nb-img-by-line) * (var(--img-width) + (2 * 16px))) - 32px);
+  width: 100%;
+}
+
+.search-images-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.search-image-container {
+.search-image {
   margin: 16px;
+  width: var(--img-width);
+}
+
+@media screen and (max-width: 1448px) {
+  .search-legend {
+    --nb-img-by-line: 1;
+  }
+}
+
+@media screen and (min-width: 2116px) and (max-width: 2800px) {
+  .search-legend {
+    --nb-img-by-line: 3;
+  }
+}
+
+@media screen and (min-width: 2800px)  {
+  .search-legend {
+    max-width: inherit;
+    width: fit-content;
+
+  }
 }
