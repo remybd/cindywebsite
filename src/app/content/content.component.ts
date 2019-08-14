@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
-import {ContentDataMock} from "../models/mocks/content-data.mock";
-import {ContentModel} from "../models/content.model";
+import {ContentDataMock} from "../mocks/content-data.mock";
+import {ContentPageModel} from "./models/content-page.model";
+import {ContentSearchModel} from './models/content-search.model';
+import {ContentImageModel} from './models/content-image.model';
 
 @Component({
   selector: 'app-content',
@@ -9,7 +11,10 @@ import {ContentModel} from "../models/content.model";
   styleUrls: ['./content.component.css']
 })
 export class ContentComponent implements OnInit {
-  content: ContentModel;
+  content: ContentPageModel;
+
+  searchBlockType = ContentSearchModel.name;
+  imageBlockType = ContentImageModel.name;
 
   constructor(private route: ActivatedRoute) { }
 

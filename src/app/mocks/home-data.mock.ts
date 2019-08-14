@@ -1,10 +1,10 @@
-import {EntryButtonModel} from "../entry-button.model";
+import {EntryButtonModel} from "../home/models/entry-button.model";
 
 export class HomeDataMock {
   static entryButtonVerresNikon: EntryButtonModel = new EntryButtonModel("Nikon Verres Optiques", "Totebag",
     "Illustration",
     "/assets/img/home/toteBagNikon@2x.png",
-    "");
+    "/content/nikon");
 
   static entryButtonTheErable: EntryButtonModel = new EntryButtonModel("Thé à l'érable", "Boite de Thé",
     "Packaging",

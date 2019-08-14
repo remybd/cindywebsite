@@ -1,0 +1,5 @@
+<div class="search-list-images">
+  <div *ngFor="let img of search.imageList" class="search-image-container">
+    <img *ngIf="img.url" class="search-image" [src]="img.url" [alt]="search.legend">
+  </div>
+</div>

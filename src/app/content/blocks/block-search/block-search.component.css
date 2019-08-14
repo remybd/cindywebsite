@@ -1,0 +1,9 @@
+.search-list-images{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.search-image-container {
+  margin: 16px;
+}

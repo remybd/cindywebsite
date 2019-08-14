@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {HomeDataMock} from "../models/mocks/home-data.mock";
+import {HomeDataMock} from "../mocks/home-data.mock";
 
 @Component({
   selector: 'app-home',
