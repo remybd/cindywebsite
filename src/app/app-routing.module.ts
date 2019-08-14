@@ -6,7 +6,7 @@ import {LayoutHeaderWithoutLogoComponent} from './structure/layouts/header-witho
 import {LayoutHeaderWithLogoComponent} from './structure/layouts/header-with-logo/layout-header-with-logo.component';
 
 const routes: Routes = [
-
+/*
   // page with header but no logo
   {
     path: '',
@@ -25,7 +25,11 @@ const routes: Routes = [
     children: [
       { path: 'content/:key', component: ContentComponent },
     ]
-  },
+  },*/
+
+  { path: 'content/:key', component: ContentComponent },
+  { path: 'home', component: HomeComponent },
+  { path: '',  redirectTo: '/home', pathMatch: 'full'},
 
   { path: '**', redirectTo: '/home' },
 ];

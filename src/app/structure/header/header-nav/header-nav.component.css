@@ -1,0 +1,61 @@
+
+.header-links {
+  display: flex;
+  align-items: center;
+}
+
+.header-link {
+  margin-right: 48px;
+  cursor: pointer;
+  position: relative;
+}
+
+
+.header-link.icon {
+  font-size: 24px;
+}
+
+
+
+/*   instagram animation */
+
+
+.fa-instagram {
+  position: relative;
+  display: flex;
+  height: 24px;
+  width: 21px;
+}
+
+
+.fa-instagram:before, .fa-instagram:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: opacity 1s ease;
+}
+
+.fa-instagram:before {
+  opacity: 1;
+}
+
+.fa-instagram:after {
+  content: "\f16d";
+  background-color: #f09433;
+  background: linear-gradient(45deg, #feda75 0%,#fa7e1e 25%,#d62976 50%,#962fbf 75%,#4f5bd5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  opacity: 0;
+}
+
+.fa-instagram:hover:after {
+  opacity: 1;
+}
+
+.fa-instagram:hover:before {
+  opacity: 0;
+}
+

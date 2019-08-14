@@ -33,7 +33,7 @@ export class ContentDataMock {
     new ContentImageModel("/assets/img/content/nikon/search_sun_652x461.png",""),
   ];
   static nikonBlocks: ContentBlockModel[] = [
-    new ContentImageModel("/assets/img/content/nikon/",
+    new ContentImageModel("/assets/img/content/nikon/tote-bag-1_1212x756.png",
       ""),
     new ContentSearchModel(ContentDataMock.nikonSearchImages)
   ];

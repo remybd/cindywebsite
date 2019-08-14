@@ -8,14 +8,20 @@
   </div>
 
   <footer class="content-footer">
-    <h1 *ngIf="content.title" class="content-title">
-      {{content.title}}
-    </h1>
-    <h2 *ngIf="content.subtitle" class="content-subtitle">
-      {{content.subtitle}}
-    </h2>
-    <p *ngIf="content.credits" class="content-credits">
-      {{content.credits}}
-    </p>
+    <app-header-logo></app-header-logo>
+
+    <div class="content-footer-text">
+      <h1 *ngIf="content.title" class="content-title">
+        {{content.title}}
+      </h1>
+      <h2 *ngIf="content.subtitle" class="content-subtitle">
+        {{content.subtitle}}
+      </h2>
+      <p *ngIf="content.credits" class="content-credits">
+        {{content.credits}}
+      </p>
+    </div>
+
+    <app-header-nav></app-header-nav>
   </footer>
 </div>

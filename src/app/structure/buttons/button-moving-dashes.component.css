@@ -37,13 +37,13 @@
 
 
 .button-container:hover {
-  --color-start: var(--hover-main);
-  --color-middle: var(--hover-main);
-  --color-stop: var(--hover-main);
+  --color-start: var(--font-color-hover-main);
+  --color-middle: var(--font-color-hover-main);
+  --color-stop: var(--font-color-hover-main);
 
   animation-name: dash-move;
   animation-duration: 0.3s;
-  color: var(--hover-main);
+  color: var(--font-color-hover-main);
 }
 
 
@@ -72,7 +72,7 @@ https://www.youtube.com/watch?v=cccc9HjiUwo&t=21s
 
 .button-container:hover .button {
   background-image: none;
-  color: var(--hover-main);
+  color: var(--font-color-hover-main);
 }
 
 .button-container:hover .button:before{
@@ -107,7 +107,7 @@ https://www.youtube.com/watch?v=cccc9HjiUwo&t=21s
 
 .button-container:hover .button-content {
   display: flex;
-  color: var(--hover-main);
+  color: var(--font-color-hover-main);
 }
 
 
@@ -119,10 +119,10 @@ https://www.youtube.com/watch?v=cccc9HjiUwo&t=21s
 .rounded-plus {
   display: flex;
   background-color: var(--background-main);
-  color: var(--hover-main);
+  color: var(--font-color-hover-main);
   font-size: 24px;
   border-radius: 50%;
-  border: 2px var(--hover-main) solid;
+  border: 2px var(--font-color-hover-main) solid;
   filter: none;
 
   position: absolute;
@@ -148,9 +148,9 @@ https://www.youtube.com/watch?v=cccc9HjiUwo&t=21s
 
 @keyframes dash-move {
   10% {
-    --color-start: var(--hover-main);
+    --color-start: var(--font-color-hover-main);
     --color-middle: transparent;
-    --color-stop: var(--hover-main);
+    --color-stop: var(--font-color-hover-main);
 
     --percent-start: 78%;
     --percent-middle: 78%;
@@ -158,9 +158,9 @@ https://www.youtube.com/watch?v=cccc9HjiUwo&t=21s
     --percent-stop: 100%;
   }
   20% {
-    --color-start: var(--hover-main);
+    --color-start: var(--font-color-hover-main);
     --color-middle: transparent;
-    --color-stop: var(--hover-main);
+    --color-stop: var(--font-color-hover-main);
 
     --percent-start: 66%;
     --percent-middle: 66%;
@@ -168,9 +168,9 @@ https://www.youtube.com/watch?v=cccc9HjiUwo&t=21s
     --percent-stop: 94%;
   }
   30% {
-    --color-start: var(--hover-main);
+    --color-start: var(--font-color-hover-main);
     --color-middle: transparent;
-    --color-stop: var(--hover-main);
+    --color-stop: var(--font-color-hover-main);
 
     --percent-start: 54%;
     --percent-middle: 54%;
@@ -178,9 +178,9 @@ https://www.youtube.com/watch?v=cccc9HjiUwo&t=21s
     --percent-stop: 90%;
   }
   40% {
-    --color-start: var(--hover-main);
+    --color-start: var(--font-color-hover-main);
     --color-middle: transparent;
-    --color-stop: var(--hover-main);
+    --color-stop: var(--font-color-hover-main);
 
     --percent-start: 42%;
     --percent-middle: 42%;
@@ -188,9 +188,9 @@ https://www.youtube.com/watch?v=cccc9HjiUwo&t=21s
     --percent-stop: 78%;
   }
   50% {
-    --color-start: var(--hover-main);
+    --color-start: var(--font-color-hover-main);
     --color-middle: transparent;
-    --color-stop: var(--hover-main);
+    --color-stop: var(--font-color-hover-main);
 
     --percent-start: 33%;
     --percent-middle: 33%;
@@ -198,9 +198,9 @@ https://www.youtube.com/watch?v=cccc9HjiUwo&t=21s
     --percent-stop: 66%;
   }
   60% {
-    --color-start: var(--hover-main);
+    --color-start: var(--font-color-hover-main);
     --color-middle: transparent;
-    --color-stop: var(--hover-main);
+    --color-stop: var(--font-color-hover-main);
 
     --percent-start: 22%;
     --percent-middle: 22%;
@@ -208,9 +208,9 @@ https://www.youtube.com/watch?v=cccc9HjiUwo&t=21s
     --percent-stop: 58%;
   }
   70% {
-    --color-start: var(--hover-main);
+    --color-start: var(--font-color-hover-main);
     --color-middle: transparent;
-    --color-stop: var(--hover-main);
+    --color-stop: var(--font-color-hover-main);
 
     --percent-start: 10%;
     --percent-middle: 10%;
@@ -218,9 +218,9 @@ https://www.youtube.com/watch?v=cccc9HjiUwo&t=21s
     --percent-stop: 46%;
   }
   80% {
-    --color-start: var(--hover-main);
+    --color-start: var(--font-color-hover-main);
     --color-middle: transparent;
-    --color-stop: var(--hover-main);
+    --color-stop: var(--font-color-hover-main);
 
     --percent-start: 0%;
     --percent-middle: 0%;
@@ -228,9 +228,9 @@ https://www.youtube.com/watch?v=cccc9HjiUwo&t=21s
     --percent-stop: 34%;
   }
   90% {
-    --color-start: var(--hover-main);
+    --color-start: var(--font-color-hover-main);
     --color-middle: transparent;
-    --color-stop: var(--hover-main);
+    --color-stop: var(--font-color-hover-main);
 
     --percent-start: 0%;
     --percent-middle: 0%;

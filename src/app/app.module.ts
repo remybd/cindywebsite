@@ -12,6 +12,8 @@ import { BlockImageComponent } from './content/blocks/block-image/block-image.co
 import { BlockSearchComponent } from './content/blocks/block-search/block-search.component';
 import { LayoutHeaderWithLogoComponent } from './structure/layouts/header-with-logo/layout-header-with-logo.component';
 import { LayoutHeaderWithoutLogoComponent } from './structure/layouts/header-without-logo/layout-header-without-logo.component';
+import { HeaderLogoComponent } from './structure/header/header-logo/header-logo.component';
+import { HeaderNavComponent } from './structure/header/header-nav/header-nav.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { LayoutHeaderWithoutLogoComponent } from './structure/layouts/header-wit
     BlockImageComponent,
     BlockSearchComponent,
     LayoutHeaderWithLogoComponent,
-    LayoutHeaderWithoutLogoComponent
+    LayoutHeaderWithoutLogoComponent,
+    HeaderLogoComponent,
+    HeaderNavComponent
   ],
   imports: [
     BrowserModule,

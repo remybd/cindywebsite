@@ -9,6 +9,7 @@
 .search-legend {
   max-width: calc( (var( --nb-img-by-line) * (var(--img-width) + (2 * 16px))) - 32px);
   width: 100%;
+  color: var(--font-color-legend);
 }
 
 .search-images-container {
@@ -38,6 +39,5 @@
   .search-legend {
     max-width: inherit;
     width: fit-content;
-
   }
 }

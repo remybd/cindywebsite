@@ -1,13 +1,4 @@
 <div class="header-container">
-  <a class="header-logo" routerLink="/home" *ngIf="logo">
-    <img class="logo" alt="cindy-tang-logo" src="/assets/img/logo/logo.svg">
-  </a>
-  <nav class="header-links">
-    <a class="header-link icon">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a class="header-link link-text-underline">
-      À propos
-    </a>
-  </nav>
+  <app-header-logo *ngIf="logo"></app-header-logo>
+  <app-header-nav></app-header-nav>
 </div>
