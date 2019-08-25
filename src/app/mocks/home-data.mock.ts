@@ -39,7 +39,7 @@ export class HomeDataMock {
   static entryButtonEnMouvement: EntryButtonModel = new EntryButtonModel("En mouvement", "Maison d'édition",
     "Identité visuelle",
     "/assets/img/home/enMouvementBelAmiCover@2x.png",
-    "");
+    "/content/en-mouvement");
 
   static entryButtonDentifrice: EntryButtonModel = new EntryButtonModel("3X/J", "Kit de dentifrice pour enfants",
     "Packaging",
@@ -59,13 +59,26 @@ export class HomeDataMock {
     "/assets/img/home/abbe-pierre@2x.png",
     "/content/abbe-pierre");
 
+  static entryButtonNuitEau: EntryButtonModel = new EntryButtonModel("Nuit de l'eau",
+    "",
+    "Édition",
+    "",
+    "/content/nuit-eau");
+
+
+  static entryButtonCrazyHorse: EntryButtonModel = new EntryButtonModel("Crazy Horse",
+    "Carte de voeux",
+    "Édition",
+    "/assets/img/home/crazy-horse@2x.png",
+    "/content/crazy-horse");
 
   static entryButtonArray = [
     HomeDataMock.entryButtonVerresNikon, HomeDataMock.entryButtonTheErable,
     HomeDataMock.entryButtonCentrePompidou, HomeDataMock.entryButtonCaisseEpargne,
     HomeDataMock.entryButtonRadioCanada, HomeDataMock.entryButtonAmbigu,
+    HomeDataMock.entryButtonCrazyHorse, HomeDataMock.entryButtonNuitEau,
     HomeDataMock.entryButtonEpiderme, HomeDataMock.entryButtonEnMouvement,
     HomeDataMock.entryButtonDentifrice, HomeDataMock.entryButtonRencontresChoregraphie,
-    HomeDataMock.entryButtonAbbePierre
+    HomeDataMock.entryButtonAbbePierre,
   ]
 }
