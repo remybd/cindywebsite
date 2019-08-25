@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {HomeDataMock} from "../mocks/home-data.mock";
+import {HomeDataMock} from "../datas/home-data.mock";
 
 @Component({
   selector: 'app-home',
@@ -8,6 +8,7 @@ import {HomeDataMock} from "../mocks/home-data.mock";
 })
 export class HomeComponent implements OnInit {
   entryButtonArray = HomeDataMock.entryButtonArray;
+  precurrentPageString = HomeDataMock.precurrentPageString;
   constructor() { }
 
   ngOnInit() {

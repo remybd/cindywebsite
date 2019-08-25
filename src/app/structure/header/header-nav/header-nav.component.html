@@ -5,4 +5,7 @@
   <a class="header-link link-text-underline">
     À propos
   </a>
+  <a *ngIf="next" [routerLink]="precurrentPageString + next" class="header-link link-text-underline">
+    Next
+  </a>
 </nav>

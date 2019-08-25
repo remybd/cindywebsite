@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {HomeDataMock} from '../../../datas/home-data.mock';
 
 @Component({
   selector: 'app-header-nav',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header-nav.component.css']
 })
 export class HeaderNavComponent implements OnInit {
+  precurrentPageString = HomeDataMock.precurrentPageString;
+  @Input() next: string = '';
 
   constructor() { }
 

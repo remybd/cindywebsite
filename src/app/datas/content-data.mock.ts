@@ -17,7 +17,7 @@ export class ContentDataMock {
   ];
   static caisseEpargne: ContentPageModel = new ContentPageModel(
     'Caisse d\'épargne - supporter officiel de l\'équipe de France de Handball',
-    'Création de l\'affiche pour la coupe du monde de handball homme et femme',
+    'Création de l\'poster pour la coupe du monde de handball homme et femme',
     'CR : Jeanne Teissier / Photographe maillot : David Meignan / Photographe femmes : Etienne Garnier',
     ContentDataMock.caisseEpargneBlocks
   );
@@ -108,7 +108,7 @@ export class ContentDataMock {
   ];
   static nuitEau: ContentPageModel = new ContentPageModel(
     'UNICEF - la nuit de l\'eau',
-    'Création de l\'affiche pour la 10ème édition de la Nuit de l\'Eau.',
+    'Création de l\'poster pour la 10ème édition de la Nuit de l\'Eau.',
     'En partenariat avec l\'ECV',
     ContentDataMock.nuitEauBlocks
   );

@@ -9,7 +9,8 @@
 
   <div class="entry-button-container">
     <a *ngFor="let entryButton of entryButtonArray"
-       [routerLink]="entryButton.link" class="entry-button">
+       [routerLink]="precurrentPageString + entryButton.key" class="entry-button">
+
       <app-button-moving-dashes [imageUrl]="entryButton.imageUrl">
         <h2 *ngIf="entryButton.title" class="entry-button-title">
           {{ entryButton.title }}
@@ -24,6 +25,7 @@
           <i>{{ entryButton.type }}</i>
         </h3>
       </app-button-moving-dashes>
+
     </a>
   </div>
 </div>
