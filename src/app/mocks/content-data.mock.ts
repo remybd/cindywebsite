@@ -1,7 +1,7 @@
 import {ContentPageModel} from '../content/models/content-page.model';
 import {ContentImageModel} from '../content/models/content-image.model';
 import {ContentBlockModel} from '../content/models/content-block.model';
-import {ContentSearchModel} from '../content/models/content-search.model';
+import {ContentMosaicModel} from '../content/models/content-mosaic.model';
 import {ContentVideoModel} from '../content/models/content-video.model';
 
 export class ContentDataMock {
@@ -33,7 +33,7 @@ export class ContentDataMock {
   static nikonBlocks: ContentBlockModel[] = [
     new ContentImageModel('/assets/img/content/nikon/tote-bag-1_1212x756.png',
       ''),
-    new ContentSearchModel(ContentDataMock.nikonSearchImages)
+    new ContentMosaicModel(ContentDataMock.nikonSearchImages, "Recherches")
   ];
   static nikon: ContentPageModel = new ContentPageModel(
     'Nikon - Illustration pour totebag',

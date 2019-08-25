@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BlockSearchComponent } from './block-search.component';
+import { BlockMosaicComponent } from './block-mosaic.component';
 
 describe('BlockSearchComponent', () => {
-  let component: BlockSearchComponent;
-  let fixture: ComponentFixture<BlockSearchComponent>;
+  let component: BlockMosaicComponent;
+  let fixture: ComponentFixture<BlockMosaicComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BlockSearchComponent ]
+      declarations: [ BlockMosaicComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BlockSearchComponent);
+    fixture = TestBed.createComponent(BlockMosaicComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
