@@ -1,11 +1,9 @@
 <nav class="header-links">
-  <a class="header-link icon">
+  <a class="header-link icon" href="https://www.instagram.com/_cindy_tang" target="_blank">
     <i class="fab fa-instagram"></i>
   </a>
-  <a class="header-link link-text-underline">
+  <a class="header-link link-text-underline" routerLink="">
     À propos
   </a>
-  <a *ngIf="next" [routerLink]="precurrentPageString + next" class="header-link link-text-underline">
-    Next
-  </a>
+  <a *ngIf="next" [routerLink]="['../', next]" class="header-link link-text-underline">Next</a>
 </nav>

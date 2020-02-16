@@ -8,11 +8,18 @@
   margin-right: 48px;
   cursor: pointer;
   position: relative;
+  text-decoration: none;
+  color: var(--font-color-main);
+}
+
+.header-link:hover {
+  color: var(--font-color-hover-main);
 }
 
 
 .header-link.icon {
   font-size: 24px;
+  color: var(--font-color-main);
 }
 
 
@@ -59,3 +66,21 @@
   opacity: 0;
 }
 
+
+/* mobile */
+@media screen and (max-width: 992px) {
+  .header-logo {
+    margin-left: 16px;
+  }
+
+  .header-links {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 16px;
+  }
+
+  .header-link {
+    margin: 8px 0px;
+    text-align: center;
+  }
+}

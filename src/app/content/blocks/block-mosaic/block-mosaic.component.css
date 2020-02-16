@@ -21,6 +21,7 @@
 .search-image {
   margin: 16px;
   width: var(--img-width);
+  max-width: 100%;
 }
 
 @media screen and (max-width: 1448px) {
@@ -41,3 +42,4 @@
     width: fit-content;
   }
 }
+

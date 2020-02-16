@@ -8,7 +8,7 @@ import {HomeDataMock} from "../datas/home-data.mock";
 })
 export class HomeComponent implements OnInit {
   entryButtonArray = HomeDataMock.entryButtonArray;
-  precurrentPageString = HomeDataMock.precurrentPageString;
+  preCurrentPagePath = HomeDataMock.preCurrentPagePath;
   constructor() { }
 
   ngOnInit() {

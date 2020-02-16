@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header-without-logo',
-  templateUrl: './layout-empty.component.html',
-  styleUrls: ['./layout-empty.component.css']
+  templateUrl: './layout-logo.component.html',
+  styleUrls: ['./layout-logo.component.css']
 })
-export class LayoutEmptyComponent implements OnInit {
+export class LayoutLogoComponent implements OnInit {
 
   constructor() { }
 

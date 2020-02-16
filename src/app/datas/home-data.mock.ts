@@ -2,7 +2,7 @@ import {EntryButtonModel} from '../home/models/entry-button.model';
 import {ContentType} from './content-type.enum';
 
 export class HomeDataMock {
-  static precurrentPageString: string = '/content/';
+  static preCurrentPagePath: string = '/content/';
 
 
   static entryButtonVerresNikon: EntryButtonModel = new EntryButtonModel('Nikon Verres Optiques', 'Totebag',

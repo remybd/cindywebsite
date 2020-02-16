@@ -7,7 +7,6 @@ import {HomeDataMock} from '../../../datas/home-data.mock';
   styleUrls: ['./header-nav.component.css']
 })
 export class HeaderNavComponent implements OnInit {
-  precurrentPageString = HomeDataMock.precurrentPageString;
   @Input() next: string = '';
 
   constructor() { }

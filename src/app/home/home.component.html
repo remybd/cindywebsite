@@ -9,7 +9,7 @@
 
   <div class="entry-button-container">
     <a *ngFor="let entryButton of entryButtonArray"
-       [routerLink]="precurrentPageString + entryButton.key" class="entry-button">
+       [routerLink]="preCurrentPagePath + entryButton.key" class="entry-button">
 
       <app-button-moving-dashes [imageUrl]="entryButton.imageUrl">
         <h2 *ngIf="entryButton.title" class="entry-button-title">

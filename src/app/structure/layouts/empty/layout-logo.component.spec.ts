@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LayoutEmptyComponent } from './layout-empty.component';
+import { LayoutLogoComponent } from './layout-logo.component';
 
 describe('HeaderWithoutLogoComponent', () => {
-  let component: LayoutEmptyComponent;
-  let fixture: ComponentFixture<LayoutEmptyComponent>;
+  let component: LayoutLogoComponent;
+  let fixture: ComponentFixture<LayoutLogoComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LayoutEmptyComponent ]
+      declarations: [ LayoutLogoComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LayoutEmptyComponent);
+    fixture = TestBed.createComponent(LayoutLogoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

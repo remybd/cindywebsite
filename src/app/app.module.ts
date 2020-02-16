@@ -11,7 +11,7 @@ import { ContentComponent } from './content/content.component';
 import { BlockImageComponent } from './content/blocks/block-image/block-image.component';
 import { BlockMosaicComponent } from './content/blocks/block-mosaic/block-mosaic.component';
 import { LayoutHomePageComponent } from './structure/layouts/home-page/layout-home-page.component';
-import { LayoutEmptyComponent } from './structure/layouts/empty/layout-empty.component';
+import { LayoutLogoComponent } from './structure/layouts/empty/layout-logo.component';
 import { HeaderLogoComponent } from './structure/header/header-logo/header-logo.component';
 import { HeaderNavComponent } from './structure/header/header-nav/header-nav.component';
 import { BlockVideoComponent } from './content/blocks/block-video/block-video.component';
@@ -27,7 +27,7 @@ import { BlockVideoComponent } from './content/blocks/block-video/block-video.co
     BlockImageComponent,
     BlockMosaicComponent,
     LayoutHomePageComponent,
-    LayoutEmptyComponent,
+    LayoutLogoComponent,
     HeaderLogoComponent,
     HeaderNavComponent,
     BlockVideoComponent

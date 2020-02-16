@@ -1,3 +1,7 @@
 .content-image-subtitle {
   color: var(--font-color-legend);
 }
+
+.content-image {
+  width: 100%;
+}
