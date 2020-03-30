@@ -3,9 +3,11 @@ import {ContentBlockModel} from './content-block.model';
 
 export class ContentMosaicModel extends ContentBlockModel{
   imageList: ContentImageModel[] = [];
+  static readonly blockName = 'MOSAIC';
+
 
   constructor(imageList: ContentImageModel[], legend: string = "") {
-    super(legend);
+    super(ContentMosaicModel.blockName, legend);
     this.imageList = imageList;
   }
 }

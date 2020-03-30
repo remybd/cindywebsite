@@ -2,9 +2,9 @@
 
   <div class="content-list-blocks">
     <div *ngFor="let block of content.blockList" class="content-block-container">
-      <app-block-image *ngIf="block.constructor.name == imageBlockType" [img]="block"></app-block-image>
-      <app-block-search *ngIf="block.constructor.name == searchBlockType" [search]="block"></app-block-search>
-      <app-block-video *ngIf="block.constructor.name == videoBlockType" [video]="block"></app-block-video>
+      <app-block-image *ngIf="block.blockName === imageBlockType" [img]="block"></app-block-image>
+      <app-block-search *ngIf="block.blockName === searchBlockType" [search]="block"></app-block-search>
+      <app-block-video *ngIf="block.blockName === videoBlockType" [video]="block"></app-block-video>
     </div>
   </div>
 

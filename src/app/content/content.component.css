@@ -58,6 +58,17 @@
 
 /* mobile */
 @media screen and (max-width: 992px) {
+  .content-container {
+    padding-top: 32px;
+    padding-bottom: 144px;
+  }
+
+
+  .content-block-container {
+    margin: 16px;
+  }
+
+
   .content-footer {
     flex-wrap: wrap;
     padding: 8px 0px;

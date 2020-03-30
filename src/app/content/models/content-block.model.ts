@@ -1,7 +1,9 @@
-export class ContentBlockModel{
-  legend: string = "";
+export class ContentBlockModel {
+  legend: string = '';
+  readonly blockName;
 
-  constructor(legend: string = "") {
+  constructor(blockName: string, legend: string = '') {
+    this.blockName = blockName;
     this.legend = legend;
   }
 }
