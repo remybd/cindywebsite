@@ -40,7 +40,7 @@ export class ContentComponent implements OnInit {
   }
 
   getNextPageKey(key: string) {
-    const entryButton = this.contentTypeManager.next(key);
+    const entryButton = this.contentTypeManager.nextInHomePage(key);
     if(entryButton) {
       this.nextPageKey = entryButton.key;
     }

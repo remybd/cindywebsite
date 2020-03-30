@@ -77,12 +77,18 @@ export class HomeDataMock {
     'crazy-horse');
 
   static entryButtonArray = [
-    HomeDataMock.entryButtonVerresNikon, HomeDataMock.entryButtonTheErable,
-    HomeDataMock.entryButtonCentrePompidou, HomeDataMock.entryButtonCaisseEpargne,
-    HomeDataMock.entryButtonRadioCanada, HomeDataMock.entryButtonAmbigu,
-    HomeDataMock.entryButtonCrazyHorse, HomeDataMock.entryButtonNuitEau,
-    HomeDataMock.entryButtonEpiderme, HomeDataMock.entryButtonEnMouvement,
-    HomeDataMock.entryButtonDentifrice, HomeDataMock.entryButtonRencontresChoregraphie,
+    HomeDataMock.entryButtonVerresNikon,
+    HomeDataMock.entryButtonTheErable,
+    HomeDataMock.entryButtonCentrePompidou,
+    HomeDataMock.entryButtonCaisseEpargne,
+    HomeDataMock.entryButtonRadioCanada,
+    HomeDataMock.entryButtonAmbigu,
+    HomeDataMock.entryButtonCrazyHorse,
+    HomeDataMock.entryButtonNuitEau,
+    HomeDataMock.entryButtonEpiderme,
+    HomeDataMock.entryButtonEnMouvement,
+    HomeDataMock.entryButtonDentifrice,
+    HomeDataMock.entryButtonRencontresChoregraphie,
     HomeDataMock.entryButtonAbbePierre,
   ];
 }

@@ -12,22 +12,23 @@ export class ContentTypeManagerService {
   constructor() {
   }
 
+  // TODO use it in components
   set currentContentType(value: ContentType) {
     this._currentContentType = value;
   }
 
-  next(currentPageKey: string): EntryButtonModel {
-    const pagePosition = this.findPositionPageInArray(currentPageKey);
+  nextInHomePage(currentPageKey: string): EntryButtonModel {
+    const pagePosition = this.findPositionPageInHomePageList(currentPageKey);
     return this.findNextPageSameType(pagePosition);
   }
 
-  previous(currentPageKey: string): EntryButtonModel {
-    const pagePosition = this.findPositionPageInArray(currentPageKey);
+  previousInHomePage(currentPageKey: string): EntryButtonModel {
+    const pagePosition = this.findPositionPageInHomePageList(currentPageKey);
     return this.findPreviousPageSameType(pagePosition);
   }
 
 
-  findPositionPageInArray(currentPageKey: string): number {
+  findPositionPageInHomePageList(currentPageKey: string): number {
     return HomeDataMock.entryButtonArray.findIndex((entryButton: EntryButtonModel, index, obj) => {
       return entryButton.key == currentPageKey;
     });
