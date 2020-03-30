@@ -17,5 +17,7 @@ svg:hover {
 @media screen and (max-width: 992px) {
   .header-logo {
     margin-left: 16px;
+    height: 32px;
+    width: 32px;
   }
 }

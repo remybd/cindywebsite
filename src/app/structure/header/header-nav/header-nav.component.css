@@ -82,5 +82,14 @@
   .header-link {
     margin: 8px 0px;
     text-align: center;
+    font-size: 14px;
+  }
+
+  .header-link.icon {
+    font-size: 18px;
+  }
+
+  .next, .previous {
+    display: none;
   }
 }

@@ -24,11 +24,11 @@
 }
 
 .entry-button {
-  margin: 42px;
+  margin: 40px;
 }
 
 .entry-button .entry-button-title, .entry-button .entry-button-subtitle,
-.entry-button .entry-button-separator, .entry-button .entry-button-type{
+.entry-button .entry-button-separator, .entry-button .entry-button-type {
   margin: 0px;
   font-size: 22px;
 }
@@ -47,4 +47,33 @@
 
 .entry-button-type {
   font-style: italic;
+}
+
+
+/* mobile */
+@media screen and (max-width: 992px) {
+  :host {
+    margin: 16px;
+    display: block;
+  }
+
+  /*
+  the logo should go on top left. So no really other solution than an absolut position. But I don't like it
+   TODO improve
+    */
+  .logo {
+    width: 56px;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+  }
+
+  .main-title {
+    margin: 32px;
+    font-size: 24px;
+  }
+
+  .entry-button {
+    margin: 24px;
+  }
 }

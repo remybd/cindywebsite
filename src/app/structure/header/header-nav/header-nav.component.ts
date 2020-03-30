@@ -7,7 +7,8 @@ import {HomeDataMock} from '../../../datas/home-data.mock';
   styleUrls: ['./header-nav.component.css']
 })
 export class HeaderNavComponent implements OnInit {
-  @Input() next: string = '';
+  @Input() next = '';
+  @Input() previous = '';
 
   constructor() { }
 
