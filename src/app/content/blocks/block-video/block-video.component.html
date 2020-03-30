@@ -1,4 +1,4 @@
-<video controls class="video">
+<video controls class="video" *ngIf="video && video.url && video.type">
   <source [src]="video.url"  [type]="video.type">
   Sorry, your browser doesn't support embedded videos.
 </video>
