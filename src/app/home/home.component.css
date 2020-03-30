@@ -62,14 +62,15 @@
    TODO improve
     */
   .logo {
-    width: 56px;
+    width: 48px;
     position: absolute;
-    top: 24px;
-    left: 24px;
+    top: 16px;
+    left: 16px;
   }
 
   .main-title {
     margin: 32px;
+    margin-top: 16px;
     font-size: 24px;
   }
 

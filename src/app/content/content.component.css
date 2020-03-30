@@ -58,8 +58,18 @@
 
 /* mobile */
 @media screen and (max-width: 992px) {
+  .content-footer {
+    flex-wrap: wrap;
+    padding: 8px 0px;
+  }
+
   .content-footer-text {
-    margin: 0px 16px;
+    width: 100%;
+    margin: 8px;
+  }
+
+  app-header-logo, app-header-nav {
+    order: 2;
   }
 
   .content-title {
@@ -68,9 +78,10 @@
 
   .content-subtitle {
     font-size: 10px;
+    display: none;
   }
 
   .content-credits {
-    font-size: 8px;
+    font-size: 7px;
   }
 }

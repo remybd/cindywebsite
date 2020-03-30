@@ -73,20 +73,16 @@
     margin-left: 16px;
   }
 
-  .header-links {
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin-right: 16px;
-  }
-
   .header-link {
-    margin: 8px 0px;
     text-align: center;
     font-size: 14px;
+    margin-right: 16px;
   }
 
   .header-link.icon {
     font-size: 18px;
+    height: 18px;
+    margin-right: 32px;
   }
 
   .next, .previous {
