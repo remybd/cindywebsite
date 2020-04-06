@@ -81,20 +81,29 @@ export class HomeDataMock {
     '/assets/img/home/crazy-horse@2x.png',
     'crazy-horse');
 
+
+  static entryButtonFondationDeFrance: EntryButtonModel = new EntryButtonModel('Fondation de France',
+    'Covid19',
+    ContentType.motionDesign,
+    '/assets/img/home/fondation-de-france.png',
+    'fdf-covid');
+
   static entryButtonArray = [
-    HomeDataMock.entryButtonVerresNikon,
-    HomeDataMock.entryButtonTheErable,
-    HomeDataMock.entryButtonCentrePompidou,
-    HomeDataMock.entryButtonCaisseEpargneHandball,
+    HomeDataMock.entryButtonAbbePierre,
     HomeDataMock.entryButtonCaisseEpargneSecuriteRoutiere,
-    HomeDataMock.entryButtonRadioCanada,
-    HomeDataMock.entryButtonAmbigu,
+    HomeDataMock.entryButtonFondationDeFrance,
+    HomeDataMock.entryButtonCaisseEpargneHandball,
+    HomeDataMock.entryButtonVerresNikon,
     HomeDataMock.entryButtonCrazyHorse,
     HomeDataMock.entryButtonNuitEau,
-    HomeDataMock.entryButtonEpiderme,
     HomeDataMock.entryButtonEnMouvement,
+
+/*    HomeDataMock.entryButtonTheErable,
+    HomeDataMock.entryButtonCentrePompidou,
+    HomeDataMock.entryButtonRadioCanada,
+    HomeDataMock.entryButtonAmbigu,
+    HomeDataMock.entryButtonEpiderme,
     HomeDataMock.entryButtonDentifrice,
-    HomeDataMock.entryButtonRencontresChoregraphie,
-    HomeDataMock.entryButtonAbbePierre,
+    HomeDataMock.entryButtonRencontresChoregraphie*/
   ];
 }
