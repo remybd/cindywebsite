@@ -5,3 +5,7 @@
   outline: none;
 }
 
+.content-video-subtitle {
+  margin: 0px 32px;
+  color: var(--font-color-legend);
+}

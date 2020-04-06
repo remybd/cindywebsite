@@ -25,8 +25,7 @@ export class ContentDataMock {
 
 
   static caisseEpargneSecuriteRoutiereBlocks: ContentImageModel[] = [
-    new ContentImageModel('/assets/img/content/caisse-epargne/ce-pre-vention-routie-803-x-1073.png',
-      '')
+    new ContentImageModel('/assets/img/content/caisse-epargne/ce-pre-vention-routie-803-x-1073.png')
   ];
   static caisseEpargneSecuriteRoutiere: ContentPageModel = new ContentPageModel(
     'Caisse d\'épargne - Sécurité Routière',
@@ -58,10 +57,20 @@ export class ContentDataMock {
   );
 
 
+
+
   //abbe pierre
+  static abbePierreMosaicImages: ContentImageModel[] = [
+    new ContentImageModel('/assets/img/content/abbe-pierre/mosaic-1-fap-picsdor-2020-598-x-844.png'),
+    new ContentImageModel('/assets/img/content/abbe-pierre/mosaic-3-fap-picsdor-depliant-1040-x-812.png'),
+    new ContentImageModel('/assets/img/content/abbe-pierre/mosaic-3-fap-picsdor-depliant-1040-x-812.png'),
+    new ContentImageModel('/assets/img/content/abbe-pierre/mosaic-4-fap-stickers-641-x-814.png'),
+  ];
+
   static abbePierreBlocks: ContentBlockModel[] = [
+    new ContentMosaicModel(ContentDataMock.abbePierreMosaicImages, 'Affiche et déclinaison 2020'),
     new ContentVideoModel('/assets/img/content/abbe-pierre/PICS_DOR.mp4',
-      ''),
+      'Vidéo teaser 2019'),
   ];
   static abbePierre: ContentPageModel = new ContentPageModel(
     'FONDATION ABBÉ PIERRE - les pics d’or',
