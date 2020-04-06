@@ -3,6 +3,7 @@ import {ContentImageModel} from '../content/models/content-image.model';
 import {ContentBlockModel} from '../content/models/content-block.model';
 import {ContentMosaicModel} from '../content/models/content-mosaic.model';
 import {ContentVideoModel} from '../content/models/content-video.model';
+import {ContentLegendModel} from '../content/models/content-legend.model';
 
 export class ContentDataMock {
 
@@ -61,14 +62,14 @@ export class ContentDataMock {
 
   //abbe pierre
   static abbePierreMosaicImages: ContentImageModel[] = [
-    new ContentImageModel('/assets/img/content/abbe-pierre/mosaic-1-fap-picsdor-2020-598-x-844.png'),
-    new ContentImageModel('/assets/img/content/abbe-pierre/mosaic-3-fap-picsdor-depliant-1040-x-812.png'),
-    new ContentImageModel('/assets/img/content/abbe-pierre/mosaic-3-fap-picsdor-depliant-1040-x-812.png'),
-    new ContentImageModel('/assets/img/content/abbe-pierre/mosaic-4-fap-stickers-641-x-814.png'),
+    new ContentImageModel('/assets/img/content/abbe-pierre/mosaic-1-fap-picsdor-2020-587-x-830.png'),
+    new ContentImageModel('/assets/img/content/abbe-pierre/mosaic-2-fap-picsdor-affiche-1101-x-830.png'),
+    new ContentImageModel('/assets/img/content/abbe-pierre/mosaic-3-fap-picsdor-depliant-1101-x-830.png'),
+    new ContentImageModel('/assets/img/content/abbe-pierre/mosaic-4-fap-stickers-587-x-830.png'),
   ];
 
   static abbePierreBlocks: ContentBlockModel[] = [
-    new ContentMosaicModel(ContentDataMock.abbePierreMosaicImages, 'Affiche et déclinaison 2020'),
+    new ContentLegendModel(ContentDataMock.abbePierreMosaicImages, 'Affiche et déclinaison 2020'),
     new ContentVideoModel('/assets/img/content/abbe-pierre/PICS_DOR.mp4',
       'Vidéo teaser 2019'),
   ];

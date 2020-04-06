@@ -1,11 +1,7 @@
 <div *ngIf="content" class="content-container">
 
   <div class="content-list-blocks">
-    <div *ngFor="let block of content.blockList" class="content-block-container">
-      <app-block-image *ngIf="block.blockName === imageBlockType" [img]="block"></app-block-image>
-      <app-block-search *ngIf="block.blockName === searchBlockType" [search]="block"></app-block-search>
-      <app-block-video *ngIf="block.blockName === videoBlockType" [video]="block"></app-block-video>
-    </div>
+    <app-content-block-creation [blockList]="content.blockList"></app-content-block-creation>
   </div>
 
   <footer class="content-footer">

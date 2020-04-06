@@ -1,0 +1,8 @@
+<ng-container *ngFor="let block of blockList">
+  <div class="content-block-container">
+    <app-block-image *ngIf="block.blockName === imageBlockType" [img]="block"></app-block-image>
+    <app-block-search *ngIf="block.blockName === searchBlockType" [search]="block"></app-block-search>
+    <app-block-video *ngIf="block.blockName === videoBlockType" [video]="block"></app-block-video>
+    <app-block-legend *ngIf="block.blockName === legendBlockType" [legendBlock]="block"></app-block-legend>
+  </div>
+</ng-container>

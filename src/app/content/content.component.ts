@@ -15,11 +15,6 @@ import {HomeDataMock} from '../datas/home-data.mock';
 })
 export class ContentComponent implements OnInit {
   content: ContentPageModel;
-
-  searchBlockType = ContentMosaicModel.blockName;
-  imageBlockType = ContentImageModel.blockName;
-  videoBlockType = ContentVideoModel.blockName;
-
   nextPageKey = '';
 
   constructor(private route: ActivatedRoute,

@@ -9,6 +9,7 @@
   --font-color-main: #fff;
   --font-color-hover-main: #fffc00;
   --font-color-legend: #858585;
+  --content-max-width: 1920px;
 }
 
 body {

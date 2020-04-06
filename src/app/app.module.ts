@@ -15,6 +15,8 @@ import { LayoutLogoComponent } from './structure/layouts/empty/layout-logo.compo
 import { HeaderLogoComponent } from './structure/header/header-logo/header-logo.component';
 import { HeaderNavComponent } from './structure/header/header-nav/header-nav.component';
 import { BlockVideoComponent } from './content/blocks/block-video/block-video.component';
+import { BlockLegendComponent } from './content/blocks/block-legend/block-legend.component';
+import { ContentBlockCreationComponent } from './content/content-block-creation/content-block-creation.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { BlockVideoComponent } from './content/blocks/block-video/block-video.co
     LayoutLogoComponent,
     HeaderLogoComponent,
     HeaderNavComponent,
-    BlockVideoComponent
+    BlockVideoComponent,
+    BlockLegendComponent,
+    ContentBlockCreationComponent
   ],
   imports: [
     BrowserModule,
