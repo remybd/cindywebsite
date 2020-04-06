@@ -1,7 +1,7 @@
 import {ContentPageModel} from '../content/models/content-page.model';
 import {ContentImageModel} from '../content/models/content-image.model';
 import {ContentBlockModel} from '../content/models/content-block.model';
-import {ContentMosaicModel} from '../content/models/content-mosaic.model';
+import {ContentSearchModel} from '../content/models/content-search.model';
 import {ContentVideoModel} from '../content/models/content-video.model';
 import {ContentLegendModel} from '../content/models/content-legend.model';
 
@@ -39,7 +39,7 @@ export class ContentDataMock {
 
 
   //nikon
-  static nikonSearchMosaicImages: ContentImageModel[] = [
+  static nikonSearchSearchImages: ContentImageModel[] = [
     new ContentImageModel('/assets/img/content/nikon/search_jungle_652x461.png', ''),
     new ContentImageModel('/assets/img/content/nikon/search_snow_656x463.png', ''),
     new ContentImageModel('/assets/img/content/nikon/search_mountain_656x463.png', ''),
@@ -48,7 +48,7 @@ export class ContentDataMock {
   static nikonBlocks: ContentBlockModel[] = [
     new ContentImageModel('/assets/img/content/nikon/tote-bag-1_1212x756.png',
       ''),
-    new ContentMosaicModel(ContentDataMock.nikonSearchMosaicImages, "Recherches")
+    new ContentSearchModel(ContentDataMock.nikonSearchSearchImages, "Recherches")
   ];
   static nikon: ContentPageModel = new ContentPageModel(
     'Nikon - Illustration pour totebag',
@@ -86,7 +86,7 @@ export class ContentDataMock {
 
 
   //en mouvement
-  static enMouvementMosaicImages: ContentImageModel[] = [
+  static enMouvementSearchImages: ContentImageModel[] = [
     new ContentImageModel('/assets/img/content/en-mouvement/mosaic-1-919x576.png', ''),
     new ContentImageModel('/assets/img/content/en-mouvement/mosaic-2-918x576.png', ''),
     new ContentImageModel('/assets/img/content/en-mouvement/mosaic-3-919x577.png', ''),
@@ -97,7 +97,7 @@ export class ContentDataMock {
     new ContentImageModel("/assets/img/content/en-mouvement/web-bel-ami-cover-1256x659.png"),
     new ContentImageModel("/assets/img/content/en-mouvement/we-blivre-df-copie-1256x659.png"),
     new ContentImageModel("/assets/img/content/en-mouvement/pages-1256x659.png"),
-    new ContentMosaicModel(ContentDataMock.enMouvementMosaicImages)
+    new ContentSearchModel(ContentDataMock.enMouvementSearchImages)
   ];
   static enMouvement: ContentPageModel = new ContentPageModel(
     'EN MOUVEMENT - maison d\'édition',

@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {ContentBlockModel} from '../models/content-block.model';
-import {ContentMosaicModel} from '../models/content-mosaic.model';
+import {ContentSearchModel} from '../models/content-search.model';
 import {ContentImageModel} from '../models/content-image.model';
 import {ContentVideoModel} from '../models/content-video.model';
 import {ContentLegendModel} from '../models/content-legend.model';
@@ -13,7 +13,7 @@ import {ContentLegendModel} from '../models/content-legend.model';
 export class ContentBlockCreationComponent implements OnInit {
   @Input() blockList: ContentBlockModel[] = [];
 
-  searchBlockType = ContentMosaicModel.blockName;
+  searchBlockType = ContentSearchModel.blockName;
   imageBlockType = ContentImageModel.blockName;
   videoBlockType = ContentVideoModel.blockName;
   legendBlockType = ContentLegendModel.blockName;

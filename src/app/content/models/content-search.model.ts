@@ -1,13 +1,13 @@
 import {ContentImageModel} from './content-image.model';
 import {ContentBlockModel} from './content-block.model';
 
-export class ContentMosaicModel extends ContentBlockModel{
+export class ContentSearchModel extends ContentBlockModel{
   imageList: ContentImageModel[] = [];
-  static readonly blockName = 'MOSAIC';
+  static readonly blockName = 'SEARCH';
 
 
   constructor(imageList: ContentImageModel[], legend: string = "") {
-    super(ContentMosaicModel.blockName, legend);
+    super(ContentSearchModel.blockName, legend);
     this.imageList = imageList;
   }
 }
