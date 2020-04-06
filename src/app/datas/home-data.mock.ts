@@ -20,12 +20,17 @@ export class HomeDataMock {
     '/assets/img/home/centrePompidou@2x.png',
     '');
 
-  static entryButtonCaisseEpargne: EntryButtonModel = new EntryButtonModel('Caisse d\'Épargne', 'Handball',
+  static entryButtonCaisseEpargneHandball: EntryButtonModel = new EntryButtonModel('Caisse d\'Épargne', 'Handball',
     ContentType.poster,
     '/assets/img/home/caisseEpargneHandball@2x.png',
-    'caisse-epargne');
+    'caisse-epargne-handball');
 
-  static entryButtonRadioCanada: EntryButtonModel = new EntryButtonModel('Ici radio Canada', 'Affiches',
+  static entryButtonCaisseEpargneSecuriteRoutiere: EntryButtonModel = new EntryButtonModel('Caisse d\'Épargne', 'Sécurité Routière',
+    ContentType.poster,
+    '/assets/img/home/ce-pre-vention-routie-re-img@2x.png',
+    'caisse-epargne-securite-routiere');
+
+  static entryButtonRadioCanada: EntryButtonModel = new EntryButtonModel('Ici radio Canada', '',
     ContentType.poster,
     '/assets/img/home/radioCanadaStructureEtVariation@2x.png',
     '');
@@ -63,10 +68,10 @@ export class HomeDataMock {
     '/assets/img/home/abbe-pierre@2x.png',
     'abbe-pierre');
 
-  static entryButtonNuitEau: EntryButtonModel = new EntryButtonModel('Nuit de l\'eau',
-    '',
+  static entryButtonNuitEau: EntryButtonModel = new EntryButtonModel('Unicef',
+    'La nuit de l\'eau',
     ContentType.editon,
-    '',
+    '/assets/img/home/verre-deau-ok-clem@2x.png',
     'nuit-eau');
 
 
@@ -80,7 +85,8 @@ export class HomeDataMock {
     HomeDataMock.entryButtonVerresNikon,
     HomeDataMock.entryButtonTheErable,
     HomeDataMock.entryButtonCentrePompidou,
-    HomeDataMock.entryButtonCaisseEpargne,
+    HomeDataMock.entryButtonCaisseEpargneHandball,
+    HomeDataMock.entryButtonCaisseEpargneSecuriteRoutiere,
     HomeDataMock.entryButtonRadioCanada,
     HomeDataMock.entryButtonAmbigu,
     HomeDataMock.entryButtonCrazyHorse,

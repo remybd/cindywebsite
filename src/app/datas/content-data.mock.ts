@@ -7,7 +7,7 @@ import {ContentVideoModel} from '../content/models/content-video.model';
 export class ContentDataMock {
 
   // caisse epargne
-  static caisseEpargneBlocks: ContentImageModel[] = [
+  static caisseEpargneHandballBlocks: ContentImageModel[] = [
     new ContentImageModel('/assets/img/content/caisse-epargne/handball-600-x-800-homme-soutien-1.png',
       'Affiche soutien Homme'),
     new ContentImageModel('/assets/img/content/caisse-epargne/ce-handball-l-equipe-254-x-336-mm-handball-homme-victoire.png',
@@ -15,12 +15,27 @@ export class ContentDataMock {
     new ContentImageModel('/assets/img/content/caisse-epargne/ce-handball-l-equipe-le-parisien-254-x-336-mm-3.png',
       'Affiche en cas de victoire Femme'),
   ];
-  static caisseEpargne: ContentPageModel = new ContentPageModel(
+  static caisseEpargneHandball: ContentPageModel = new ContentPageModel(
     'Caisse d\'épargne - supporter officiel de l\'équipe de France de Handball',
     'Création de l\'affiche pour la coupe du monde de handball homme et femme',
-    'CR : Jeanne Teissier / Photographe maillot : David Meignan / Photographe femmes : Etienne Garnier',
-    ContentDataMock.caisseEpargneBlocks
+    'Agence : Altmann + Pacreau / CR : Jeanne Teissier / Photographe maillot : David Meignan / Photographe femmes : Etienne Garnier',
+    ContentDataMock.caisseEpargneHandballBlocks
   );
+
+
+
+  static caisseEpargneSecuriteRoutiereBlocks: ContentImageModel[] = [
+    new ContentImageModel('/assets/img/content/caisse-epargne/ce-pre-vention-routie-803-x-1073.png',
+      '')
+  ];
+  static caisseEpargneSecuriteRoutiere: ContentPageModel = new ContentPageModel(
+    'Caisse d\'épargne - Sécurité Routière',
+    '',
+    'Agence : Altmann + Pacreau / CR : Cédric Ferrand  / Photographe : Ronan Mérot ',
+    ContentDataMock.caisseEpargneSecuriteRoutiereBlocks
+  );
+
+
 
 
   //nikon
@@ -52,7 +67,7 @@ export class ContentDataMock {
     'FONDATION ABBÉ PIERRE - les pics d’or',
     'Montage vidéo pour la cérémonie de remise des prix des Pics D’or : ' +
     'cérémonie visant à dénoncer les pires dispositifs anti-SDF.',
-    '',
+    'Agence : Altmann + Pacreau',
     ContentDataMock.abbePierreBlocks
   );
 
@@ -109,7 +124,7 @@ export class ContentDataMock {
   static nuitEau: ContentPageModel = new ContentPageModel(
     'UNICEF - la nuit de l\'eau',
     'Création de l\'affiche pour la 10ème édition de la Nuit de l\'Eau.',
-    'En partenariat avec l\'ECV',
+    'En partenariat avec l\'UNICEF',
     ContentDataMock.nuitEauBlocks
   );
 
@@ -119,7 +134,8 @@ export class ContentDataMock {
 
 
   static contentDataDic = {
-    'caisse-epargne': ContentDataMock.caisseEpargne,
+    'caisse-epargne-handball': ContentDataMock.caisseEpargneHandball,
+    'caisse-epargne-securite-routiere': ContentDataMock.caisseEpargneSecuriteRoutiere,
     'nikon': ContentDataMock.nikon,
     'abbe-pierre': ContentDataMock.abbePierre,
     'en-mouvement': ContentDataMock.enMouvement,
