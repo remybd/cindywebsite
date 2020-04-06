@@ -140,6 +140,21 @@ export class ContentDataMock {
 
 
 
+
+  //fondation de france
+  static fdfCovidBlocks: ContentBlockModel[] = [
+    new ContentVideoModel('/assets/img/content/fondation-de-france/FDF-COVID19.mp4'),
+  ];
+  static fondationDeFranceCovid: ContentPageModel = new ContentPageModel(
+    'FONDATION DE FRANCE - COVID 19',
+    '',
+    'Agence : Altmann + Pacreau',
+    ContentDataMock.fdfCovidBlocks
+  );
+
+
+
+
 //----------------------------------------------------------------------------------------------------------------
 
 
@@ -150,7 +165,8 @@ export class ContentDataMock {
     'abbe-pierre': ContentDataMock.abbePierre,
     'en-mouvement': ContentDataMock.enMouvement,
     'crazy-horse': ContentDataMock.crazyHorse,
-    'nuit-eau': ContentDataMock.nuitEau
+    'nuit-eau': ContentDataMock.nuitEau,
+    'fdf-covid': ContentDataMock.fondationDeFranceCovid
   };
 
 }
