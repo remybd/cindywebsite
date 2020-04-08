@@ -24,7 +24,6 @@ export class ContentDataMock {
   );
 
 
-
   static caisseEpargneSecuriteRoutiereBlocks: ContentImageModel[] = [
     new ContentImageModel('/assets/img/content/caisse-epargne/ce-pre-vention-routie-803-x-1073.png')
   ];
@@ -34,8 +33,6 @@ export class ContentDataMock {
     'Agence : Altmann + Pacreau / CR : Cédric Ferrand  / Photographe : Ronan Mérot ',
     ContentDataMock.caisseEpargneSecuriteRoutiereBlocks
   );
-
-
 
 
   //nikon
@@ -48,7 +45,7 @@ export class ContentDataMock {
   static nikonBlocks: ContentBlockModel[] = [
     new ContentImageModel('/assets/img/content/nikon/tote-bag-1_1212x756.png',
       ''),
-    new ContentSearchModel(ContentDataMock.nikonSearchSearchImages, "Recherches")
+    new ContentSearchModel(ContentDataMock.nikonSearchSearchImages, 'Recherches')
   ];
   static nikon: ContentPageModel = new ContentPageModel(
     'Nikon - Illustration pour totebag',
@@ -56,8 +53,6 @@ export class ContentDataMock {
     'Agence : Altmann + Pacreau',
     ContentDataMock.nikonBlocks
   );
-
-
 
 
   //abbe pierre
@@ -82,9 +77,6 @@ export class ContentDataMock {
   );
 
 
-
-
-
   //en mouvement
   static enMouvementSearchImages: ContentImageModel[] = [
     new ContentImageModel('/assets/img/content/en-mouvement/mosaic-1-919x576.png', ''),
@@ -94,9 +86,9 @@ export class ContentDataMock {
   ];
 
   static enMouvementBlocks: ContentBlockModel[] = [
-    new ContentImageModel("/assets/img/content/en-mouvement/web-bel-ami-cover-1256x659.png"),
-    new ContentImageModel("/assets/img/content/en-mouvement/we-blivre-df-copie-1256x659.png"),
-    new ContentImageModel("/assets/img/content/en-mouvement/pages-1256x659.png"),
+    new ContentImageModel('/assets/img/content/en-mouvement/web-bel-ami-cover-1256x659.png'),
+    new ContentImageModel('/assets/img/content/en-mouvement/we-blivre-df-copie-1256x659.png'),
+    new ContentImageModel('/assets/img/content/en-mouvement/pages-1256x659.png'),
     new ContentSearchModel(ContentDataMock.enMouvementSearchImages)
   ];
   static enMouvement: ContentPageModel = new ContentPageModel(
@@ -106,8 +98,6 @@ export class ContentDataMock {
     '',
     ContentDataMock.enMouvementBlocks
   );
-
-
 
 
   // crazy Horse
@@ -121,7 +111,6 @@ export class ContentDataMock {
     'Agence : Hub ID&Napoli',
     ContentDataMock.crazyHorseBlocks
   );
-
 
 
   // nuit de l'eau
@@ -139,8 +128,6 @@ export class ContentDataMock {
   );
 
 
-
-
   //fondation de france
   static fdfCovidBlocks: ContentBlockModel[] = [
     new ContentVideoModel('/assets/img/content/fondation-de-france/FDF-COVID19.mp4'),
@@ -151,7 +138,6 @@ export class ContentDataMock {
     'Agence : Altmann + Pacreau',
     ContentDataMock.fdfCovidBlocks
   );
-
 
 
   //the erable
@@ -170,6 +156,20 @@ export class ContentDataMock {
   );
 
 
+  //pompidou
+  static pompidouBlocks: ContentBlockModel[] = [
+    new ContentImageModel('/assets/img/content/pompidou/magazine-close-1309-x-1005.png'),
+    new ContentImageModel('/assets/img/content/pompidou/page-1-631-x-447.png'),
+    new ContentImageModel('/assets/img/content/pompidou/page-2-635-x-446.png'),
+    new ContentImageModel('/assets/img/content/pompidou/page-3-632-x-447.png'),
+    new ContentImageModel('/assets/img/content/pompidou/page-4-636-x-447.png')
+  ];
+  static pompidou: ContentPageModel = new ContentPageModel(
+    'CENTRE POMPIDOU - BROCHURE',
+    '',
+    'ECV',
+    ContentDataMock.pompidouBlocks
+  );
 
 //----------------------------------------------------------------------------------------------------------------
 
@@ -183,7 +183,8 @@ export class ContentDataMock {
     'crazy-horse': ContentDataMock.crazyHorse,
     'nuit-eau': ContentDataMock.nuitEau,
     'fdf-covid': ContentDataMock.fondationDeFranceCovid,
-    'the-erable': ContentDataMock.theErable
+    'the-erable': ContentDataMock.theErable,
+    'pompidou': ContentDataMock.pompidou
   };
 
 }

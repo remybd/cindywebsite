@@ -18,7 +18,7 @@ export class HomeDataMock {
   static entryButtonCentrePompidou: EntryButtonModel = new EntryButtonModel('Centre Pompidou', 'Brochure',
     ContentType.editon,
     '/assets/img/home/centrePompidou@2x.png',
-    '');
+    'pompidou');
 
   static entryButtonCaisseEpargneHandball: EntryButtonModel = new EntryButtonModel('Caisse d\'Épargne', 'Handball',
     ContentType.poster,
@@ -98,9 +98,8 @@ export class HomeDataMock {
     HomeDataMock.entryButtonNuitEau,
     HomeDataMock.entryButtonTheErable,
     HomeDataMock.entryButtonEnMouvement,
-
-    /*     HomeDataMock.entryButtonCentrePompidou,
-        HomeDataMock.entryButtonRadioCanada,
+    HomeDataMock.entryButtonCentrePompidou,
+    /*    HomeDataMock.entryButtonRadioCanada,
         HomeDataMock.entryButtonAmbigu,
         HomeDataMock.entryButtonEpiderme,
         HomeDataMock.entryButtonDentifrice,
