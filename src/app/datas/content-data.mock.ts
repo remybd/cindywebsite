@@ -171,6 +171,26 @@ export class ContentDataMock {
     ContentDataMock.pompidouBlocks
   );
 
+
+  //3xj dentifrice
+  static dentifrice3xjBlocks: ContentBlockModel[] = [
+    new ContentImageModel('/assets/img/content/3xj-dentifrice/close-box-587-x-830.png'),
+    new ContentImageModel('/assets/img/content/3xj-dentifrice/brosse-a-dent-1101-x-830.png'),
+    new ContentImageModel('/assets/img/content/3xj-dentifrice/boite-ouverte-1101-x-830.png'),
+    new ContentImageModel('/assets/img/content/3xj-dentifrice/instructions-3-587-x-830.png'),
+
+    new ContentImageModel('/assets/img/content/3xj-dentifrice/box-top-829-x-588.png'),
+    new ContentImageModel('/assets/img/content/3xj-dentifrice/instructions-2-835-x-586.png'),
+    new ContentImageModel('/assets/img/content/3xj-dentifrice/instructions-830-x-587.png'),
+    new ContentImageModel('/assets/img/content/3xj-dentifrice/brosse-a-dent-836-x-587.png'),
+  ];
+  static dentifrice3xj: ContentPageModel = new ContentPageModel(
+    '3x/j - kit de soins dentaires pour enfants',
+    '',
+    'UQÀM',
+    ContentDataMock.dentifrice3xjBlocks
+  );
+
 //----------------------------------------------------------------------------------------------------------------
 
 
@@ -184,7 +204,8 @@ export class ContentDataMock {
     'nuit-eau': ContentDataMock.nuitEau,
     'fdf-covid': ContentDataMock.fondationDeFranceCovid,
     'the-erable': ContentDataMock.theErable,
-    'pompidou': ContentDataMock.pompidou
+    'pompidou': ContentDataMock.pompidou,
+    '3xj-dentifrice': ContentDataMock.dentifrice3xj
   };
 
 }

@@ -53,7 +53,7 @@ export class HomeDataMock {
   static entryButtonDentifrice: EntryButtonModel = new EntryButtonModel('3X/J', 'Kit de dentifrice pour enfants',
     ContentType.packaging,
     '/assets/img/home/dentifrice@2x.png',
-    '');
+    '3xj-dentifrice');
 
   static entryButtonRencontresChoregraphie: EntryButtonModel = new EntryButtonModel('Rencontres chorégraphiques de sene saint-denis',
     'Affiches',
@@ -94,15 +94,16 @@ export class HomeDataMock {
     HomeDataMock.entryButtonFondationDeFrance,
     HomeDataMock.entryButtonCaisseEpargneHandball,
     HomeDataMock.entryButtonVerresNikon,
+    HomeDataMock.entryButtonDentifrice,
     HomeDataMock.entryButtonCrazyHorse,
     HomeDataMock.entryButtonNuitEau,
     HomeDataMock.entryButtonTheErable,
     HomeDataMock.entryButtonEnMouvement,
     HomeDataMock.entryButtonCentrePompidou,
+
     /*    HomeDataMock.entryButtonRadioCanada,
         HomeDataMock.entryButtonAmbigu,
         HomeDataMock.entryButtonEpiderme,
-        HomeDataMock.entryButtonDentifrice,
         HomeDataMock.entryButtonRencontresChoregraphie*/
   ];
 }
