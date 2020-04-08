@@ -154,6 +154,22 @@ export class ContentDataMock {
 
 
 
+  //the erable
+  static theErableBlocks: ContentBlockModel[] = [
+    new ContentImageModel('/assets/img/content/the-erable/the-erable-full-package-1309-x-1005.png'),
+    new ContentImageModel('/assets/img/content/the-erable/the-erable-boite-fermee-631-x-447.png'),
+    new ContentImageModel('/assets/img/content/the-erable/the-erable-boite-ouverte-635-x-446.png'),
+    new ContentImageModel('/assets/img/content/the-erable/the-erable-boite-haut-632-x-447.png'),
+    new ContentImageModel('/assets/img/content/the-erable/the-erable-636-x447.png')
+  ];
+  static theErable: ContentPageModel = new ContentPageModel(
+    'BOITE DE THÉ À L\'ÉRABLE AVEC SUCRE À L\'ÉRABLE',
+    '',
+    'UQÀM',
+    ContentDataMock.theErableBlocks
+  );
+
+
 
 //----------------------------------------------------------------------------------------------------------------
 
@@ -166,7 +182,8 @@ export class ContentDataMock {
     'en-mouvement': ContentDataMock.enMouvement,
     'crazy-horse': ContentDataMock.crazyHorse,
     'nuit-eau': ContentDataMock.nuitEau,
-    'fdf-covid': ContentDataMock.fondationDeFranceCovid
+    'fdf-covid': ContentDataMock.fondationDeFranceCovid,
+    'the-erable': ContentDataMock.theErable
   };
 
 }

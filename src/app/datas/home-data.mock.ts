@@ -13,7 +13,7 @@ export class HomeDataMock {
   static entryButtonTheErable: EntryButtonModel = new EntryButtonModel('Thé à l\'érable', 'Boite de Thé',
     ContentType.packaging,
     '/assets/img/home/theErable@2x.png',
-    '');
+    'the-erable');
 
   static entryButtonCentrePompidou: EntryButtonModel = new EntryButtonModel('Centre Pompidou', 'Brochure',
     ContentType.editon,
@@ -85,7 +85,7 @@ export class HomeDataMock {
   static entryButtonFondationDeFrance: EntryButtonModel = new EntryButtonModel('Fondation de France',
     'Covid19',
     ContentType.motionDesign,
-    '/assets/img/home/fondation-de-france.png',
+    '/assets/img/home/fdf-covid@2x.png',
     'fdf-covid');
 
   static entryButtonArray = [
@@ -96,14 +96,14 @@ export class HomeDataMock {
     HomeDataMock.entryButtonVerresNikon,
     HomeDataMock.entryButtonCrazyHorse,
     HomeDataMock.entryButtonNuitEau,
+    HomeDataMock.entryButtonTheErable,
     HomeDataMock.entryButtonEnMouvement,
 
-/*    HomeDataMock.entryButtonTheErable,
-    HomeDataMock.entryButtonCentrePompidou,
-    HomeDataMock.entryButtonRadioCanada,
-    HomeDataMock.entryButtonAmbigu,
-    HomeDataMock.entryButtonEpiderme,
-    HomeDataMock.entryButtonDentifrice,
-    HomeDataMock.entryButtonRencontresChoregraphie*/
+    /*     HomeDataMock.entryButtonCentrePompidou,
+        HomeDataMock.entryButtonRadioCanada,
+        HomeDataMock.entryButtonAmbigu,
+        HomeDataMock.entryButtonEpiderme,
+        HomeDataMock.entryButtonDentifrice,
+        HomeDataMock.entryButtonRencontresChoregraphie*/
   ];
 }
