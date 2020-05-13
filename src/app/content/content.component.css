@@ -33,10 +33,20 @@
   align-items: center;
 }
 
+app-header-logo, app-header-nav {
+  width: 25%;
+}
+
+app-header-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
 
 .content-footer-text {
   color: var(--font-color-hover-main);
-  margin: 0px 32px;
+  padding: 0px 32px;
+  width: 50%;
 }
 
 .content-title {
