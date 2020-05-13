@@ -216,6 +216,8 @@ export class ContentDataMock {
     new ContentImageModel('/assets/img/content/france-galop/fg-prix-arc-de-triomphe.png'),
     new ContentImageModel('/assets/img/content/france-galop/fg-deauville.png'),
 
+    new ContentVideoModel('/assets/img/content/france-galop/FG DOOH MOCK UP 1.mp4', '', 'video/mp4', true),
+    new ContentVideoModel('/assets/img/content/france-galop/FG DOOH MOCK UP 2.mp4', '', 'video/mp4', true),
 
     new ContentImageModel('/assets/img/content/france-galop/fg-colonne-dimanche.png'),
     new ContentImageModel('/assets/img/content/france-galop/fg-dimanche-cartes.png'),
