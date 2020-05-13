@@ -49,7 +49,7 @@ export class ContentDataMock {
   ];
   static nikon: ContentPageModel = new ContentPageModel(
     'Nikon - Illustration pour totebag',
-    'Illustrations pour un totebag nikon.',
+    '',
     'Agence : Altmann + Pacreau',
     ContentDataMock.nikonBlocks
   );
@@ -70,8 +70,7 @@ export class ContentDataMock {
   ];
   static abbePierre: ContentPageModel = new ContentPageModel(
     'FONDATION ABBÉ PIERRE - les pics d’or',
-    'Montage vidéo pour la cérémonie de remise des prix des Pics D’or : ' +
-    'cérémonie visant à dénoncer les pires dispositifs anti-SDF.',
+    '',
     'Agence : Altmann + Pacreau',
     ContentDataMock.abbePierreBlocks
   );
@@ -191,6 +190,19 @@ export class ContentDataMock {
     ContentDataMock.dentifrice3xjBlocks
   );
 
+
+  // croix rouge
+  static croixRougeBlocks: ContentBlockModel[] = [
+    new ContentImageModel('/assets/img/content/croix-rouge/croix-rouge-affiche.png')
+  ];
+
+  static croixRouge: ContentPageModel = new ContentPageModel(
+    'CROIX ROUGE - APPEL AUX DONS',
+    '',
+    'Agence : Altmann + Pacreau',
+    ContentDataMock.croixRougeBlocks
+  );
+
 //----------------------------------------------------------------------------------------------------------------
 
 
@@ -205,7 +217,8 @@ export class ContentDataMock {
     'fdf-covid': ContentDataMock.fondationDeFranceCovid,
     'the-erable': ContentDataMock.theErable,
     'pompidou': ContentDataMock.pompidou,
-    '3xj-dentifrice': ContentDataMock.dentifrice3xj
+    '3xj-dentifrice': ContentDataMock.dentifrice3xj,
+    'croix-rouge': ContentDataMock.croixRouge
   };
 
 }
