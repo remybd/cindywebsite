@@ -66,6 +66,12 @@
   opacity: 0;
 }
 
+.previous:not(:last-child) {
+  margin-right: 24px;
+}
+
+
+
 
 /* mobile */
 @media screen and (max-width: 992px) {

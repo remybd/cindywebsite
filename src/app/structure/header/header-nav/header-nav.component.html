@@ -5,6 +5,10 @@
   <a class="header-link link-text-underline" routerLink="">
     À propos
   </a>
-  <a *ngIf="next" [routerLink]="['../', next]" class="header-link link-text-underline next">Next</a>
-  <a *ngIf="previous" [routerLink]="['../', previous]" class="header-link link-text-underline previous">Previous</a>
+  <a *ngIf="previous" [routerLink]="['../', previous]" class="header-link link-text-underline previous">
+    <i class="fas fa-chevron-left"></i>
+  </a>
+  <a *ngIf="next" [routerLink]="['../', next]" class="header-link link-text-underline next">
+    <i class="fas fa-chevron-right"></i>
+  </a>
 </nav>

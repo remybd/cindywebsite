@@ -14,6 +14,7 @@ import {Title} from '@angular/platform-browser';
 export class ContentComponent implements OnInit {
   content: ContentPageModel;
   nextPageKey = '';
+  previousPageKey = '';
 
   constructor(private route: ActivatedRoute,
               private contentTypeManager: NextPreviousPageService,
@@ -30,15 +31,23 @@ export class ContentComponent implements OnInit {
       if (key && key in ContentDataMock.contentDataDic) {
         this.content = ContentDataMock.contentDataDic[key];
         this.titleService.setTitle(environment.titleBase + this.content.title);
+
         this.getNextPageKey(key);
+        this.getPreviousPageKey(key);
       }
     });
   }
 
   getNextPageKey(key: string) {
     const entryButton = this.contentTypeManager.nextInHomePage(key);
-    if (entryButton) {
-      this.nextPageKey = entryButton.key;
-    }
+    this.nextPageKey = entryButton?.key;
+    console.log('next ', this.nextPageKey)
+
+  }
+
+  getPreviousPageKey(key: string) {
+    const entryButton = this.contentTypeManager.previousInHomePage(key);
+    this.previousPageKey = entryButton?.key;
+    console.log('previous ', this.previousPageKey)
   }
 }
