@@ -15,9 +15,6 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## TODO
-* tests
-* next previous buttons + refactor types (useless now)
-* swipe on mobile
 * better img management
 * better loading management
 * blob storage for video
