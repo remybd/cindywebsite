@@ -1,5 +1,7 @@
 import {Component, HostListener, Input, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
+import {NextPreviousPageService} from '../../next-previous-page-management/next-previous-page.service';
+import {Observable} from 'rxjs';
 
 
 @Component({
@@ -8,39 +10,23 @@ import {Router} from '@angular/router';
   styleUrls: ['./header-nav.component.css']
 })
 export class HeaderNavComponent implements OnInit {
-  @Input() next = '';
-  @Input() previous = '';
+  nextPage$: Observable<string | null>;
+  previousPage$: Observable<string | null>;
 
-  static eventBinding = {
-    ArrowRight: HeaderNavComponent.nextPageStatic,
-    ArrowLeft: HeaderNavComponent.previousPageStatic
-  };
-
-  constructor(private router: Router) {
-  }
+  constructor(private nextPreviousPageService: NextPreviousPageService) {}
 
   ngOnInit() {
+    this.nextPage$ = this.nextPreviousPageService.nextPage$
+    this.previousPage$ = this.nextPreviousPageService.previousPage$
   }
 
-  previousPage() {
-    this.router.navigateByUrl('/content/' + this.previous);
+  next() {
+    this.nextPreviousPageService.nextPage();
   }
 
-  static previousPageStatic(instance) {
-    instance.previousPage();
-  }
-
-  nextPage() {
-    this.router.navigateByUrl('/content/' + this.next);
-  }
-
-  static nextPageStatic(instance) {
-    instance.nextPage();
+  previous() {
+    this.nextPreviousPageService.previousPage();
   }
 
 
-  @HostListener('window:keyup', ['$event'])
-  keyEvent(event: KeyboardEvent) {
-    HeaderNavComponent.eventBinding[event.key](this)
-  }
 }

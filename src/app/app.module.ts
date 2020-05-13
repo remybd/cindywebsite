@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import {BrowserModule, HAMMER_GESTURE_CONFIG, HammerModule} from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +17,7 @@ import { HeaderNavComponent } from './structure/header/header-nav/header-nav.com
 import { BlockVideoComponent } from './content/blocks/block-video/block-video.component';
 import { BlockLegendComponent } from './content/blocks/block-legend/block-legend.component';
 import { ContentBlockCreationComponent } from './content/content-block-creation/content-block-creation.component';
+import {CustomHammerConfig} from './hammer-gesture.config';
 
 @NgModule({
   declarations: [
@@ -38,9 +39,15 @@ import { ContentBlockCreationComponent } from './content/content-block-creation/
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HammerModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HAMMER_GESTURE_CONFIG,
+      useClass: CustomHammerConfig
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

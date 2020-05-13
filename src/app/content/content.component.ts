@@ -17,7 +17,7 @@ export class ContentComponent implements OnInit {
   previousPageKey = '';
 
   constructor(private route: ActivatedRoute,
-              private contentTypeManager: NextPreviousPageService,
+              private nextPreviousPageService: NextPreviousPageService,
               private titleService: Title) {
   }
 
@@ -32,20 +32,8 @@ export class ContentComponent implements OnInit {
         this.content = ContentDataMock.contentDataDic[key];
         this.titleService.setTitle(environment.titleBase + this.content.title);
 
-        this.getNextPageKey(key);
-        this.getPreviousPageKey(key);
+        this.nextPreviousPageService.currentPageKey = key;
       }
     });
-  }
-
-  getNextPageKey(key: string) {
-    const entryButton = this.contentTypeManager.nextInHomePage(key);
-    this.nextPageKey = entryButton?.key;
-
-  }
-
-  getPreviousPageKey(key: string) {
-    const entryButton = this.contentTypeManager.previousInHomePage(key);
-    this.previousPageKey = entryButton?.key;
   }
 }
