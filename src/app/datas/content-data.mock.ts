@@ -203,6 +203,35 @@ export class ContentDataMock {
     ContentDataMock.croixRougeBlocks
   );
 
+
+
+  // france galop
+  static franceGalopBlocks: ContentBlockModel[] = [
+    new ContentImageModel('/assets/img/content/france-galop/fg-dimanches-au-galop.png'),
+    new ContentImageModel('/assets/img/content/france-galop/fg-steeple-chase.png'),
+    new ContentImageModel('/assets/img/content/france-galop/fg-prix-de-diane.png'),
+    new ContentImageModel('/assets/img/content/france-galop/fg-prix-jockey-club.png'),
+    new ContentImageModel('/assets/img/content/france-galop/fg-saint-cloud.png'),
+    new ContentImageModel('/assets/img/content/france-galop/fg-garden-party.png'),
+    new ContentImageModel('/assets/img/content/france-galop/fg-prix-arc-de-triomphe.png'),
+    new ContentImageModel('/assets/img/content/france-galop/fg-deauville.png'),
+
+
+    new ContentImageModel('/assets/img/content/france-galop/fg-colonne-dimanche.png'),
+    new ContentImageModel('/assets/img/content/france-galop/fg-dimanche-cartes.png'),
+    new ContentImageModel('/assets/img/content/france-galop/fg-cheveaux-trotinette.png'),
+    new ContentImageModel('/assets/img/content/france-galop/fg-prix-arc-triomphe-batiment.png'),
+    new ContentImageModel('/assets/img/content/france-galop/fg-garden-party-entree.png')
+
+  ];
+
+  static franceGalop: ContentPageModel = new ContentPageModel(
+    'FRANCE GALOP - CAMPAGNE 2019',
+    '',
+    'Agence : Altmann + Pacreau / Photographe : Benjamin Schmuck',
+    ContentDataMock.franceGalopBlocks
+  );
+
 //----------------------------------------------------------------------------------------------------------------
 
 
@@ -218,7 +247,8 @@ export class ContentDataMock {
     'the-erable': ContentDataMock.theErable,
     'pompidou': ContentDataMock.pompidou,
     '3xj-dentifrice': ContentDataMock.dentifrice3xj,
-    'croix-rouge': ContentDataMock.croixRouge
+    'croix-rouge': ContentDataMock.croixRouge,
+    'france-galop': ContentDataMock.franceGalop
   };
 
 }

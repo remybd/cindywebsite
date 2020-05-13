@@ -21,6 +21,8 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 * add tab title on each page
 * better img management
 * better loading management
+* blob storage for video
+* center text in footer when long text
 
 ## Further help
 
