@@ -62,7 +62,7 @@ export class HomeDataMock {
     '');
 
 
-  static entryButtonAbbePierre: EntryButtonModel = new EntryButtonModel('"Fondation" Abbé Pierre',
+  static entryButtonAbbePierre: EntryButtonModel = new EntryButtonModel('Fondation Abbé Pierre',
     'Les Pics D\'or',
     ContentType.motionDesign,
     '/assets/img/home/abbe-pierre@2x.png',
