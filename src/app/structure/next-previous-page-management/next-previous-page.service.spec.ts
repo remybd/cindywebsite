@@ -4,6 +4,7 @@ import { NextPreviousPageService } from './next-previous-page.service';
 import {EntryButtonModel} from '../../home/models/entry-button.model';
 import {HomeDataMock} from '../../datas/home-data.mock';
 import {HomeComponent} from '../../home/home.component';
+import {RouterTestingModule} from '@angular/router/testing';
 
 const entryButtonArrayForTest = [
   new EntryButtonModel('A', '', null, '', 'a'),
@@ -15,7 +16,11 @@ const entryButtonArrayForTest = [
 describe('ContentTypeManagerService', () => {
   var service: NextPreviousPageService;
 
-  beforeEach(() => TestBed.configureTestingModule({}));
+  beforeEach(() => TestBed.configureTestingModule({
+    imports: [
+      RouterTestingModule
+    ]
+  }));
 
   beforeEach(() => {
     HomeDataMock.entryButtonArray = entryButtonArrayForTest;
