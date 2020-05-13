@@ -5,10 +5,10 @@
   <a class="header-link link-text-underline" routerLink="">
     À propos
   </a>
-  <a *ngIf="previous" [routerLink]="['../', previous]" class="header-link link-text-underline previous">
+  <a *ngIf="previous" (click)="previousPage()" class="header-link link-text-underline previous">
     <i class="fas fa-chevron-left"></i>
   </a>
-  <a *ngIf="next" [routerLink]="['../', next]" class="header-link link-text-underline next">
+  <a *ngIf="next" (click)="nextPage()" class="header-link link-text-underline next">
     <i class="fas fa-chevron-right"></i>
   </a>
 </nav>

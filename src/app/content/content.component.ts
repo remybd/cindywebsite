@@ -41,13 +41,11 @@ export class ContentComponent implements OnInit {
   getNextPageKey(key: string) {
     const entryButton = this.contentTypeManager.nextInHomePage(key);
     this.nextPageKey = entryButton?.key;
-    console.log('next ', this.nextPageKey)
 
   }
 
   getPreviousPageKey(key: string) {
     const entryButton = this.contentTypeManager.previousInHomePage(key);
     this.previousPageKey = entryButton?.key;
-    console.log('previous ', this.previousPageKey)
   }
 }
