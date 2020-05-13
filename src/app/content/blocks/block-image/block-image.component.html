@@ -1,4 +1,6 @@
-<img *ngIf="img && img.url" class="content-image" [src]="img.url" [alt]="img.legend">
-<p *ngIf="img && img.legend" class="content-image-subtitle">
-  {{ img.legend }}
-</p>
+<ng-container *ngIf="img">
+  <img *ngIf="img.url" class="content-image" [src]="img.url" [alt]="img.legend">
+  <p *ngIf="img.legend" class="content-image-subtitle">
+    {{ img.legend }}
+  </p>
+</ng-container>

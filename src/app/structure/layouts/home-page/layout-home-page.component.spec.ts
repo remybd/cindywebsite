@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LayoutHomePageComponent } from './layout-home-page.component';
+import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
+import {RouterTestingModule} from '@angular/router/testing';
 
 describe('HeaderWithLogoComponent', () => {
   let component: LayoutHomePageComponent;
@@ -8,7 +10,9 @@ describe('HeaderWithLogoComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LayoutHomePageComponent ]
+      declarations: [ LayoutHomePageComponent ],
+      imports: [RouterTestingModule],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   }));

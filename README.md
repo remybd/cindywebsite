@@ -18,11 +18,9 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 * tests
 * next previous buttons + refactor types (useless now)
 * swipe on mobile
-* add tab title on each page
 * better img management
 * better loading management
 * blob storage for video
-* center text in footer when long text
 * bug animation home page not on safari and firefox
 
 ## Further help

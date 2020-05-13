@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {ContentDataMock} from '../datas/content-data.mock';
 import {ContentPageModel} from './models/content-page.model';
-import {ContentTypeManagerService} from '../structure/content-type-manager/content-type-manager.service';
+import {NextPreviousPageService} from '../structure/next-previous-page-management/next-previous-page.service';
 import {environment} from '../../environments/environment';
 import {Title} from '@angular/platform-browser';
 
@@ -16,7 +16,7 @@ export class ContentComponent implements OnInit {
   nextPageKey = '';
 
   constructor(private route: ActivatedRoute,
-              private contentTypeManager: ContentTypeManagerService,
+              private contentTypeManager: NextPreviousPageService,
               private titleService: Title) {
   }
 
