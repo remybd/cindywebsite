@@ -76,10 +76,4 @@ export class NextPreviousPageService {
     instance.nextPage();
   }
 
-
-  @HostListener('window:keyup', ['$event'])
-  keyEvent(event: KeyboardEvent) {
-    NextPreviousPageService.eventBinding[event.key](this)
-  }
-
 }

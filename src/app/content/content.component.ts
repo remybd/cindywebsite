@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {ContentDataMock} from '../datas/content-data.mock';
 import {ContentPageModel} from './models/content-page.model';
@@ -13,8 +13,6 @@ import {Title} from '@angular/platform-browser';
 })
 export class ContentComponent implements OnInit {
   content: ContentPageModel;
-  nextPageKey = '';
-  previousPageKey = '';
 
   constructor(private route: ActivatedRoute,
               private nextPreviousPageService: NextPreviousPageService,
@@ -35,5 +33,10 @@ export class ContentComponent implements OnInit {
         this.nextPreviousPageService.currentPageKey = key;
       }
     });
+  }
+
+  @HostListener('window:keyup', ['$event'])
+  keyEvent(event: KeyboardEvent) {
+    NextPreviousPageService.eventBinding[event.key](this.nextPreviousPageService)
   }
 }
