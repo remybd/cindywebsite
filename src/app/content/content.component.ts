@@ -37,6 +37,14 @@ export class ContentComponent implements OnInit {
 
   @HostListener('window:keyup', ['$event'])
   keyEvent(event: KeyboardEvent) {
-    NextPreviousPageService.eventBinding[event.key](this.nextPreviousPageService)
+    NextPreviousPageService.eventBinding[event.key](this.nextPreviousPageService);
+  }
+
+  swipeRight() {
+    this.nextPreviousPageService.previousPage();
+  }
+
+  swipeLeft() {
+    this.nextPreviousPageService.nextPage();
   }
 }

@@ -1,4 +1,4 @@
-<div *ngIf="content" class="content-container">
+<div *ngIf="content" class="content-container" (swipeRight)="swipeRight()" (swipeLeft)="swipeLeft()">
 
   <div class="content-list-blocks">
     <app-content-block-creation [blockList]="content.blockList"></app-content-block-creation>

@@ -1,4 +1,4 @@
-import {HostListener, Injectable} from '@angular/core';
+import {Injectable} from '@angular/core';
 import {HomeDataMock} from '../../datas/home-data.mock';
 import {EntryButtonModel} from '../../home/models/entry-button.model';
 import {Router} from '@angular/router';
@@ -22,6 +22,10 @@ export class NextPreviousPageService {
   previousPage$ = this._previousPageKeySubject.asObservable();
 
   set currentPageKey(value: string) {
+    if (!value) {
+      this.reset();
+      return;
+    }
     this._currentPageKey = value;
     this.setNextInHomePage();
     this.setPreviousInHomePage();
@@ -30,14 +34,20 @@ export class NextPreviousPageService {
   constructor(private router: Router) {
   }
 
+  private reset() {
+    this._currentPageKey = null;
+    this._nextPageKeySubject.next(null);
+    this._previousPageKeySubject.next(null);
+  }
+
   nextPage() {
-    if(this._nextPageKeySubject.getValue()) {
+    if (this._nextPageKeySubject.getValue()) {
       this.router.navigateByUrl('/content/' + this._nextPageKeySubject.getValue());
     }
   }
 
   previousPage() {
-    if(this._previousPageKeySubject.getValue()) {
+    if (this._previousPageKeySubject.getValue()) {
       this.router.navigateByUrl('/content/' + this._previousPageKeySubject.getValue());
     }
   }
@@ -45,7 +55,7 @@ export class NextPreviousPageService {
 
   private setNextInHomePage() {
     const pagePosition = this.findPositionPageInHomePageList(this._currentPageKey);
-    this._nextPageKeySubject.next(this.findNextPage(pagePosition)?.key)
+    this._nextPageKeySubject.next(this.findNextPage(pagePosition)?.key);
   }
 
   private setPreviousInHomePage() {
