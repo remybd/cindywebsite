@@ -4,7 +4,10 @@
 
 export const environment = {
   production: false,
-  titleBase: 'CT - '
+  titleBase: 'CT - ',
+  appInsights: {
+    instrumentationKey: ''
+  }
 };
 
 /*
