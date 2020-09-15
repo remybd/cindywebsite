@@ -4,6 +4,7 @@ import {HomeComponent} from "./home/home.component";
 import {ContentComponent} from "./content/content.component";
 import {LayoutLogoComponent} from './structure/layouts/empty/layout-logo.component';
 import {LayoutHomePageComponent} from './structure/layouts/home-page/layout-home-page.component';
+import {AProposComponent} from './a-propos/a-propos.component';
 
 const routes: Routes = [
 
@@ -17,13 +18,18 @@ const routes: Routes = [
     ]
   },
 
+  {
+    path: 'a-propos', component: AProposComponent,
+  },
 
   // page with header but no logo
   {
     path: '',
     component: LayoutHomePageComponent,
     children: [
-      { path: 'content/:key', component: ContentComponent },
+      {
+        path: 'content/:key', component: ContentComponent
+      },
     ]
   },
 
