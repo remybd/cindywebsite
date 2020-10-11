@@ -64,7 +64,7 @@ export class HomeDataMock {
 
   static entryButtonAbbePierre: EntryButtonModel = new EntryButtonModel('Fondation Abbé Pierre',
     'Les Pics D\'or',
-    ContentType.motionDesign,
+    ContentType.affichesAndMotionDesgin,
     '/assets/img/home/abbe-pierre@2x.png',
     'abbe-pierre');
 
@@ -96,13 +96,13 @@ export class HomeDataMock {
 
   static entryButtonFranceGalop: EntryButtonModel = new EntryButtonModel('France Galop',
     'Campagne 2019',
-    ContentType.poster,
+    ContentType.affichesAndMotionDesgin,
     '/assets/img/home/france-galop@2x.png',
     'france-galop');
 
   static entryButtonPetitNavire: EntryButtonModel = new EntryButtonModel('Petit Navire',
     'Campagne 2020',
-    ContentType.poster,
+    ContentType.affichesAndMotionDesgin,
     '/assets/img/home/petit_navire.jpg',
     'petit-navire');
 
