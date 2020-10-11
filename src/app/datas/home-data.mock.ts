@@ -103,7 +103,7 @@ export class HomeDataMock {
   static entryButtonPetitNavire: EntryButtonModel = new EntryButtonModel('Petit Navire',
     'Campagne 2020',
     ContentType.poster,
-    '/assets/img/home/Logo_petit_navire.png',
+    '/assets/img/home/petit_navire.jpg',
     'petit-navire');
 
   static entryButtonArray = [
