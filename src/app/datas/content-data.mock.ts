@@ -9,11 +9,11 @@ export class ContentDataMock {
 
   // caisse epargne
   static caisseEpargneHandballBlocks: ContentImageModel[] = [
-    new ContentImageModel('/assets/img/content/caisse-epargne/handball-600-x-800-homme-soutien-1.png',
+    new ContentImageModel('/assets/img/content/caisse-epargne/handball-homme-soutien-1-600x800.png',
       'Affiche soutien Homme'),
-    new ContentImageModel('/assets/img/content/caisse-epargne/ce-handball-l-equipe-254-x-336-mm-handball-homme-victoire.png',
+    new ContentImageModel('/assets/img/content/caisse-epargne/ce-handball-l-equipe-mm-handball-homme-victoire-254x336.png',
       'Affiche en cas de victoire Homme'),
-    new ContentImageModel('/assets/img/content/caisse-epargne/ce-handball-l-equipe-le-parisien-254-x-336-mm-3.png',
+    new ContentImageModel('/assets/img/content/caisse-epargne/ce-handball-l-equipe-le-parisien-mm-3-254x336.png',
       'Affiche en cas de victoire Femme'),
   ];
   static caisseEpargneHandball: ContentPageModel = new ContentPageModel(
@@ -25,7 +25,7 @@ export class ContentDataMock {
 
 
   static caisseEpargneSecuriteRoutiereBlocks: ContentImageModel[] = [
-    new ContentImageModel('/assets/img/content/caisse-epargne/ce-pre-vention-routie-803-x-1073.png')
+    new ContentImageModel('/assets/img/content/caisse-epargne/ce-pre-vention-routie-803x1073.png')
   ];
   static caisseEpargneSecuriteRoutiere: ContentPageModel = new ContentPageModel(
     'Caisse d\'épargne - Sécurité Routière',
@@ -57,10 +57,10 @@ export class ContentDataMock {
 
   //abbe pierre
   static abbePierreMosaicImages: ContentImageModel[] = [
-    new ContentImageModel('/assets/img/content/abbe-pierre/mosaic-1-fap-picsdor-2020-587-x-830.png'),
-    new ContentImageModel('/assets/img/content/abbe-pierre/mosaic-2-fap-picsdor-affiche-1101-x-830.png'),
-    new ContentImageModel('/assets/img/content/abbe-pierre/mosaic-3-fap-picsdor-depliant-1101-x-830.png'),
-    new ContentImageModel('/assets/img/content/abbe-pierre/mosaic-4-fap-stickers-587-x-830.png'),
+    new ContentImageModel('/assets/img/content/abbe-pierre/mosaic-1-fap-picsdor-2020-587x830.png'),
+    new ContentImageModel('/assets/img/content/abbe-pierre/mosaic-2-fap-picsdor-affiche-1101x830.png'),
+    new ContentImageModel('/assets/img/content/abbe-pierre/mosaic-3-fap-picsdor-depliant-1101x830.png'),
+    new ContentImageModel('/assets/img/content/abbe-pierre/mosaic-4-fap-stickers-587x830.png'),
   ];
 
   static abbePierreBlocks: ContentBlockModel[] = [
@@ -141,11 +141,11 @@ export class ContentDataMock {
 
   //the erable
   static theErableBlocks: ContentBlockModel[] = [
-    new ContentImageModel('/assets/img/content/the-erable/the-erable-full-package-1309-x-1005.png'),
-    new ContentImageModel('/assets/img/content/the-erable/the-erable-boite-fermee-631-x-447.png'),
-    new ContentImageModel('/assets/img/content/the-erable/the-erable-boite-ouverte-635-x-446.png'),
-    new ContentImageModel('/assets/img/content/the-erable/the-erable-boite-haut-632-x-447.png'),
-    new ContentImageModel('/assets/img/content/the-erable/the-erable-636-x447.png')
+    new ContentImageModel('/assets/img/content/the-erable/the-erable-full-package-1309x1005.png'),
+    new ContentImageModel('/assets/img/content/the-erable/the-erable-boite-fermee-631x447.png'),
+    new ContentImageModel('/assets/img/content/the-erable/the-erable-boite-ouverte-635x446.png'),
+    new ContentImageModel('/assets/img/content/the-erable/the-erable-boite-haut-632x447.png'),
+    new ContentImageModel('/assets/img/content/the-erable/the-erable-636x447.png')
   ];
   static theErable: ContentPageModel = new ContentPageModel(
     'BOITE DE THÉ À L\'ÉRABLE AVEC SUCRE À L\'ÉRABLE',
@@ -157,11 +157,11 @@ export class ContentDataMock {
 
   //pompidou
   static pompidouBlocks: ContentBlockModel[] = [
-    new ContentImageModel('/assets/img/content/pompidou/magazine-close-1309-x-1005.png'),
-    new ContentImageModel('/assets/img/content/pompidou/page-1-631-x-447.png'),
-    new ContentImageModel('/assets/img/content/pompidou/page-2-635-x-446.png'),
-    new ContentImageModel('/assets/img/content/pompidou/page-3-632-x-447.png'),
-    new ContentImageModel('/assets/img/content/pompidou/page-4-636-x-447.png')
+    new ContentImageModel('/assets/img/content/pompidou/magazine-close-1309x1005.png'),
+    new ContentImageModel('/assets/img/content/pompidou/page-1-631x447.png'),
+    new ContentImageModel('/assets/img/content/pompidou/page-2-635x446.png'),
+    new ContentImageModel('/assets/img/content/pompidou/page-3-632x447.png'),
+    new ContentImageModel('/assets/img/content/pompidou/page-4-636x447.png')
   ];
   static pompidou: ContentPageModel = new ContentPageModel(
     'CENTRE POMPIDOU - BROCHURE',
@@ -173,15 +173,15 @@ export class ContentDataMock {
 
   //3xj dentifrice
   static dentifrice3xjBlocks: ContentBlockModel[] = [
-    new ContentImageModel('/assets/img/content/3xj-dentifrice/close-box-587-x-830.png'),
-    new ContentImageModel('/assets/img/content/3xj-dentifrice/brosse-a-dent-1101-x-830.png'),
-    new ContentImageModel('/assets/img/content/3xj-dentifrice/boite-ouverte-1101-x-830.png'),
-    new ContentImageModel('/assets/img/content/3xj-dentifrice/instructions-3-587-x-830.png'),
+    new ContentImageModel('/assets/img/content/3xj-dentifrice/close-box-587x830.png'),
+    new ContentImageModel('/assets/img/content/3xj-dentifrice/brosse-a-dent-1101x830.png'),
+    new ContentImageModel('/assets/img/content/3xj-dentifrice/boite-ouverte-1101x830.png'),
+    new ContentImageModel('/assets/img/content/3xj-dentifrice/instructions-3-587x830.png'),
 
-    new ContentImageModel('/assets/img/content/3xj-dentifrice/box-top-829-x-588.png'),
-    new ContentImageModel('/assets/img/content/3xj-dentifrice/instructions-2-835-x-586.png'),
-    new ContentImageModel('/assets/img/content/3xj-dentifrice/instructions-830-x-587.png'),
-    new ContentImageModel('/assets/img/content/3xj-dentifrice/brosse-a-dent-836-x-587.png'),
+    new ContentImageModel('/assets/img/content/3xj-dentifrice/box-top-829x588.png'),
+    new ContentImageModel('/assets/img/content/3xj-dentifrice/instructions-2-835x586.png'),
+    new ContentImageModel('/assets/img/content/3xj-dentifrice/instructions-830x587.png'),
+    new ContentImageModel('/assets/img/content/3xj-dentifrice/brosse-a-dent-836x587.png'),
   ];
   static dentifrice3xj: ContentPageModel = new ContentPageModel(
     '3x/j - kit de soins dentaires pour enfants',
@@ -193,7 +193,7 @@ export class ContentDataMock {
 
   // croix rouge
   static croixRougeBlocks: ContentBlockModel[] = [
-    new ContentImageModel('/assets/img/content/croix-rouge/croix-rouge-affiche.png')
+    new ContentImageModel('/assets/img/content/croix-rouge/croix-rouge-affiche-803x1074.png')
   ];
 
   static croixRouge: ContentPageModel = new ContentPageModel(
@@ -216,8 +216,8 @@ export class ContentDataMock {
     new ContentImageModel('/assets/img/content/france-galop/fg-prix-arc-de-triomphe.png'),
     new ContentImageModel('/assets/img/content/france-galop/fg-deauville.png'),
 
-    new ContentVideoModel('/assets/img/content/france-galop/FG DOOH MOCK UP 1.mp4', '', 'video/mp4', true),
-    new ContentVideoModel('/assets/img/content/france-galop/FG DOOH MOCK UP 2.mp4', '', 'video/mp4', true),
+    new ContentVideoModel('/assets/img/content/france-galop/FG-DOOH-MOCK-UP-1.mp4', '', 'video/mp4', true),
+    new ContentVideoModel('/assets/img/content/france-galop/FG-DOOH-MOCK-UP-2.mp4', '', 'video/mp4', true),
 
     new ContentImageModel('/assets/img/content/france-galop/fg-colonne-dimanche.png'),
     new ContentImageModel('/assets/img/content/france-galop/fg-dimanche-cartes.png'),
@@ -233,6 +233,22 @@ export class ContentDataMock {
     'Agence : Altmann + Pacreau / Photographe : Benjamin Schmuck',
     ContentDataMock.franceGalopBlocks
   );
+
+
+  // petit navire
+  static petitNavireBlocks: ContentBlockModel[] = [
+    new ContentVideoModel('/assets/img/content/petit-navire/clip_petit_navire.mp4'),
+    new ContentImageModel('/assets/img/content/petit-navire/affiche_energie-1134x850.jpg'),
+    new ContentImageModel('/assets/img/content/petit-navire/affiche_muscler-1134x850.jpg'),
+    new ContentImageModel('/assets/img/content/petit-navire/affiche_memoire-1314x850.jpg')
+  ];
+
+  static petitNavire: ContentPageModel = new ContentPageModel(
+    'PETIT NAVIRE - CAMPAGNE 2020',
+    '',
+    'Agence : Altmann + Pacreau',
+    ContentDataMock.petitNavireBlocks
+  )
 
 //----------------------------------------------------------------------------------------------------------------
 
@@ -250,7 +266,8 @@ export class ContentDataMock {
     'pompidou': ContentDataMock.pompidou,
     '3xj-dentifrice': ContentDataMock.dentifrice3xj,
     'croix-rouge': ContentDataMock.croixRouge,
-    'france-galop': ContentDataMock.franceGalop
+    'france-galop': ContentDataMock.franceGalop,
+    'petit-navire': ContentDataMock.petitNavire
   };
 
 }

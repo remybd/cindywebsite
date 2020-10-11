@@ -100,8 +100,15 @@ export class HomeDataMock {
     '/assets/img/home/france-galop@2x.png',
     'france-galop');
 
+  static entryButtonPetitNavire: EntryButtonModel = new EntryButtonModel('Petit Navire',
+    'Campagne 2020',
+    ContentType.poster,
+    '/assets/img/home/Logo_petit_navire.png',
+    'petit-navire');
+
   static entryButtonArray = [
     HomeDataMock.entryButtonFranceGalop,
+    HomeDataMock.entryButtonPetitNavire,
     HomeDataMock.entryButtonAbbePierre,
     HomeDataMock.entryButtonCaisseEpargneSecuriteRoutiere,
     HomeDataMock.entryButtonFondationDeFrance,
