@@ -237,10 +237,10 @@ export class ContentDataMock {
 
   // petit navire
   static petitNavireBlocks: ContentBlockModel[] = [
-    new ContentVideoModel('/assets/img/content/petit-navire/clip_petit_navire.mp4'),
     new ContentImageModel('/assets/img/content/petit-navire/affiche_energie-1134x850.jpg'),
     new ContentImageModel('/assets/img/content/petit-navire/affiche_muscler-1134x850.jpg'),
-    new ContentImageModel('/assets/img/content/petit-navire/affiche_memoire-1314x850.jpg')
+    new ContentImageModel('/assets/img/content/petit-navire/affiche_memoire-1314x850.jpg'),
+    new ContentVideoModel('/assets/img/content/petit-navire/clip_petit_navire.mp4')
   ];
 
   static petitNavire: ContentPageModel = new ContentPageModel(
