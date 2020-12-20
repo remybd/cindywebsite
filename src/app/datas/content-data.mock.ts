@@ -253,7 +253,7 @@ export class ContentDataMock {
   // lapeyre pro
   static lapeyreProSearchSitu: ContentSearchModel = new ContentSearchModel([
     new ContentImageModel('/assets/img/content/lapeyre-pro/lp-affichette-633x895.png'),
-    new ContentImageModel('/assets/img/content/lapeyre-pro/lp-totem-1266x1790.png'),
+    new ContentImageModel('/assets/img/content/lapeyre-pro/lp-totem-633-895.png'),
   ])
 
   static lapeyreProSearchGuidelines: ContentSearchModel = new ContentSearchModel([
