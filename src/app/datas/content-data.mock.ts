@@ -204,7 +204,6 @@ export class ContentDataMock {
   );
 
 
-
   // france galop
   static franceGalopBlocks: ContentBlockModel[] = [
     new ContentImageModel('/assets/img/content/france-galop/fg-dimanches-au-galop.png'),
@@ -250,6 +249,46 @@ export class ContentDataMock {
     ContentDataMock.petitNavireBlocks
   )
 
+
+  // lapeyre pro
+  static lapeyreProSearchSitu: ContentSearchModel = new ContentSearchModel([
+    new ContentImageModel('/assets/img/content/lapeyre-pro/lp-affichette-633x895.png'),
+    new ContentImageModel('/assets/img/content/lapeyre-pro/lp-totem-1266x1790.png'),
+  ])
+
+  static lapeyreProSearchGuidelines: ContentSearchModel = new ContentSearchModel([
+    new ContentImageModel('/assets/img/content/lapeyre-pro/lp-guidelines-1-1344x946.png'),
+    new ContentImageModel('/assets/img/content/lapeyre-pro/lp-guidelines-2-1340x946.png'),
+    new ContentImageModel('/assets/img/content/lapeyre-pro/lp-guidelines-3-1340x946.png'),
+    new ContentImageModel('/assets/img/content/lapeyre-pro/lp-guidelines-4-1340x946.png'),
+    new ContentImageModel('/assets/img/content/lapeyre-pro/lp-guidelines-5-1332x946.png'),
+    new ContentImageModel('/assets/img/content/lapeyre-pro/lp-guidelines-6-1346x946.png'),
+    new ContentImageModel('/assets/img/content/lapeyre-pro/lp-guidelines-10-1332x946.png'),
+    new ContentImageModel('/assets/img/content/lapeyre-pro/lp-guidelines-7-1346x946.png'),
+    new ContentImageModel('/assets/img/content/lapeyre-pro/lp-guidelines-12-1332x946.png'),
+    new ContentImageModel('/assets/img/content/lapeyre-pro/lp-guidelines-9-1338x946.png'),
+    new ContentImageModel('/assets/img/content/lapeyre-pro/lp-guidelines-11-1326x946.png'),
+    new ContentImageModel('/assets/img/content/lapeyre-pro/lp-guidelines-8-1338x946.png'),
+  ])
+
+  static lapeyreProBlocks: ContentBlockModel[] = [
+    new ContentImageModel('/assets/img/content/lapeyre-pro/lp-catalogue-couverture-1309x1005.png'),
+    new ContentImageModel('/assets/img/content/lapeyre-pro/lp-catalogue-interieur-1309x1005.png'),
+    new ContentImageModel('/assets/img/content/lapeyre-pro/lp-plaquette-1309x1005.png'),
+    ContentDataMock.lapeyreProSearchSitu,
+    new ContentImageModel('/assets/img/content/lapeyre-pro/lp-travaux-1309x1005.png'),
+    ContentDataMock.lapeyreProSearchGuidelines
+  ]
+
+
+  static lapeyrePro: ContentPageModel = new ContentPageModel(
+    'LAPEYRE PRO - COMMUNICATION 360',
+    '',
+    'Agence : Altmann + Pacreau',
+    ContentDataMock.lapeyreProBlocks
+  );
+
+
 //----------------------------------------------------------------------------------------------------------------
 
 
@@ -267,7 +306,8 @@ export class ContentDataMock {
     '3xj-dentifrice': ContentDataMock.dentifrice3xj,
     'croix-rouge': ContentDataMock.croixRouge,
     'france-galop': ContentDataMock.franceGalop,
-    'petit-navire': ContentDataMock.petitNavire
+    'petit-navire': ContentDataMock.petitNavire,
+    'lapeyre-pro': ContentDataMock.lapeyrePro
   };
 
 }
