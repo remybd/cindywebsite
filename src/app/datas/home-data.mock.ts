@@ -112,9 +112,16 @@ export class HomeDataMock {
     '/assets/img/home/lapeyre-pro@2x.png',
     'lapeyre-pro');
 
+  static entryButtonLapeyre: EntryButtonModel = new EntryButtonModel('Lapeyre',
+    'Communication 360',
+    ContentType.affichesAndMotionDesgin,
+    '/assets/img/home/lapeyre@2x.png',
+    'lapeyre');
+
   static entryButtonArray = [
     HomeDataMock.entryButtonFranceGalop,
     HomeDataMock.entryButtonPetitNavire,
+    HomeDataMock.entryButtonLapeyre,
     HomeDataMock.entryButtonLapeyrePro,
     HomeDataMock.entryButtonAbbePierre,
     HomeDataMock.entryButtonCaisseEpargneSecuriteRoutiere,

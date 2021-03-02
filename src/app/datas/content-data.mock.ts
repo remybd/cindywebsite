@@ -289,6 +289,36 @@ export class ContentDataMock {
   );
 
 
+
+
+
+
+
+
+  // lapeyre pro
+  static lapeyreBlocks: ContentBlockModel[] = [
+    new ContentImageModel('/assets/img/content/lapeyre/lp-campagne-baignoire-1307x981.png'),
+    new ContentImageModel('/assets/img/content/lapeyre/lp-campagne-cuisine-1306x980.png'),
+    new ContentImageModel('/assets/img/content/lapeyre/lp-noel-1300x975.png'),
+    new ContentImageModel('/assets/img/content/lapeyre/lp-anniversaire-1298x670.png'),
+    new ContentImageModel('/assets/img/content/lapeyre/lp-folie-equerre-1299x974.png'),
+    new ContentImageModel('/assets/img/content/lapeyre/lp-affiche-rouen-1297x973.png'),
+    new ContentImageModel('/assets/img/content/lapeyre/lp-presse-1-1296x929.png'),
+    new ContentImageModel('/assets/img/content/lapeyre/lp-catalogue-page-service-1300x885.png'),
+    new ContentImageModel('/assets/img/content/lapeyre/lp-depliant-service-1293x1293.png'),
+    new ContentVideoModel('/assets/img/content/lapeyre/lp-dooh-cuisine.mp4', '', 'video/mp4', false),
+    new ContentVideoModel('/assets/img/content/lapeyre/lp-dooh-nouvelle-collection.mp4', '', 'video/mp4', true),
+  ]
+
+
+  static lapeyre: ContentPageModel = new ContentPageModel(
+    'LAPEYRE 2018/2019 - COMMUNICATION 360',
+    '',
+    'Agence : Altmann + Pacreau',
+    ContentDataMock.lapeyreBlocks
+  );
+
+
 //----------------------------------------------------------------------------------------------------------------
 
 
@@ -307,7 +337,8 @@ export class ContentDataMock {
     'croix-rouge': ContentDataMock.croixRouge,
     'france-galop': ContentDataMock.franceGalop,
     'petit-navire': ContentDataMock.petitNavire,
-    'lapeyre-pro': ContentDataMock.lapeyrePro
+    'lapeyre-pro': ContentDataMock.lapeyrePro,
+    'lapeyre': ContentDataMock.lapeyre
   };
 
 }
