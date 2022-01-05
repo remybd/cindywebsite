@@ -4,7 +4,7 @@ import {HomeComponent} from "./home/home.component";
 import {ContentComponent} from "./content/content.component";
 import {LayoutLogoComponent} from './structure/layouts/empty/layout-logo.component';
 import {LayoutHomePageComponent} from './structure/layouts/home-page/layout-home-page.component';
-import {AProposComponent} from './a-propos/a-propos.component';
+import {AboutComponent} from './about/about.component';
 
 const routes: Routes = [
 
@@ -19,7 +19,7 @@ const routes: Routes = [
   },
 
   {
-    path: 'a-propos', component: AProposComponent,
+    path: 'about', component: AboutComponent,
   },
 
   // page with header but no logo

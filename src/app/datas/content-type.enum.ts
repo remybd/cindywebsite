@@ -1,10 +1,10 @@
 export enum ContentType {
-  editon = 'Édition',
+  editon = 'Publishing',
   motionDesign = 'Motion Design',
-  affichesAndMotionDesgin = 'Affiches / Motion Design',
-  poster = 'Affiches',
+  affichesAndMotionDesgin = 'Poster / Motion Design',
+  poster = 'Posters',
   packaging = 'Packaging',
-  visualIdentity = 'Identité visuelle',
+  visualIdentity = 'Visual Identity',
   illustration = 'Illustration',
   empty = ''
 }

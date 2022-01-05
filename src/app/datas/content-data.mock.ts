@@ -10,16 +10,16 @@ export class ContentDataMock {
   // caisse epargne
   static caisseEpargneHandballBlocks: ContentImageModel[] = [
     new ContentImageModel('/assets/img/content/caisse-epargne/handball-homme-soutien-1-600x800.png',
-      'Affiche soutien Homme'),
+      'Men sheering poster'),
     new ContentImageModel('/assets/img/content/caisse-epargne/ce-handball-l-equipe-mm-handball-homme-victoire-254x336.png',
-      'Affiche en cas de victoire Homme'),
+      'Poster for men victory'),
     new ContentImageModel('/assets/img/content/caisse-epargne/ce-handball-l-equipe-le-parisien-mm-3-254x336.png',
-      'Affiche en cas de victoire Femme'),
+      'Poster for women victory'),
   ];
   static caisseEpargneHandball: ContentPageModel = new ContentPageModel(
-    'Caisse d\'épargne - supporter officiel de l\'équipe de France de Handball',
-    'Création de l\'affiche pour la coupe du monde de handball homme et femme',
-    'Agence : Altmann + Pacreau / CR : Jeanne Teissier / Photographe maillot : David Meignan / Photographe femmes : Etienne Garnier',
+    'Caisse d\'épargne - official supporter of the French Handball team',
+    'Poster design for the men\'s and women\'s handball world cup',
+    'Agency : Altmann + Pacreau / Copywriter : Jeanne Teissier / Jersey Photograph : David Meignan / Woman Photograph : Etienne Garnier',
     ContentDataMock.caisseEpargneHandballBlocks
   );
 
@@ -28,9 +28,9 @@ export class ContentDataMock {
     new ContentImageModel('/assets/img/content/caisse-epargne/ce-pre-vention-routie-803x1073.png')
   ];
   static caisseEpargneSecuriteRoutiere: ContentPageModel = new ContentPageModel(
-    'Caisse d\'épargne - Sécurité Routière',
+    'Caisse d\'épargne - Road safety',
     '',
-    'Agence : Altmann + Pacreau / CR : Cédric Ferrand  / Photographe : Ronan Mérot ',
+    'Agency : Altmann + Pacreau / Copywriter : Cédric Ferrand  / Photograph : Ronan Mérot ',
     ContentDataMock.caisseEpargneSecuriteRoutiereBlocks
   );
 
@@ -45,12 +45,12 @@ export class ContentDataMock {
   static nikonBlocks: ContentBlockModel[] = [
     new ContentImageModel('/assets/img/content/nikon/tote-bag-1_1212x756.png',
       ''),
-    new ContentSearchModel(ContentDataMock.nikonSearchSearchImages, 'Recherches')
+    new ContentSearchModel(ContentDataMock.nikonSearchSearchImages, 'Research')
   ];
   static nikon: ContentPageModel = new ContentPageModel(
-    'Nikon - Illustration pour totebag',
+    'Nikon - Illustration for tote bag',
     '',
-    'Agence : Altmann + Pacreau',
+    'Agency : Altmann + Pacreau',
     ContentDataMock.nikonBlocks
   );
 
@@ -64,14 +64,14 @@ export class ContentDataMock {
   ];
 
   static abbePierreBlocks: ContentBlockModel[] = [
-    new ContentLegendModel(ContentDataMock.abbePierreMosaicImages, 'Affiche et déclinaison 2020'),
+    new ContentLegendModel(ContentDataMock.abbePierreMosaicImages, '2020 Posters and adaptations'),
     new ContentVideoModel('/assets/img/content/abbe-pierre/PICS_DOR.mp4',
-      'Vidéo teaser 2019'),
+      'Video teaser 2019'),
   ];
   static abbePierre: ContentPageModel = new ContentPageModel(
     'FONDATION ABBÉ PIERRE - les pics d’or',
     '',
-    'Agence : Altmann + Pacreau',
+    'Agency : Altmann + Pacreau',
     ContentDataMock.abbePierreBlocks
   );
 
@@ -91,9 +91,9 @@ export class ContentDataMock {
     new ContentSearchModel(ContentDataMock.enMouvementSearchImages)
   ];
   static enMouvement: ContentPageModel = new ContentPageModel(
-    'EN MOUVEMENT - maison d\'édition',
-    'Création d\'une maison d\'édition. ' +
-    'Identité visuelle et charte graphique',
+    'EN MOUVEMENT - Publishing company',
+    'Creation of a publishing company' +
+    'Visual identity and graphic guidelines',
     '',
     ContentDataMock.enMouvementBlocks
   );
@@ -105,9 +105,9 @@ export class ContentDataMock {
     new ContentImageModel('/assets/img/content/crazy-horse/crazy-horse-verso-879x586.png')
   ];
   static crazyHorse: ContentPageModel = new ContentPageModel(
-    'CRAZY HORSE - Carte de voeux 2018',
+    'CRAZY HORSE - 2018 greeting card',
     '',
-    'Agence : Hub ID&Napoli',
+    'Agency : Hub ID&Napoli',
     ContentDataMock.crazyHorseBlocks
   );
 
@@ -120,9 +120,9 @@ export class ContentDataMock {
     new ContentImageModel('/assets/img/content/nuit-eau/image-tote-bag-la-nuit-de-l-eau-597x830.png')
   ];
   static nuitEau: ContentPageModel = new ContentPageModel(
-    'UNICEF - la nuit de l\'eau',
-    'Création de l\'affiche pour la 10ème édition de la Nuit de l\'Eau.',
-    'En partenariat avec l\'UNICEF',
+    'UNICEF - La nuit de l\'eau',
+      'Creation of the poster for the 10th edition of the Nuit de l\'Eau.',
+    'In partnership with UNICEF',
     ContentDataMock.nuitEauBlocks
   );
 
@@ -134,7 +134,7 @@ export class ContentDataMock {
   static fondationDeFranceCovid: ContentPageModel = new ContentPageModel(
     'FONDATION DE FRANCE - COVID 19',
     '',
-    'Agence : Altmann + Pacreau',
+    'Agency : Altmann + Pacreau',
     ContentDataMock.fdfCovidBlocks
   );
 
@@ -148,7 +148,7 @@ export class ContentDataMock {
     new ContentImageModel('/assets/img/content/the-erable/the-erable-636x447.png')
   ];
   static theErable: ContentPageModel = new ContentPageModel(
-    'BOITE DE THÉ À L\'ÉRABLE AVEC SUCRE À L\'ÉRABLE',
+    'Maple tea box with maple sugar',
     '',
     'UQÀM',
     ContentDataMock.theErableBlocks
@@ -184,7 +184,7 @@ export class ContentDataMock {
     new ContentImageModel('/assets/img/content/3xj-dentifrice/brosse-a-dent-836x587.png'),
   ];
   static dentifrice3xj: ContentPageModel = new ContentPageModel(
-    '3x/j - kit de soins dentaires pour enfants',
+    '3x/j - Dental first kid\'s kit',
     '',
     'UQÀM',
     ContentDataMock.dentifrice3xjBlocks
@@ -197,9 +197,9 @@ export class ContentDataMock {
   ];
 
   static croixRouge: ContentPageModel = new ContentPageModel(
-    'CROIX ROUGE - APPEL AUX DONS',
+    'FRENCH RED CROSS - Call for donations',
     '',
-    'Agence : Altmann + Pacreau',
+    'Agency : Altmann + Pacreau',
     ContentDataMock.croixRougeBlocks
   );
 
@@ -227,9 +227,9 @@ export class ContentDataMock {
   ];
 
   static franceGalop: ContentPageModel = new ContentPageModel(
-    'FRANCE GALOP - CAMPAGNE 2019',
+    'FRANCE GALOP - 2019 CAMPAIGN',
     '',
-    'Agence : Altmann + Pacreau / Photographe : Benjamin Schmuck',
+    'Agency : Altmann + Pacreau / Photograph : Benjamin Schmuck',
     ContentDataMock.franceGalopBlocks
   );
 
@@ -243,9 +243,9 @@ export class ContentDataMock {
   ];
 
   static petitNavire: ContentPageModel = new ContentPageModel(
-    'PETIT NAVIRE - CAMPAGNE 2020',
+    'PETIT NAVIRE - 2020 CAMPAIGN',
     '',
-    'Agence : Altmann + Pacreau',
+    'Agency : Altmann + Pacreau',
     ContentDataMock.petitNavireBlocks
   )
 
@@ -282,9 +282,9 @@ export class ContentDataMock {
 
 
   static lapeyrePro: ContentPageModel = new ContentPageModel(
-    'LAPEYRE PRO - COMMUNICATION 360',
+    'LAPEYRE PRO - 360 COMMUNICATION',
     '',
-    'Agence : Altmann + Pacreau',
+    'Agency : Altmann + Pacreau',
     ContentDataMock.lapeyreProBlocks
   );
 
@@ -312,9 +312,9 @@ export class ContentDataMock {
 
 
   static lapeyre: ContentPageModel = new ContentPageModel(
-    'LAPEYRE 2018/2019 - COMMUNICATION 360',
+    'LAPEYRE 2018/2019 - 360 COMMUNICATION',
     '',
-    'Agence : Altmann + Pacreau',
+    'Agency : Altmann + Pacreau',
     ContentDataMock.lapeyreBlocks
   );
 

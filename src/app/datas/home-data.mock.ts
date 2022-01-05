@@ -5,12 +5,12 @@ export class HomeDataMock {
   static preCurrentPagePath: string = '/content/';
 
 
-  static entryButtonVerresNikon: EntryButtonModel = new EntryButtonModel('Nikon Verres Optiques', 'Totebag',
+  static entryButtonVerresNikon: EntryButtonModel = new EntryButtonModel('Nikon Lenswear', 'Tote bag',
     ContentType.illustration,
     '/assets/img/home/toteBagNikon@2x.png',
     'nikon');
 
-  static entryButtonTheErable: EntryButtonModel = new EntryButtonModel('Thé à l\'érable', 'Boite de Thé',
+  static entryButtonTheErable: EntryButtonModel = new EntryButtonModel('Maple tea', 'Tea box',
     ContentType.packaging,
     '/assets/img/home/theErable@2x.png',
     'the-erable');
@@ -25,7 +25,7 @@ export class HomeDataMock {
     '/assets/img/home/caisseEpargneHandball@2x.png',
     'caisse-epargne-handball');
 
-  static entryButtonCaisseEpargneSecuriteRoutiere: EntryButtonModel = new EntryButtonModel('Caisse d\'Épargne', 'Sécurité Routière',
+  static entryButtonCaisseEpargneSecuriteRoutiere: EntryButtonModel = new EntryButtonModel('Caisse d\'Épargne', 'Safety road',
     ContentType.poster,
     '/assets/img/home/ce-pre-vention-routie-re-img@2x.png',
     'caisse-epargne-securite-routiere');
@@ -45,21 +45,15 @@ export class HomeDataMock {
     '/assets/img/home/epiderme@2x.png',
     '');
 
-  static entryButtonEnMouvement: EntryButtonModel = new EntryButtonModel('En mouvement', 'Maison d\'édition',
+  static entryButtonEnMouvement: EntryButtonModel = new EntryButtonModel('En mouvement', 'Publishing company',
     ContentType.visualIdentity,
     '/assets/img/home/enMouvementBelAmiCover@2x.png',
     'en-mouvement');
 
-  static entryButtonDentifrice: EntryButtonModel = new EntryButtonModel('3X/J', 'Kit de dentifrice pour enfants',
+  static entryButtonDentifrice: EntryButtonModel = new EntryButtonModel('3X/J', 'Dental first kid\'s kit',
     ContentType.packaging,
     '/assets/img/home/dentifrice@2x.png',
     '3xj-dentifrice');
-
-  static entryButtonRencontresChoregraphie: EntryButtonModel = new EntryButtonModel('Rencontres chorégraphiques de sene saint-denis',
-    'Affiches',
-    ContentType.poster,
-    '/assets/img/home/rencontreChoregraphieSeineSaintDenis@2x.png',
-    '');
 
 
   static entryButtonAbbePierre: EntryButtonModel = new EntryButtonModel('Fondation Abbé Pierre',
@@ -76,7 +70,7 @@ export class HomeDataMock {
 
 
   static entryButtonCrazyHorse: EntryButtonModel = new EntryButtonModel('Crazy Horse',
-    'Carte de voeux',
+    'Greeting card',
     ContentType.empty,
     '/assets/img/home/crazy-horse@2x.png',
     'crazy-horse');
@@ -88,32 +82,32 @@ export class HomeDataMock {
     '/assets/img/home/fdf-covid@2x.png',
     'fdf-covid');
 
-  static entryButtonCroixRouge: EntryButtonModel = new EntryButtonModel('Croix-Rouge',
-    'Appel aux dons',
+  static entryButtonCroixRouge: EntryButtonModel = new EntryButtonModel('French Red Cross',
+    'Call for donations',
     ContentType.poster,
     '/assets/img/home/croix-rouge@2x.png',
     'croix-rouge');
 
   static entryButtonFranceGalop: EntryButtonModel = new EntryButtonModel('France Galop',
-    'Campagne 2019',
+    '2019 Campaign',
     ContentType.affichesAndMotionDesgin,
     '/assets/img/home/france-galop@2x.png',
     'france-galop');
 
   static entryButtonPetitNavire: EntryButtonModel = new EntryButtonModel('Petit Navire',
-    'Campagne 2020',
+    '2020 Campaign',
     ContentType.affichesAndMotionDesgin,
     '/assets/img/home/petit_navire.jpg',
     'petit-navire');
 
   static entryButtonLapeyrePro: EntryButtonModel = new EntryButtonModel('Lapeyre Pro',
-    'Communication 360',
+    '360 Communication',
     ContentType.affichesAndMotionDesgin,
     '/assets/img/home/lapeyre-pro@2x.png',
     'lapeyre-pro');
 
   static entryButtonLapeyre: EntryButtonModel = new EntryButtonModel('Lapeyre',
-    'Communication 360',
+    '360 Communication',
     ContentType.affichesAndMotionDesgin,
     '/assets/img/home/lapeyre@2x.png',
     'lapeyre');

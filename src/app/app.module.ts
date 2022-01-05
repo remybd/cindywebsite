@@ -18,7 +18,7 @@ import { BlockVideoComponent } from './content/blocks/block-video/block-video.co
 import { BlockLegendComponent } from './content/blocks/block-legend/block-legend.component';
 import { ContentBlockCreationComponent } from './content/content-block-creation/content-block-creation.component';
 import {CustomHammerConfig} from './hammer-gesture.config';
-import { AProposComponent } from './a-propos/a-propos.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +37,7 @@ import { AProposComponent } from './a-propos/a-propos.component';
     BlockVideoComponent,
     BlockLegendComponent,
     ContentBlockCreationComponent,
-    AProposComponent
+    AboutComponent
   ],
   imports: [
     BrowserModule,
