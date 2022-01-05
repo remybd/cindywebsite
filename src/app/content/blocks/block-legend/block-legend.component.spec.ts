@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { BlockLegendComponent } from './block-legend.component';
 import {RouterTestingModule} from '@angular/router/testing';
@@ -8,7 +8,7 @@ describe('BlockLegendComponent', () => {
   let component: BlockLegendComponent;
   let fixture: ComponentFixture<BlockLegendComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ BlockLegendComponent ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],

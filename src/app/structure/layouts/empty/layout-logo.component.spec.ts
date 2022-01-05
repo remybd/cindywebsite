@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { LayoutLogoComponent } from './layout-logo.component';
 import {RouterTestingModule} from '@angular/router/testing';
@@ -8,7 +8,7 @@ describe('HeaderWithoutLogoComponent', () => {
   let component: LayoutLogoComponent;
   let fixture: ComponentFixture<LayoutLogoComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ LayoutLogoComponent ],
       imports: [RouterTestingModule],

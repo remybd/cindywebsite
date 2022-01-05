@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ButtonMovingDashesComponent } from './button-moving-dashes.component';
 
@@ -6,7 +6,7 @@ describe('ButtonMovingDashesComponent', () => {
   let component: ButtonMovingDashesComponent;
   let fixture: ComponentFixture<ButtonMovingDashesComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ ButtonMovingDashesComponent ]
     })
