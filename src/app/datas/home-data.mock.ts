@@ -92,7 +92,8 @@ export class HomeDataMock {
     '2019 Campaign',
     ContentType.affichesAndMotionDesgin,
     '/assets/img/home/france-galop@2x.png',
-    'france-galop');
+    'france-galop',
+    true);
 
   static entryButtonPetitNavire: EntryButtonModel = new EntryButtonModel('Petit Navire',
     '2020 Campaign',
