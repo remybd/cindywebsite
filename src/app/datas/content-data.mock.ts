@@ -10,7 +10,7 @@ export class ContentDataMock {
   // caisse epargne
   static caisseEpargneHandballBlocks: ContentImageModel[] = [
     new ContentImageModel('/assets/img/content/caisse-epargne/handball-homme-soutien-1-600x800.png',
-      'Men sheering poster'),
+      'Men cheering poster'),
     new ContentImageModel('/assets/img/content/caisse-epargne/ce-handball-l-equipe-mm-handball-homme-victoire-254x336.png',
       'Poster for men victory'),
     new ContentImageModel('/assets/img/content/caisse-epargne/ce-handball-l-equipe-le-parisien-mm-3-254x336.png',
@@ -44,7 +44,7 @@ export class ContentDataMock {
   ]
 
   static caisseEpargneParis2024: ContentPageModel = new ContentPageModel(
-    'Caisse d\'épargne - JO',
+    'Caisse d\'épargne - Paris 2024',
     '',
     'Agency : Altmann + Pacreau',
     ContentDataMock.caisseEpargneParis2024Blocks
