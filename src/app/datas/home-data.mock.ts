@@ -97,7 +97,7 @@ export class HomeDataMock {
   static entryButtonPetitNavire: EntryButtonModel = new EntryButtonModel('Petit Navire',
     '2020 Campaign',
     ContentType.affichesAndMotionDesgin,
-    '/assets/img/home/petit_navire.jpg',
+    '/assets/img/home/petit_navire.png',
     'petit-navire');
 
   static entryButtonLapeyrePro: EntryButtonModel = new EntryButtonModel('Lapeyre Pro',
@@ -112,13 +112,48 @@ export class HomeDataMock {
     '/assets/img/home/lapeyre@2x.png',
     'lapeyre');
 
+  static entryButtonLescure: EntryButtonModel = new EntryButtonModel('Maison Lescure',
+    '',
+    ContentType.motionDesign,
+    '/assets/img/home/lescure.png',
+    'lescure');
+
+  static entryButtonNaturalia: EntryButtonModel = new EntryButtonModel('Naturalia',
+    'Local Campaign',
+    ContentType.motionDesign,
+    '/assets/img/home/naturalia.png',
+    'naturalia');
+
+  static entryButtonOpel: EntryButtonModel = new EntryButtonModel('Opel',
+    '360 Communication',
+    ContentType.motionDesign,
+    '/assets/img/home/opel.png',
+    'opel');
+
+  static entryButtonPlantaFin: EntryButtonModel = new EntryButtonModel('Planta Fin',
+    '',
+    ContentType.motionDesign,
+    '/assets/img/home/planta-fin.png',
+    'planta-fin');
+
+  static entryButtonCaisseEpargneParis2024: EntryButtonModel = new EntryButtonModel('Caisse d\'Épargne',
+    'Paris 2024',
+    ContentType.motionDesign,
+    '/assets/img/home/caisse-epargne-paris-2024.png',
+    'caisse-epargne-paris-2024');
+
   static entryButtonArray = [
     HomeDataMock.entryButtonFranceGalop,
     HomeDataMock.entryButtonPetitNavire,
     HomeDataMock.entryButtonLapeyre,
     HomeDataMock.entryButtonLapeyrePro,
     HomeDataMock.entryButtonAbbePierre,
+    HomeDataMock.entryButtonCaisseEpargneParis2024,
     HomeDataMock.entryButtonCaisseEpargneSecuriteRoutiere,
+    HomeDataMock.entryButtonLescure,
+    HomeDataMock.entryButtonNaturalia,
+    HomeDataMock.entryButtonOpel,
+    HomeDataMock.entryButtonPlantaFin,
     HomeDataMock.entryButtonFondationDeFrance,
     HomeDataMock.entryButtonCroixRouge,
     HomeDataMock.entryButtonCaisseEpargneHandball,

@@ -35,6 +35,22 @@ export class ContentDataMock {
   );
 
 
+  static caisseEpargneParis2024Blocks: ContentBlockModel[] = [
+    new ContentVideoModel('/assets/img/content/caisse-epargne-jo/ce-dooh-hauteur-generique.mp4', '', 'video/mp4', false),
+    new ContentVideoModel('/assets/img/content/caisse-epargne-jo/ce-dooh-hauteur-athletisme.mp4', '', 'video/mp4', true),
+    new ContentVideoModel('/assets/img/content/caisse-epargne-jo/ce-dooh-hauteur-boy.mp4', '', 'video/mp4', true),
+    new ContentVideoModel('/assets/img/content/caisse-epargne-jo/ce-dooh-hauteur-handi-basket.mp4', '', 'video/mp4', true),
+    new ContentVideoModel('/assets/img/content/caisse-epargne-jo/ce-dooh-hauteur-travaux.mp4', '', 'video/mp4', true)
+  ]
+
+  static caisseEpargneParis2024: ContentPageModel = new ContentPageModel(
+    'Caisse d\'épargne - JO',
+    '',
+    'Agency : Altmann + Pacreau',
+    ContentDataMock.caisseEpargneParis2024Blocks
+  );
+
+
   //nikon
   static nikonSearchSearchImages: ContentImageModel[] = [
     new ContentImageModel('/assets/img/content/nikon/search_jungle_652x461.png', ''),
@@ -230,8 +246,7 @@ export class ContentDataMock {
     'FRANCE GALOP - 2019 CAMPAIGN',
     '',
     'Agency : Altmann + Pacreau / Photograph : Benjamin Schmuck',
-    ContentDataMock.franceGalopBlocks
-  );
+    ContentDataMock.franceGalopBlocks);
 
 
   // petit navire
@@ -319,12 +334,68 @@ export class ContentDataMock {
   );
 
 
+  // lescure
+  static lescureBlocks: ContentBlockModel[] = [
+    new ContentVideoModel('/assets/img/content/lescure/lescure-dooh-doux-1080x1920.mp4', '', 'video/mp4', true)
+  ]
+
+  static lescure: ContentPageModel = new ContentPageModel(
+    'MAISON LESCURE - DOOH',
+    '',
+    'Agency : Altmann + Pacreau',
+    ContentDataMock.lescureBlocks
+  );
+
+  // naturalia
+  static naturaliaBlocks: ContentBlockModel[] = [
+    new ContentVideoModel('/assets/img/content/naturalia/naturalia-dooh-oeuf.mp4', '', 'video/mp4', true),
+    new ContentVideoModel('/assets/img/content/naturalia/naturalia-dooh-salade.mp4', '', 'video/mp4', true)
+  ]
+
+  static naturalia: ContentPageModel = new ContentPageModel(
+    'NATURALIA - LOCAL CAMPAIGN ADAPTATION',
+    '',
+    'Agency : Altmann + Pacreau',
+    ContentDataMock.naturaliaBlocks
+  );
+
+  // opel
+  static opelBlocks: ContentBlockModel[] = [
+    new ContentVideoModel('/assets/img/content/opel/opel-digital-aw-check-high.mp4', '', 'video/mp4', true),
+    new ContentVideoModel('/assets/img/content/opel/opel-digital-winter-wheels.mp4', '', 'video/mp4', true)
+  ]
+
+  static opel: ContentPageModel = new ContentPageModel(
+    'OPEL - 360 COMMUNICATION',
+    '',
+    'Agency : Altmann + Pacreau',
+    ContentDataMock.opelBlocks
+  );
+
+
+  // plant a fin
+  static plantaFinBlocks: ContentBlockModel[] = [
+    new ContentVideoModel('/assets/img/content/plant-a-fin/crepes.mp4', '', 'video/mp4', true),
+    new ContentVideoModel('/assets/img/content/plant-a-fin/biscottes.mp4', '', 'video/mp4', true)
+  ]
+
+  static plantaFin: ContentPageModel = new ContentPageModel(
+    'PLANTA FIN - SOCIAL MEDIA',
+    '',
+    'Agency : Altmann + Pacreau',
+    ContentDataMock.plantaFinBlocks
+  );
+
+
+
+
 //----------------------------------------------------------------------------------------------------------------
 
 
   static contentDataDic = {
     'caisse-epargne-handball': ContentDataMock.caisseEpargneHandball,
     'caisse-epargne-securite-routiere': ContentDataMock.caisseEpargneSecuriteRoutiere,
+    'caisse-epargne-paris-2024': ContentDataMock.caisseEpargneParis2024,
     'nikon': ContentDataMock.nikon,
     'abbe-pierre': ContentDataMock.abbePierre,
     'en-mouvement': ContentDataMock.enMouvement,
@@ -338,7 +409,11 @@ export class ContentDataMock {
     'france-galop': ContentDataMock.franceGalop,
     'petit-navire': ContentDataMock.petitNavire,
     'lapeyre-pro': ContentDataMock.lapeyrePro,
-    'lapeyre': ContentDataMock.lapeyre
+    'lapeyre': ContentDataMock.lapeyre,
+    'lescure': ContentDataMock.lescure,
+    'naturalia': ContentDataMock.naturalia,
+    'opel': ContentDataMock.opel,
+    'planta-fin': ContentDataMock.plantaFin
   };
 
 }

@@ -87,7 +87,7 @@ https://www.youtube.com/watch?v=cccc9HjiUwo&t=21s
   background-size: cover;
   background-image: var(--image-url);
 
-  filter: blur(3px) grayscale(100%) brightness(90%);
+  filter: blur(3px) grayscale(100%) brightness(85%);
 }
 
 
