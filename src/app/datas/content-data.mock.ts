@@ -230,7 +230,8 @@ export class ContentDataMock {
     'FRANCE GALOP - 2019 CAMPAIGN',
     '',
     'Agency : Altmann + Pacreau / Photograph : Benjamin Schmuck',
-    ContentDataMock.franceGalopBlocks
+    ContentDataMock.franceGalopBlocks,
+    true
   );
 
 

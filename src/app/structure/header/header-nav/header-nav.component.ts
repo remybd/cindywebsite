@@ -1,6 +1,6 @@
 import {Component, HostListener, Input, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
-import {NextPreviousPageService} from '../../next-previous-page-management/next-previous-page.service';
+import {NextPreviousPageService} from '../../services/next-previous-page-management/next-previous-page.service';
 import {Observable} from 'rxjs';
 
 

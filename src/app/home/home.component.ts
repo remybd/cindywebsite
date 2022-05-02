@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {HomeDataMock} from "../datas/home-data.mock";
 import {Title} from '@angular/platform-browser';
 import {environment} from '../../environments/environment';
-import {NextPreviousPageService} from '../structure/next-previous-page-management/next-previous-page.service';
+import {NextPreviousPageService} from '../structure/services/next-previous-page-management/next-previous-page.service';
 
 @Component({
   selector: 'app-home',

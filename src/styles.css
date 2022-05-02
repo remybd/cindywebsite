@@ -44,7 +44,40 @@ a:visited {
   color: var(--font-color-hover-main);
 }
 
+.btn-primary {
+  color: var(--font-color-main);
+  background: none;
+  border: 1px solid var(--font-color-main);
+  cursor: pointer;
+  padding: 8px 16px;
+}
 
+.btn-primary:hover {
+  color: var(--font-color-hover-main);
+  border: 1px solid var(--font-color-hover-main);
+}
 
+.btn-secondary {
+  color: var(--font-color-main);
+  background: none;
+  border: 1px solid var(--font-color-main);
+  cursor: pointer;
+  padding: 8px 16px;
+}
+
+.btn-secondary:hover {
+  color: var(--font-color-hover-main);
+  border: 1px solid var(--font-color-hover-main);
+}
+
+.input {
+  padding: 8px 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input:focus-visible {
+  outline: none;
+}
 
 

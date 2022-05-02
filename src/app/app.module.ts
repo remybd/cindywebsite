@@ -19,6 +19,8 @@ import { BlockLegendComponent } from './content/blocks/block-legend/block-legend
 import { ContentBlockCreationComponent } from './content/content-block-creation/content-block-creation.component';
 import {CustomHammerConfig} from './hammer-gesture.config';
 import { AboutComponent } from './about/about.component';
+import { UnlockFormComponent } from './content/unlock-form/unlock-form.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -37,12 +39,14 @@ import { AboutComponent } from './about/about.component';
     BlockVideoComponent,
     BlockLegendComponent,
     ContentBlockCreationComponent,
-    AboutComponent
+    AboutComponent,
+    UnlockFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HammerModule
+    HammerModule,
+    FormsModule
   ],
   providers: [
     {

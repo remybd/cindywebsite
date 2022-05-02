@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
-import {HomeDataMock} from '../../datas/home-data.mock';
-import {EntryButtonModel} from '../../home/models/entry-button.model';
+import {HomeDataMock} from '../../../datas/home-data.mock';
+import {EntryButtonModel} from '../../../home/models/entry-button.model';
 import {Router} from '@angular/router';
 import {BehaviorSubject} from 'rxjs';
 

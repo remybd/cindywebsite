@@ -2,9 +2,10 @@ import {Component, HostListener, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {ContentDataMock} from '../datas/content-data.mock';
 import {ContentPageModel} from './models/content-page.model';
-import {NextPreviousPageService} from '../structure/next-previous-page-management/next-previous-page.service';
+import {NextPreviousPageService} from '../structure/services/next-previous-page-management/next-previous-page.service';
 import {environment} from '../../environments/environment';
 import {Title} from '@angular/platform-browser';
+import {PasswordStorageService} from "../structure/services/password-storage.service";
 
 @Component({
   selector: 'app-content',
@@ -16,7 +17,8 @@ export class ContentComponent implements OnInit {
 
   constructor(private route: ActivatedRoute,
               private nextPreviousPageService: NextPreviousPageService,
-              private titleService: Title) {
+              private titleService: Title,
+              public passwordStorage: PasswordStorageService) {
   }
 
   ngOnInit() {

@@ -1,0 +1,10 @@
+<form (ngSubmit)="submitPassword()" class="password-form" autocomplete="off">
+  <label for="unlock-password">Enter the password to unlock the page</label>
+  <input type="password" placeholder="Password" id="unlock-password" name="unlock-password" class="input" autocomplete="off"
+         [(ngModel)]="password" [class.shake-horizontal]="wrongPassword" (ngModelChange)="wrongPassword = false">
+
+  <div class="button-container">
+    <button class="btn-primary" type="submit">Unlock Page</button>
+    <a class="btn-secondary" routerLink="/">Cancel</a>
+  </div>
+</form>

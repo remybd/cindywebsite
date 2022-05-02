@@ -1,6 +1,8 @@
 <div *ngIf="content" class="content-container" (swipeRight)="swipeRight()" (swipeLeft)="swipeLeft()">
 
-  <div class="content-list-blocks">
+  <app-unlock-form *ngIf="content.lock && !(passwordStorage.validPassword$ | async)"></app-unlock-form>
+
+  <div class="content-list-blocks" [class.locked]="content.lock && !(passwordStorage.validPassword$ | async)">
     <app-content-block-creation [blockList]="content.blockList"></app-content-block-creation>
   </div>
 
