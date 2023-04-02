@@ -8,18 +8,6 @@ import {BehaviorSubject} from 'rxjs';
   providedIn: 'root'
 })
 export class NextPreviousPageService {
-  static eventBinding = {
-    ArrowRight: NextPreviousPageService.nextPageStatic,
-    ArrowLeft: NextPreviousPageService.previousPageStatic
-  };
-
-  private _currentPageKey = '';
-
-  private _nextPageKeySubject = new BehaviorSubject<string | null>(null);
-  nextPage$ = this._nextPageKeySubject.asObservable();
-
-  private _previousPageKeySubject = new BehaviorSubject<string | null>(null);
-  previousPage$ = this._previousPageKeySubject.asObservable();
 
   set currentPageKey(value: string) {
     if (!value) {
@@ -32,6 +20,26 @@ export class NextPreviousPageService {
   }
 
   constructor(private router: Router) {
+  }
+  static eventBinding = {
+    ArrowRight: NextPreviousPageService?.nextPageStatic,
+    ArrowLeft: NextPreviousPageService?.previousPageStatic
+  };
+
+  private _currentPageKey = '';
+
+  private _nextPageKeySubject = new BehaviorSubject<string | null>(null);
+  nextPage$ = this._nextPageKeySubject.asObservable();
+
+  private _previousPageKeySubject = new BehaviorSubject<string | null>(null);
+  previousPage$ = this._previousPageKeySubject.asObservable();
+
+  static previousPageStatic(instance) {
+    instance.previousPage();
+  }
+
+  static nextPageStatic(instance) {
+    instance.nextPage();
   }
 
   private reset() {
@@ -76,14 +84,6 @@ export class NextPreviousPageService {
 
   private findPreviousPage(pagePosition: number = HomeDataMock.entryButtonArray.length - 1): EntryButtonModel {
     return HomeDataMock.entryButtonArray[pagePosition - 1];
-  }
-
-  static previousPageStatic(instance) {
-    instance.previousPage();
-  }
-
-  static nextPageStatic(instance) {
-    instance.nextPage();
   }
 
 }
