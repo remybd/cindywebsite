@@ -6,5 +6,6 @@ export enum ContentType {
   packaging = 'Packaging',
   visualIdentity = 'Visual Identity',
   illustration = 'Illustration',
+  retail = 'Retail',
   empty = ''
 }

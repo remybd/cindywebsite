@@ -142,7 +142,42 @@ export class HomeDataMock {
     '/assets/img/home/caisse-epargne-paris-2024.png',
     'caisse-epargne-paris-2024');
 
+  static entryButtonMaxiCashChristmas: EntryButtonModel = new EntryButtonModel('Maxi Cash',
+    'Christmas 2022',
+    ContentType.postersAndMotionDesign,
+    '/assets/img/home/maxi_cash_joy_of_giving.png',
+    'maxi-cash-christmas');
+
+  static entryButtonMaxiCashPaynow: EntryButtonModel = new EntryButtonModel('Maxi Cash',
+    'Paynow',
+    ContentType.motionDesign,
+    '/assets/img/home/maxi_cash_paynow_video.png',
+    'maxi-cash-paynow');
+
+  static entryButtonPTC: EntryButtonModel = new EntryButtonModel('PTC',
+    'Fare Increase',
+    ContentType.motionDesign,
+    '/assets/img/home/PTC_video_fare_increase.png',
+    'ptc');
+
+  static entryButtonPhilips: EntryButtonModel = new EntryButtonModel('Philips',
+    'A4 Tent Cards',
+    ContentType.retail,
+    '/assets/img/home/philips.png',
+    'philips');
+
+  static entryButtonRare: EntryButtonModel = new EntryButtonModel('Rare',
+    'Light Up for Rare',
+    ContentType.motionDesign,
+    '/assets/img/home/rare_video.png',
+    'rare');
+
   static entryButtonArray = [
+    HomeDataMock.entryButtonMaxiCashChristmas,
+    HomeDataMock.entryButtonMaxiCashPaynow,
+    HomeDataMock.entryButtonPTC,
+    HomeDataMock.entryButtonRare,
+    HomeDataMock.entryButtonPhilips,
     HomeDataMock.entryButtonFranceGalop,
     HomeDataMock.entryButtonPetitNavire,
     HomeDataMock.entryButtonLapeyre,

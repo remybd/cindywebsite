@@ -19,7 +19,7 @@ export class ContentDataMock {
   static caisseEpargneHandball: ContentPageModel = new ContentPageModel(
     'Caisse d\'épargne - official supporter of the French Handball team',
     'Poster design for the men\'s and women\'s handball world cup',
-    'Agency : Altmann + Pacreau / Copywriter : Jeanne Teissier / Jersey Photograph : David Meignan / Woman Photograph : Etienne Garnier',
+    'Agency: Altmann + Pacreau / Copywriter : Jeanne Teissier / Jersey Photograph : David Meignan / Woman Photograph : Etienne Garnier',
     ContentDataMock.caisseEpargneHandballBlocks
   );
 
@@ -30,7 +30,7 @@ export class ContentDataMock {
   static caisseEpargneSecuriteRoutiere: ContentPageModel = new ContentPageModel(
     'Caisse d\'épargne - Road safety',
     '',
-    'Agency : Altmann + Pacreau / Copywriter : Cédric Ferrand  / Photograph : Ronan Mérot ',
+    'Agency: Altmann + Pacreau / Copywriter : Cédric Ferrand  / Photograph : Ronan Mérot ',
     ContentDataMock.caisseEpargneSecuriteRoutiereBlocks
   );
 
@@ -41,17 +41,17 @@ export class ContentDataMock {
     new ContentVideoModel('/assets/img/content/caisse-epargne-jo/ce-dooh-hauteur-boy.mp4', '', 'video/mp4', true),
     new ContentVideoModel('/assets/img/content/caisse-epargne-jo/ce-dooh-hauteur-handi-basket.mp4', '', 'video/mp4', true),
     new ContentVideoModel('/assets/img/content/caisse-epargne-jo/ce-dooh-hauteur-travaux.mp4', '', 'video/mp4', true)
-  ]
+  ];
 
   static caisseEpargneParis2024: ContentPageModel = new ContentPageModel(
     'Caisse d\'épargne - Paris 2024',
     '',
-    'Agency : Altmann + Pacreau',
+    'Agency: Altmann + Pacreau',
     ContentDataMock.caisseEpargneParis2024Blocks
   );
 
 
-  //nikon
+  // nikon
   static nikonSearchSearchImages: ContentImageModel[] = [
     new ContentImageModel('/assets/img/content/nikon/search_jungle_652x461.png', ''),
     new ContentImageModel('/assets/img/content/nikon/search_snow_656x463.png', ''),
@@ -66,12 +66,12 @@ export class ContentDataMock {
   static nikon: ContentPageModel = new ContentPageModel(
     'Nikon - Illustration for tote bag',
     '',
-    'Agency : Altmann + Pacreau',
+    'Agency: Altmann + Pacreau',
     ContentDataMock.nikonBlocks
   );
 
 
-  //abbe pierre
+  // abbe pierre
   static abbePierreMosaicImages: ContentImageModel[] = [
     new ContentImageModel('/assets/img/content/abbe-pierre/mosaic-1-fap-picsdor-2020-587x830.png'),
     new ContentImageModel('/assets/img/content/abbe-pierre/mosaic-2-fap-picsdor-affiche-1101x830.png'),
@@ -87,12 +87,12 @@ export class ContentDataMock {
   static abbePierre: ContentPageModel = new ContentPageModel(
     'FONDATION ABBÉ PIERRE - les pics d’or',
     '',
-    'Agency : Altmann + Pacreau',
+    'Agency: Altmann + Pacreau',
     ContentDataMock.abbePierreBlocks
   );
 
 
-  //en mouvement
+  // en mouvement
   static enMouvementSearchImages: ContentImageModel[] = [
     new ContentImageModel('/assets/img/content/en-mouvement/mosaic-1-919x576.png', ''),
     new ContentImageModel('/assets/img/content/en-mouvement/mosaic-2-918x576.png', ''),
@@ -123,7 +123,7 @@ export class ContentDataMock {
   static crazyHorse: ContentPageModel = new ContentPageModel(
     'CRAZY HORSE - 2018 greeting card',
     '',
-    'Agency : Hub ID&Napoli',
+    'Agency: Hub ID&Napoli',
     ContentDataMock.crazyHorseBlocks
   );
 
@@ -143,19 +143,19 @@ export class ContentDataMock {
   );
 
 
-  //fondation de france
+  // fondation de france
   static fdfCovidBlocks: ContentBlockModel[] = [
     new ContentVideoModel('/assets/img/content/fondation-de-france/FDF-COVID19.mp4'),
   ];
   static fondationDeFranceCovid: ContentPageModel = new ContentPageModel(
     'FONDATION DE FRANCE - COVID 19',
     '',
-    'Agency : Altmann + Pacreau',
+    'Agency: Altmann + Pacreau',
     ContentDataMock.fdfCovidBlocks
   );
 
 
-  //the erable
+  // the erable
   static theErableBlocks: ContentBlockModel[] = [
     new ContentImageModel('/assets/img/content/the-erable/the-erable-full-package-1309x1005.png'),
     new ContentImageModel('/assets/img/content/the-erable/the-erable-boite-fermee-631x447.png'),
@@ -171,7 +171,7 @@ export class ContentDataMock {
   );
 
 
-  //pompidou
+  // pompidou
   static pompidouBlocks: ContentBlockModel[] = [
     new ContentImageModel('/assets/img/content/pompidou/magazine-close-1309x1005.png'),
     new ContentImageModel('/assets/img/content/pompidou/page-1-631x447.png'),
@@ -187,7 +187,7 @@ export class ContentDataMock {
   );
 
 
-  //3xj dentifrice
+  // 3xj dentifrice
   static dentifrice3xjBlocks: ContentBlockModel[] = [
     new ContentImageModel('/assets/img/content/3xj-dentifrice/close-box-587x830.png'),
     new ContentImageModel('/assets/img/content/3xj-dentifrice/brosse-a-dent-1101x830.png'),
@@ -215,7 +215,7 @@ export class ContentDataMock {
   static croixRouge: ContentPageModel = new ContentPageModel(
     'FRENCH RED CROSS - Call for donations',
     '',
-    'Agency : Altmann + Pacreau',
+    'Agency: Altmann + Pacreau',
     ContentDataMock.croixRougeBlocks
   );
 
@@ -245,7 +245,7 @@ export class ContentDataMock {
   static franceGalop: ContentPageModel = new ContentPageModel(
     'FRANCE GALOP - 2019 CAMPAIGN',
     '',
-    'Agency : Altmann + Pacreau / Photograph : Benjamin Schmuck',
+    'Agency: Altmann + Pacreau / Photograph : Benjamin Schmuck',
     ContentDataMock.franceGalopBlocks);
 
 
@@ -260,16 +260,16 @@ export class ContentDataMock {
   static petitNavire: ContentPageModel = new ContentPageModel(
     'PETIT NAVIRE - 2020 CAMPAIGN',
     '',
-    'Agency : Altmann + Pacreau',
+    'Agency: Altmann + Pacreau',
     ContentDataMock.petitNavireBlocks
-  )
+  );
 
 
   // lapeyre pro
   static lapeyreProSearchSitu: ContentSearchModel = new ContentSearchModel([
     new ContentImageModel('/assets/img/content/lapeyre-pro/lp-affichette-633x895.png'),
     new ContentImageModel('/assets/img/content/lapeyre-pro/lp-totem-633-895.png'),
-  ])
+  ]);
 
   static lapeyreProSearchGuidelines: ContentSearchModel = new ContentSearchModel([
     new ContentImageModel('/assets/img/content/lapeyre-pro/lp-guidelines-1-1344x946.png'),
@@ -284,7 +284,7 @@ export class ContentDataMock {
     new ContentImageModel('/assets/img/content/lapeyre-pro/lp-guidelines-9-1338x946.png'),
     new ContentImageModel('/assets/img/content/lapeyre-pro/lp-guidelines-11-1326x946.png'),
     new ContentImageModel('/assets/img/content/lapeyre-pro/lp-guidelines-8-1338x946.png'),
-  ])
+  ]);
 
   static lapeyreProBlocks: ContentBlockModel[] = [
     new ContentImageModel('/assets/img/content/lapeyre-pro/lp-catalogue-couverture-1309x1005.png'),
@@ -293,13 +293,13 @@ export class ContentDataMock {
     ContentDataMock.lapeyreProSearchSitu,
     new ContentImageModel('/assets/img/content/lapeyre-pro/lp-travaux-1309x1005.png'),
     ContentDataMock.lapeyreProSearchGuidelines
-  ]
+  ];
 
 
   static lapeyrePro: ContentPageModel = new ContentPageModel(
     'LAPEYRE PRO - 360 COMMUNICATION',
     '',
-    'Agency : Altmann + Pacreau',
+    'Agency: Altmann + Pacreau',
     ContentDataMock.lapeyreProBlocks
   );
 
@@ -323,13 +323,13 @@ export class ContentDataMock {
     new ContentImageModel('/assets/img/content/lapeyre/lp-depliant-service-1293x1293.png'),
     new ContentVideoModel('/assets/img/content/lapeyre/lp-dooh-cuisine.mp4', '', 'video/mp4', false),
     new ContentVideoModel('/assets/img/content/lapeyre/lp-dooh-nouvelle-collection.mp4', '', 'video/mp4', true),
-  ]
+  ];
 
 
   static lapeyre: ContentPageModel = new ContentPageModel(
     'LAPEYRE 2018/2019 - 360 COMMUNICATION',
     '',
-    'Agency : Altmann + Pacreau',
+    'Agency: Altmann + Pacreau',
     ContentDataMock.lapeyreBlocks
   );
 
@@ -337,12 +337,12 @@ export class ContentDataMock {
   // lescure
   static lescureBlocks: ContentBlockModel[] = [
     new ContentVideoModel('/assets/img/content/lescure/lescure-dooh-doux-1080x1920.mp4', '', 'video/mp4', true)
-  ]
+  ];
 
   static lescure: ContentPageModel = new ContentPageModel(
     'MAISON LESCURE - DOOH',
     '',
-    'Agency : Altmann + Pacreau',
+    'Agency: Altmann + Pacreau',
     ContentDataMock.lescureBlocks
   );
 
@@ -350,12 +350,12 @@ export class ContentDataMock {
   static naturaliaBlocks: ContentBlockModel[] = [
     new ContentVideoModel('/assets/img/content/naturalia/naturalia-dooh-oeuf.mp4', '', 'video/mp4', true),
     new ContentVideoModel('/assets/img/content/naturalia/naturalia-dooh-salade.mp4', '', 'video/mp4', true)
-  ]
+  ];
 
   static naturalia: ContentPageModel = new ContentPageModel(
     'NATURALIA - LOCAL CAMPAIGN ADAPTATION',
     '',
-    'Agency : Altmann + Pacreau',
+    'Agency: Altmann + Pacreau',
     ContentDataMock.naturaliaBlocks
   );
 
@@ -363,12 +363,12 @@ export class ContentDataMock {
   static opelBlocks: ContentBlockModel[] = [
     new ContentVideoModel('/assets/img/content/opel/opel-digital-aw-check-high.mp4', '', 'video/mp4', true),
     new ContentVideoModel('/assets/img/content/opel/opel-digital-winter-wheels.mp4', '', 'video/mp4', true)
-  ]
+  ];
 
   static opel: ContentPageModel = new ContentPageModel(
     'OPEL - 360 COMMUNICATION',
     '',
-    'Agency : Altmann + Pacreau',
+    'Agency: Altmann + Pacreau',
     ContentDataMock.opelBlocks
   );
 
@@ -377,43 +377,126 @@ export class ContentDataMock {
   static plantaFinBlocks: ContentBlockModel[] = [
     new ContentVideoModel('/assets/img/content/plant-a-fin/crepes.mp4', '', 'video/mp4', true),
     new ContentVideoModel('/assets/img/content/plant-a-fin/biscottes.mp4', '', 'video/mp4', true)
-  ]
+  ];
 
   static plantaFin: ContentPageModel = new ContentPageModel(
     'PLANTA FIN - SOCIAL MEDIA',
     '',
-    'Agency : Altmann + Pacreau',
+    'Agency: Altmann + Pacreau',
     ContentDataMock.plantaFinBlocks
   );
 
 
 
 
-//----------------------------------------------------------------------------------------------------------------
+  // Maxi Cash
+  static maxiCashChristmasBlocks: ContentBlockModel[] = [
+    new ContentVideoModel('/assets/img/content/maxi-cash-christmas/D15645 - Maxi Cash - Christmas VIDEO - HD 1280x720 - FA.mp4'),
+    new ContentImageModel('/assets/img/content/maxi-cash-christmas/maxi_cash_christmas.jpg'),
+    new ContentImageModel('/assets/img/content/maxi-cash-christmas/SG3006C_93_Maxi-Cash_left.JPG.db33758c6c196d9d8717cc1d788feb60.jpg')
+  ];
+
+  static maxiCashChristmas: ContentPageModel = new ContentPageModel(
+    'MAXI CASH - The joy of giving',
+    'Video, Wall Mural and Bus Wrap',
+    'Agency: Adred Creative',
+    ContentDataMock.maxiCashChristmasBlocks
+  );
+
+
+  static maxiCashPaynowBlocks: ContentBlockModel[] = [
+    new ContentVideoModel('/assets/img/content/maxi-cash-paynow/D16436 - MAXI CASH PAYNOW VIDEO ANIMATION - 8.mp4')
+  ];
+
+  static maxiCashPaynow: ContentPageModel = new ContentPageModel(
+    'MAXI CASH - PayNow',
+    'Video to launch Paynow new service',
+    'Agency: Adred Creative',
+    ContentDataMock.maxiCashPaynowBlocks
+  );
+
+
+  // PTC
+  static ptcBlocks: ContentBlockModel[] = [
+    new ContentVideoModel('/assets/img/content/ptc/D15674 PTC - Video infographic transport fare increasement - 3.mp4')
+  ];
+
+  static ptc: ContentPageModel = new ContentPageModel(
+    'PTC - Fare Increase',
+    '',
+    'Agency: Adred Creative',
+    ContentDataMock.ptcBlocks
+  );
+
+
+
+  // Philips
+  static philipsBlocks: ContentBlockModel[] = [
+    new ContentImageModel('/assets/img/content/philips/D15544 - Philips x Millenia walk event - A4 tent card.jpg'),
+    new ContentImageModel('/assets/img/content/philips/D15568 - Philips Q4 end year festive celebration - V2- R3.jpg'),
+    new ContentImageModel('/assets/img/content/philips/D15647 - Philips x Best Denki Grand electrical Fair - 6-01.jpg'),
+    new ContentImageModel('/assets/img/content/philips/D15792 Philips Brand Fair x Best Denki Version 2 - A4 tentcard.jpg')
+  ];
+
+  static philips: ContentPageModel = new ContentPageModel(
+    'Philips - A4 Tent Cards',
+    '',
+    'Agency: Adred Creative',
+    ContentDataMock.philipsBlocks
+  );
+
+
+  // Rare
+
+  static rareRealLifeBlocks: ContentBlockModel[] = [
+    new ContentVideoModel('/assets/img/content/rare/rare_in_stitus.mp4'),
+    new ContentImageModel('/assets/img/content/rare/IMG-20230218-WA0001_v2.jpg')
+  ];
+
+  static rareBlocks: ContentBlockModel[] = [
+    new ContentVideoModel('/assets/img/content/rare/RARE DISEASES SOCIETY VIDEO - FA.mp4'),
+    new ContentLegendModel(ContentDataMock.rareRealLifeBlocks),
+  ];
+
+  static rare: ContentPageModel = new ContentPageModel(
+    'Rare - Light Up for Rare',
+    '',
+    'Agency: Adred Creative',
+    ContentDataMock.rareBlocks
+  );
+
+
+
+// ----------------------------------------------------------------------------------------------------------------
 
 
   static contentDataDic = {
     'caisse-epargne-handball': ContentDataMock.caisseEpargneHandball,
     'caisse-epargne-securite-routiere': ContentDataMock.caisseEpargneSecuriteRoutiere,
     'caisse-epargne-paris-2024': ContentDataMock.caisseEpargneParis2024,
-    'nikon': ContentDataMock.nikon,
+    nikon: ContentDataMock.nikon,
     'abbe-pierre': ContentDataMock.abbePierre,
     'en-mouvement': ContentDataMock.enMouvement,
     'crazy-horse': ContentDataMock.crazyHorse,
     'nuit-eau': ContentDataMock.nuitEau,
     'fdf-covid': ContentDataMock.fondationDeFranceCovid,
     'the-erable': ContentDataMock.theErable,
-    'pompidou': ContentDataMock.pompidou,
+    pompidou: ContentDataMock.pompidou,
     '3xj-dentifrice': ContentDataMock.dentifrice3xj,
     'croix-rouge': ContentDataMock.croixRouge,
     'france-galop': ContentDataMock.franceGalop,
     'petit-navire': ContentDataMock.petitNavire,
     'lapeyre-pro': ContentDataMock.lapeyrePro,
-    'lapeyre': ContentDataMock.lapeyre,
-    'lescure': ContentDataMock.lescure,
-    'naturalia': ContentDataMock.naturalia,
-    'opel': ContentDataMock.opel,
-    'planta-fin': ContentDataMock.plantaFin
+    lapeyre: ContentDataMock.lapeyre,
+    lescure: ContentDataMock.lescure,
+    naturalia: ContentDataMock.naturalia,
+    opel: ContentDataMock.opel,
+    'planta-fin': ContentDataMock.plantaFin,
+    'maxi-cash-christmas': ContentDataMock.maxiCashChristmas,
+    'maxi-cash-paynow': ContentDataMock.maxiCashPaynow,
+    ptc: ContentDataMock.ptc,
+    philips: ContentDataMock.philips,
+    rare: ContentDataMock.rare
   };
 
 }

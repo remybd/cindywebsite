@@ -1,7 +1,9 @@
 <ng-container *ngIf="video">
   <video *ngIf="video.url && video.type" preload="metadata"
          controls class="video"
-         [loop]="video.loop" [autoplay]="video.loop">
+         [loop]="video.loop" [autoplay]="video.loop"
+         [muted]="video.muted"
+  >
     <source [src]="video.url"  [type]="video.type">
     Sorry, your browser doesn't support embedded videos.
   </video>
