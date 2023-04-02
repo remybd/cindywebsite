@@ -16,7 +16,7 @@ export class HomeDataMock {
     'the-erable');
 
   static entryButtonCentrePompidou: EntryButtonModel = new EntryButtonModel('Centre Pompidou', 'Brochure',
-    ContentType.editon,
+    ContentType.edition,
     '/assets/img/home/centrePompidou@2x.png',
     'pompidou');
 
@@ -36,12 +36,12 @@ export class HomeDataMock {
     '');
 
   static entryButtonAmbigu: EntryButtonModel = new EntryButtonModel('Ambigü', 'Magazine',
-    ContentType.editon,
+    ContentType.edition,
     '/assets/img/home/ambigu@2x.png',
     '');
 
   static entryButtonEpiderme: EntryButtonModel = new EntryButtonModel('Épiderme', 'Magazine',
-    ContentType.editon,
+    ContentType.edition,
     '/assets/img/home/epiderme@2x.png',
     '');
 
@@ -58,13 +58,13 @@ export class HomeDataMock {
 
   static entryButtonAbbePierre: EntryButtonModel = new EntryButtonModel('Fondation Abbé Pierre',
     'Les Pics D\'or',
-    ContentType.affichesAndMotionDesgin,
+    ContentType.postersAndMotionDesign,
     '/assets/img/home/abbe-pierre@2x.png',
     'abbe-pierre');
 
   static entryButtonNuitEau: EntryButtonModel = new EntryButtonModel('Unicef',
     'La nuit de l\'eau',
-    ContentType.editon,
+    ContentType.edition,
     '/assets/img/home/verre-deau-ok-clem@2x.png',
     'nuit-eau');
 
@@ -90,25 +90,25 @@ export class HomeDataMock {
 
   static entryButtonFranceGalop: EntryButtonModel = new EntryButtonModel('France Galop',
     '2019 Campaign',
-    ContentType.affichesAndMotionDesgin,
+    ContentType.postersAndMotionDesign,
     '/assets/img/home/france-galop@2x.png',
     'france-galop');
 
   static entryButtonPetitNavire: EntryButtonModel = new EntryButtonModel('Petit Navire',
     '2020 Campaign',
-    ContentType.affichesAndMotionDesgin,
+    ContentType.postersAndMotionDesign,
     '/assets/img/home/petit_navire.png',
     'petit-navire');
 
   static entryButtonLapeyrePro: EntryButtonModel = new EntryButtonModel('Lapeyre Pro',
     '360 Communication',
-    ContentType.affichesAndMotionDesgin,
+    ContentType.postersAndMotionDesign,
     '/assets/img/home/lapeyre-pro@2x.png',
     'lapeyre-pro');
 
   static entryButtonLapeyre: EntryButtonModel = new EntryButtonModel('Lapeyre',
     '360 Communication',
-    ContentType.affichesAndMotionDesgin,
+    ContentType.postersAndMotionDesign,
     '/assets/img/home/lapeyre@2x.png',
     'lapeyre');
 

@@ -16,7 +16,6 @@ export class PasswordStorageService {
   constructor() { }
 
   checkPassword(newPassword: string): boolean {
-    console.log(newPassword)
     const validPassword = newPassword == this.psdTarget;
 
     this._validPasswordKeySubject.next(validPassword)

@@ -5,6 +5,7 @@ import {ContentComponent} from "./content/content.component";
 import {LayoutLogoComponent} from './structure/layouts/empty/layout-logo.component';
 import {LayoutHomePageComponent} from './structure/layouts/home-page/layout-home-page.component';
 import {AboutComponent} from './about/about.component';
+import {environment} from "../environments/environment";
 
 const routes: Routes = [
 
@@ -13,13 +14,13 @@ const routes: Routes = [
     path: '',
     component: LayoutLogoComponent,
     children: [
-      { path: 'home', component: HomeComponent },
+      { path: 'home', component: HomeComponent, title: environment.titleBase + 'Home' },
       { path: '',  redirectTo: '/home', pathMatch: 'full'},
     ]
   },
 
   {
-    path: 'about', component: AboutComponent,
+    path: 'about', component: AboutComponent, title: environment.titleBase + 'About'
   },
 
   // page with header but no logo
