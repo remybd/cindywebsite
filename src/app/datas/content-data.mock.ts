@@ -467,6 +467,66 @@ export class ContentDataMock {
 
 
 
+  // WSG
+
+  static wsgBlock: ContentBlockModel[] = [
+    new ContentImageModel('/assets/img/content/wsg/Artboard 6.jpg'),
+    new ContentImageModel('/assets/img/content/wsg/Artboard 7.jpg'),
+    new ContentVideoModel('/assets/img/content/wsg/D15726 - WSG - Scholarship video - 4.mp4', '', 'video/mp4', true),
+    new ContentVideoModel('/assets/img/content/wsg/D15759 - SSG-WSG SCHOLARSHIP TIKTOK VIDEO - FA.mp4'),
+  ];
+
+  static wsg: ContentPageModel = new ContentPageModel(
+    'Workforce Singapore',
+    'WSG - SSG - Joint undergraduate scholarship',
+    'Agency: Adred Creative',
+    ContentDataMock.wsgBlock
+  );
+
+
+  // NYC
+
+  static nycBlock: ContentBlockModel[] = [
+    new ContentImageModel('/assets/img/content/nyc/Orange-100.jpg'),
+    new ContentImageModel('/assets/img/content/nyc/DI_7-orange.jpg'),
+  ];
+
+  static nyc: ContentPageModel = new ContentPageModel(
+    'National Youth Council ',
+    'Poster for the Young ChangeMakers Grant',
+    'Agency: Adred Creative',
+    ContentDataMock.nycBlock
+  );
+
+  // SPC
+
+  static spcBlock: ContentBlockModel[] = [
+    new ContentImageModel('/assets/img/content/spc/spc_bottle.jpg'),
+  ];
+
+  static spc: ContentPageModel = new ContentPageModel(
+    'Singapore Petroleum Company',
+    'Poster to promote their new mineral water recycled bottle',
+    'Agency: Adred Creative',
+    ContentDataMock.spcBlock
+  );
+
+
+  // XEPA
+
+  static xepaBlock: ContentBlockModel[] = [
+    new ContentVideoModel('/assets/img/content/xepa/D15760 XEPA - Cough TVC - 6 R3.mp4'),
+  ];
+
+  static xepa: ContentPageModel = new ContentPageModel(
+    'XEPA - Cough Solutions',
+    'TVC for Tussidex and Mucolix cough solutions',
+    'Agency: Adred Creative',
+    ContentDataMock.xepaBlock
+  );
+
+
+
 // ----------------------------------------------------------------------------------------------------------------
 
 
@@ -496,7 +556,11 @@ export class ContentDataMock {
     'maxi-cash-paynow': ContentDataMock.maxiCashPaynow,
     ptc: ContentDataMock.ptc,
     philips: ContentDataMock.philips,
-    rare: ContentDataMock.rare
+    rare: ContentDataMock.rare,
+    wsg: ContentDataMock.wsg,
+    nyc: ContentDataMock.nyc,
+    spc: ContentDataMock.spc,
+    xepa: ContentDataMock.xepa,
   };
 
 }

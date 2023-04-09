@@ -172,17 +172,45 @@ export class HomeDataMock {
     '/assets/img/home/rare_video.png',
     'rare');
 
+  static entryButtonSPC: EntryButtonModel = new EntryButtonModel('SPC',
+    'New Mineral Water',
+    ContentType.poster,
+    '/assets/img/home/spc.png',
+    'spc');
+
+  static entryButtonNyc: EntryButtonModel = new EntryButtonModel('NYC',
+    'Young ChangeMakers Grant',
+    ContentType.poster,
+    '/assets/img/home/nyc.png',
+    'nyc');
+
+  static entryButtonWSG: EntryButtonModel = new EntryButtonModel('WSG',
+    'WSG-SSG-Joint undergraduate scholarship',
+    ContentType.postersAndMotionDesign,
+    '/assets/img/home/wsg.png',
+    'wsg');
+
+  static entryButtonXepa: EntryButtonModel = new EntryButtonModel('Xepa',
+    'Cough Solutions',
+    ContentType.tvCommercial,
+    '/assets/img/home/xepa.png',
+    'xepa');
+
   static entryButtonArray = [
-    HomeDataMock.entryButtonMaxiCashChristmas,
-    HomeDataMock.entryButtonMaxiCashPaynow,
-    HomeDataMock.entryButtonPTC,
-    HomeDataMock.entryButtonRare,
-    HomeDataMock.entryButtonPhilips,
     HomeDataMock.entryButtonFranceGalop,
     HomeDataMock.entryButtonPetitNavire,
     HomeDataMock.entryButtonLapeyre,
     HomeDataMock.entryButtonLapeyrePro,
     HomeDataMock.entryButtonAbbePierre,
+    HomeDataMock.entryButtonXepa,
+    HomeDataMock.entryButtonNyc,
+    HomeDataMock.entryButtonSPC,
+    HomeDataMock.entryButtonWSG,
+    HomeDataMock.entryButtonMaxiCashChristmas,
+    HomeDataMock.entryButtonMaxiCashPaynow,
+    HomeDataMock.entryButtonPTC,
+    HomeDataMock.entryButtonRare,
+    HomeDataMock.entryButtonPhilips,
     HomeDataMock.entryButtonCaisseEpargneParis2024,
     HomeDataMock.entryButtonCaisseEpargneSecuriteRoutiere,
     HomeDataMock.entryButtonLescure,
