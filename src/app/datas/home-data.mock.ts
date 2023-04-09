@@ -196,6 +196,12 @@ export class HomeDataMock {
     '/assets/img/home/xepa.png',
     'xepa');
 
+  static entryButtonAnaisAntoine: EntryButtonModel = new EntryButtonModel('Anais and Antoine',
+    '',
+    ContentType.announcement,
+    '/assets/img/home/faire-part-antoine-anais.png',
+    'anais-antoine');
+
   static entryButtonArray = [
     HomeDataMock.entryButtonFranceGalop,
     HomeDataMock.entryButtonPetitNavire,
@@ -213,6 +219,7 @@ export class HomeDataMock {
     HomeDataMock.entryButtonPhilips,
     HomeDataMock.entryButtonCaisseEpargneParis2024,
     HomeDataMock.entryButtonCaisseEpargneSecuriteRoutiere,
+    HomeDataMock.entryButtonAnaisAntoine,
     HomeDataMock.entryButtonLescure,
     HomeDataMock.entryButtonNaturalia,
     HomeDataMock.entryButtonOpel,

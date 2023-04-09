@@ -2,6 +2,7 @@ export enum ContentType {
   edition = 'Publishing',
   motionDesign = 'Motion Design',
   tvCommercial = 'TV Commercial',
+  announcement = 'Announcement',
   postersAndMotionDesign = 'Poster / Motion Design',
   poster = 'Poster',
   packaging = 'Packaging',

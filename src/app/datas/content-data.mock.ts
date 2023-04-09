@@ -527,6 +527,23 @@ export class ContentDataMock {
 
 
 
+  // Anais Antoine
+
+  static anaisAntoineBlock: ContentBlockModel[] = [
+    new ContentImageModel('/assets/img/content/anais-antoine/logo anais antoine-02.png'),
+    new ContentImageModel('/assets/img/content/anais-antoine/FAIRE-PART-ENVELOPPE-MOCKUP.png'),
+    new ContentImageModel('/assets/img/content/anais-antoine/Bifold-Brochure-Mockup.png'),
+  ];
+
+  static anaisAntoine: ContentPageModel = new ContentPageModel(
+    'Anais and Antoine Announcement',
+    'Logo, pattern and Announcement',
+    '',
+    ContentDataMock.anaisAntoineBlock
+  );
+
+
+
 // ----------------------------------------------------------------------------------------------------------------
 
 
@@ -561,6 +578,7 @@ export class ContentDataMock {
     nyc: ContentDataMock.nyc,
     spc: ContentDataMock.spc,
     xepa: ContentDataMock.xepa,
+    'anais-antoine': ContentDataMock.anaisAntoine,
   };
 
 }
