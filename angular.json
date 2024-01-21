@@ -72,18 +72,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "cindy-website:build"
+            "buildTarget": "cindy-website:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "cindy-website:build:production"
+              "buildTarget": "cindy-website:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "cindy-website:build"
+            "buildTarget": "cindy-website:build"
           }
         },
         "test": {
