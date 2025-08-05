@@ -205,6 +205,8 @@ export class HomeDataMock {
   static entryButtonArray = [
     HomeDataMock.entryButtonFranceGalop,
     HomeDataMock.entryButtonPetitNavire,
+    HomeDataMock.entryButtonCaisseEpargneSecuriteRoutiere,
+    HomeDataMock.entryButtonCaisseEpargneParis2024,
     HomeDataMock.entryButtonLapeyre,
     HomeDataMock.entryButtonLapeyrePro,
     HomeDataMock.entryButtonAbbePierre,
@@ -217,8 +219,6 @@ export class HomeDataMock {
     HomeDataMock.entryButtonPTC,
     HomeDataMock.entryButtonRare,
     HomeDataMock.entryButtonPhilips,
-    HomeDataMock.entryButtonCaisseEpargneParis2024,
-    HomeDataMock.entryButtonCaisseEpargneSecuriteRoutiere,
     HomeDataMock.entryButtonAnaisAntoine,
     HomeDataMock.entryButtonLescure,
     HomeDataMock.entryButtonNaturalia,
