@@ -1,29 +1,44 @@
-find . -type f \( -iname "*.mp4" -o -iname "*.mov" \) | while read -r file; do
-  
-  # Extract the directory, filename without extension, and the extension
-  dir=$(dirname "$file")
-  filename=$(basename -- "$file")
-  extension="${filename##*.}"
-  filename_no_ext="${filename%.*}"
-  
-  # Construct the output filename
-  new_file="$dir/$filename_no_ext-compressed.$extension"
-  
-  # Check if the compressed file already exists to avoid re-compressing
-  if [ -f "$new_file" ]; then
-    echo "Skipping: $new_file already exists."
-    continue
-  fi
-  
-  echo "Compressing: $file to $new_file"
-  
-  # Execute the command with the -nostdin and -y flags
-  ffmpeg -nostdin -y -i "$file" -c:v libx264 -crf 28 -c:a aac "$new_file"
-  
-  if [ $? -eq 0 ]; then
-    echo "Done with $file"
-  else
-    echo "Failed to process $file"
-  fi
+#!/bin/sh
 
+echo "WARNING: This script will delete your original video files."
+echo "Press Enter to continue, or Ctrl+C to cancel."
+read reply
+
+# Find all compressed video files
+find . -type f -name "*-compressed.*" | while read -r compressed_file; do
+  
+  # Construct the original filename using sed for string replacement
+  original_file=$(echo "$compressed_file" | sed 's/-compressed//')
+  
+  # Check if the original file exists before proceeding
+  if [ -f "$original_file" ]; then
+    
+    echo "Processing:"
+    echo "  Original: $original_file"
+    echo "  Compressed: $compressed_file"
+    
+    # 1. Delete the original file
+    echo "  Deleting original file..."
+    rm "$original_file"
+    
+    # Check if the deletion was successful before moving the new file
+    if [ $? -eq 0 ]; then
+      
+      # 2. Rename the compressed file to the original filename
+      echo "  Renaming compressed file..."
+      mv "$compressed_file" "$original_file"
+      
+      echo "  Replacement complete."
+      echo "-----------------------------------"
+    else
+      echo "  ERROR: Failed to delete original file. Skipping..."
+      echo "-----------------------------------"
+    fi
+  else
+    echo "WARNING: Original file not found for $compressed_file. Skipping..."
+    echo "-----------------------------------"
+  fi
+  
 done
+
+echo "Script finished."
