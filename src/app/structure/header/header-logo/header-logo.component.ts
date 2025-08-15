@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-header-logo',
-  templateUrl: './header-logo.component.html',
-  styleUrls: ['./header-logo.component.css']
+    selector: 'app-header-logo',
+    templateUrl: './header-logo.component.html',
+    styleUrls: ['./header-logo.component.css'],
+    standalone: false
 })
 export class HeaderLogoComponent implements OnInit {
 

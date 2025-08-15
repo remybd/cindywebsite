@@ -3,9 +3,10 @@ import {HomeDataMock} from "../datas/home-data.mock";
 import {NextPreviousPageService} from '../structure/services/next-previous-page-management/next-previous-page.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.css'],
+    standalone: false
 })
 export class HomeComponent implements OnInit {
   entryButtonArray = HomeDataMock.entryButtonArray;

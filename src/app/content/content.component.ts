@@ -8,9 +8,10 @@ import {Title} from '@angular/platform-browser';
 import {PasswordStorageService} from "../structure/services/password-storage.service";
 
 @Component({
-  selector: 'app-content',
-  templateUrl: './content.component.html',
-  styleUrls: ['./content.component.css']
+    selector: 'app-content',
+    templateUrl: './content.component.html',
+    styleUrls: ['./content.component.css'],
+    standalone: false
 })
 export class ContentComponent implements OnInit {
   content: ContentPageModel;

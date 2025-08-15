@@ -5,9 +5,10 @@ import {Observable} from 'rxjs';
 
 
 @Component({
-  selector: 'app-header-nav',
-  templateUrl: './header-nav.component.html',
-  styleUrls: ['./header-nav.component.css']
+    selector: 'app-header-nav',
+    templateUrl: './header-nav.component.html',
+    styleUrls: ['./header-nav.component.css'],
+    standalone: false
 })
 export class HeaderNavComponent implements OnInit {
   nextPage$: Observable<string | null>;

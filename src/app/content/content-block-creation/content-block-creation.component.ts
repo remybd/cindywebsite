@@ -6,9 +6,10 @@ import {ContentVideoModel} from '../models/content-video.model';
 import {ContentLegendModel} from '../models/content-legend.model';
 
 @Component({
-  selector: 'app-content-block-creation',
-  templateUrl: './content-block-creation.component.html',
-  styleUrls: ['./content-block-creation.component.css']
+    selector: 'app-content-block-creation',
+    templateUrl: './content-block-creation.component.html',
+    styleUrls: ['./content-block-creation.component.css'],
+    standalone: false
 })
 export class ContentBlockCreationComponent implements OnInit {
   @Input() blockList: ContentBlockModel[] = [];
