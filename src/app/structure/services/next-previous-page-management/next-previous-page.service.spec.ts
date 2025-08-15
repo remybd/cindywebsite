@@ -13,7 +13,7 @@ const entryButtonArrayForTest = [
 ];
 
 describe('ContentTypeManagerService', () => {
-  var service: NextPreviousPageService;
+  let service: NextPreviousPageService;
 
   beforeEach(() => TestBed.configureTestingModule({
     imports: [
@@ -23,7 +23,7 @@ describe('ContentTypeManagerService', () => {
 
   beforeEach(() => {
     HomeDataMock.entryButtonArray = entryButtonArrayForTest;
-    service = TestBed.get(NextPreviousPageService);
+    service = TestBed.inject(NextPreviousPageService);
   });
 
   it('should be created', () => {
