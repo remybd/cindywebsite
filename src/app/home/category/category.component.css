@@ -1,3 +1,9 @@
+.filters {
+  display: flex;
+  gap: 4px;
+}
+
+
 
 .entry-button-container {
   display: flex;

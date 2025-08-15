@@ -9,5 +9,6 @@ export enum CategoryType {
   visualIdentity = 'Visual Identity',
   illustration = 'Illustration',
   retail = 'Retail',
-  empty = ''
+  empty = '',
+  socialMedia = "Social Media",
 }

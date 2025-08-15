@@ -18,6 +18,7 @@ import {AppRoutingModule} from "../../app-routing.module";
 })
 export class CategoryComponent implements OnInit{
   entryButtonArray = [...HomeDataMock.entryButtonArray];
+  categoryType = CategoryType;
   contentType = Object.values(CategoryType);
   contentPagePath = HomeDataMock.contentPagePath;
   categoryPagePath = HomeDataMock.categoryPagePath;

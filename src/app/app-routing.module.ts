@@ -7,6 +7,7 @@ import {LayoutHomePageComponent} from './structure/layouts/home-page/layout-home
 import {AboutComponent} from './about/about.component';
 import {environment} from "../environments/environment";
 import {CategoryComponent} from "./home/category/category.component";
+import {SocialMediaComponent} from "./social-media/social-media.component";
 
 const routes: Routes = [
 
@@ -19,6 +20,7 @@ const routes: Routes = [
         path: 'category',
         component: HomeComponent,
         children: [
+          { path: 'Social Media', component: SocialMediaComponent },
           { path: ':category', component: CategoryComponent }
         ]
       },

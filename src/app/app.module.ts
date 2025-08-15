@@ -22,6 +22,8 @@ import {AboutComponent} from './about/about.component';
 import {UnlockFormComponent} from './content/unlock-form/unlock-form.component';
 import {FormsModule} from "@angular/forms";
 import {CategoryComponent} from "./home/category/category.component";
+import {SocialMediaComponent} from "./social-media/social-media.component";
+import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -42,13 +44,15 @@ import {CategoryComponent} from "./home/category/category.component";
     ContentBlockCreationComponent,
     AboutComponent,
     UnlockFormComponent,
-    CategoryComponent
+    CategoryComponent,
+    SocialMediaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HammerModule,
-    FormsModule
+    FormsModule,
+    NgOptimizedImage
   ],
   providers: [
     {

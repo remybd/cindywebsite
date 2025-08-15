@@ -9,11 +9,6 @@
   cursor: pointer;
   position: relative;
   text-decoration: none;
-  color: var(--font-color-main);
-}
-
-.header-link:hover {
-  color: var(--font-color-hover-main);
 }
 
 

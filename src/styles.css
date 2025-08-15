@@ -26,6 +26,10 @@ a:visited {
 }
 
 
+.link-text-underline {
+  color: var(--font-color-main);
+}
+
 .link-text-underline:after {
   content: "";
   height: 1px;
