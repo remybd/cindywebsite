@@ -1,0 +1,52 @@
+@if (!category) {
+  <div class="filters">
+    <button type="button" class="filter" (click)="reset()">All</button>
+    @for (category of contentType; track category) {
+      <button type="button" class="filter" (click)="filterBy(category)">{{ category }}</button>
+    }
+  </div>
+
+  <div class="filters">
+    <a class="filter" routerLink="/" >All</a>
+    @for (category of contentType; track category) {
+      <a class="filter" [routerLink]="categoryPagePath + category" >{{category}}</a>
+    }
+  </div>
+}
+
+<h1 class="main-title">
+  {{category}}
+</h1>
+
+<div class="entry-button-container">
+  @for (entryButton of entryButtonArray; track entryButton.key) {
+    <a [routerLink]="contentPagePath + entryButton.key" class="entry-button">
+      <app-button-moving-dashes [imageUrl]="entryButton.imageUrl">
+        @if (entryButton.title) {
+          <h2 class="entry-button-title">
+            {{ entryButton.title }}
+          </h2>
+        }
+        @if (entryButton.subtitle) {
+          <h3 class="entry-button-subtitle">
+            {{ entryButton.subtitle }}
+          </h3>
+        }
+        @if ((entryButton.title || entryButton.subtitle) && entryButton.type) {
+          <h3 class="entry-button-separator">
+            -
+          </h3>
+        }
+        @if (entryButton.type) {
+          <h3 class="entry-button-type">
+            <span>{{ entryButton.type }}</span>
+          </h3>
+        }
+        @if (entryButton.lock) {
+          <i class="material-icons lock">lock</i>
+        }
+      </app-button-moving-dashes>
+
+    </a>
+  }
+</div>

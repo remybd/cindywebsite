@@ -1,0 +1,45 @@
+
+.entry-button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.entry-button {
+  margin: 40px;
+}
+
+.entry-button .entry-button-title, .entry-button .entry-button-subtitle,
+.entry-button .entry-button-separator, .entry-button .entry-button-type {
+  margin: 0px;
+  font-size: 22px;
+}
+
+.entry-button-title, .entry-button-subtitle {
+  text-transform: uppercase;
+}
+
+.entry-button-title {
+  font-weight: 900;
+}
+
+.entry-button-subtitle, .entry-button-separator, .entry-button-type {
+  font-weight: 300;
+}
+
+.entry-button-type {
+  font-style: italic;
+}
+
+.lock {
+  margin-top: 32px;
+}
+
+
+/* mobile */
+@media screen and (max-width: 992px) {
+  .entry-button {
+    margin: 24px;
+  }
+}

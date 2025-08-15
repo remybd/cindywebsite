@@ -6,6 +6,7 @@ import {LayoutLogoComponent} from './structure/layouts/empty/layout-logo.compone
 import {LayoutHomePageComponent} from './structure/layouts/home-page/layout-home-page.component';
 import {AboutComponent} from './about/about.component';
 import {environment} from "../environments/environment";
+import {CategoryComponent} from "./home/category/category.component";
 
 const routes: Routes = [
 
@@ -14,7 +15,17 @@ const routes: Routes = [
     path: '',
     component: LayoutLogoComponent,
     children: [
-      { path: 'home', component: HomeComponent, title: environment.titleBase + 'Home' },
+      {
+        path: 'category',
+        component: HomeComponent,
+        children: [
+          { path: ':category', component: CategoryComponent }
+        ]
+      },
+      { path: 'home', component: HomeComponent, title: environment.titleBase + 'Home',
+        children: [
+          { path: '', component: CategoryComponent }
+        ]},
       { path: '',  redirectTo: '/home', pathMatch: 'full'},
     ]
   },

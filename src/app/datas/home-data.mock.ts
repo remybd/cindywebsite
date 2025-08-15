@@ -1,204 +1,205 @@
 import {EntryButtonModel} from '../home/models/entry-button.model';
-import {ContentType} from './content-type.enum';
+import {CategoryType} from './category';
 
 export class HomeDataMock {
-  static preCurrentPagePath: string = '/content/';
+  public static contentPagePath = '/content/';
+  public static categoryPagePath = '/category/';
 
 
   static entryButtonVerresNikon: EntryButtonModel = new EntryButtonModel('Nikon Lenswear', 'Tote bag',
-    ContentType.illustration,
+    CategoryType.illustration,
     '/assets/img/home/toteBagNikon@2x.png',
     'nikon');
 
   static entryButtonTheErable: EntryButtonModel = new EntryButtonModel('Maple tea', 'Tea box',
-    ContentType.packaging,
+    CategoryType.packaging,
     '/assets/img/home/theErable@2x.png',
     'the-erable');
 
   static entryButtonCentrePompidou: EntryButtonModel = new EntryButtonModel('Centre Pompidou', 'Brochure',
-    ContentType.edition,
+    CategoryType.edition,
     '/assets/img/home/centrePompidou@2x.png',
     'pompidou');
 
   static entryButtonCaisseEpargneHandball: EntryButtonModel = new EntryButtonModel('Caisse d\'Épargne', 'Handball',
-    ContentType.poster,
+    CategoryType.poster,
     '/assets/img/home/caisseEpargneHandball@2x.png',
     'caisse-epargne-handball');
 
   static entryButtonCaisseEpargneSecuriteRoutiere: EntryButtonModel = new EntryButtonModel('Caisse d\'Épargne', 'Safety road',
-    ContentType.poster,
+    CategoryType.poster,
     '/assets/img/home/ce-pre-vention-routie-re-img@2x.png',
     'caisse-epargne-securite-routiere');
 
   static entryButtonRadioCanada: EntryButtonModel = new EntryButtonModel('Ici radio Canada', '',
-    ContentType.poster,
+    CategoryType.poster,
     '/assets/img/home/radioCanadaStructureEtVariation@2x.png',
     '');
 
   static entryButtonAmbigu: EntryButtonModel = new EntryButtonModel('Ambigü', 'Magazine',
-    ContentType.edition,
+    CategoryType.edition,
     '/assets/img/home/ambigu@2x.png',
     '');
 
   static entryButtonEpiderme: EntryButtonModel = new EntryButtonModel('Épiderme', 'Magazine',
-    ContentType.edition,
+    CategoryType.edition,
     '/assets/img/home/epiderme@2x.png',
     '');
 
   static entryButtonEnMouvement: EntryButtonModel = new EntryButtonModel('En mouvement', 'Publishing company',
-    ContentType.visualIdentity,
+    CategoryType.visualIdentity,
     '/assets/img/home/enMouvementBelAmiCover@2x.png',
     'en-mouvement');
 
   static entryButtonDentifrice: EntryButtonModel = new EntryButtonModel('3X/J', 'Dental first kid\'s kit',
-    ContentType.packaging,
+    CategoryType.packaging,
     '/assets/img/home/dentifrice@2x.png',
     '3xj-dentifrice');
 
 
   static entryButtonAbbePierre: EntryButtonModel = new EntryButtonModel('Fondation Abbé Pierre',
     'Les Pics D\'or',
-    ContentType.postersAndMotionDesign,
+    CategoryType.postersAndMotionDesign,
     '/assets/img/home/abbe-pierre@2x.png',
     'abbe-pierre');
 
   static entryButtonNuitEau: EntryButtonModel = new EntryButtonModel('Unicef',
     'La nuit de l\'eau',
-    ContentType.edition,
+    CategoryType.edition,
     '/assets/img/home/verre-deau-ok-clem@2x.png',
     'nuit-eau');
 
 
   static entryButtonCrazyHorse: EntryButtonModel = new EntryButtonModel('Crazy Horse',
     'Greeting card',
-    ContentType.empty,
+    CategoryType.empty,
     '/assets/img/home/crazy-horse@2x.png',
     'crazy-horse');
 
 
   static entryButtonFondationDeFrance: EntryButtonModel = new EntryButtonModel('Fondation de France',
     'Covid19',
-    ContentType.motionDesign,
+    CategoryType.motionDesign,
     '/assets/img/home/fdf-covid@2x.png',
     'fdf-covid');
 
   static entryButtonCroixRouge: EntryButtonModel = new EntryButtonModel('French Red Cross',
     'Call for donations',
-    ContentType.poster,
+    CategoryType.poster,
     '/assets/img/home/croix-rouge@2x.png',
     'croix-rouge');
 
   static entryButtonFranceGalop: EntryButtonModel = new EntryButtonModel('France Galop',
     '2019 Campaign',
-    ContentType.postersAndMotionDesign,
+    CategoryType.postersAndMotionDesign,
     '/assets/img/home/france-galop@2x.png',
     'france-galop');
 
   static entryButtonPetitNavire: EntryButtonModel = new EntryButtonModel('Petit Navire',
     '2020 Campaign',
-    ContentType.postersAndMotionDesign,
+    CategoryType.postersAndMotionDesign,
     '/assets/img/home/petit_navire.png',
     'petit-navire');
 
   static entryButtonLapeyrePro: EntryButtonModel = new EntryButtonModel('Lapeyre Pro',
     '360 Communication',
-    ContentType.postersAndMotionDesign,
+    CategoryType.postersAndMotionDesign,
     '/assets/img/home/lapeyre-pro@2x.png',
     'lapeyre-pro');
 
   static entryButtonLapeyre: EntryButtonModel = new EntryButtonModel('Lapeyre',
     '360 Communication',
-    ContentType.postersAndMotionDesign,
+    CategoryType.postersAndMotionDesign,
     '/assets/img/home/lapeyre@2x.png',
     'lapeyre');
 
   static entryButtonLescure: EntryButtonModel = new EntryButtonModel('Maison Lescure',
     '',
-    ContentType.motionDesign,
+    CategoryType.motionDesign,
     '/assets/img/home/lescure.png',
     'lescure');
 
   static entryButtonNaturalia: EntryButtonModel = new EntryButtonModel('Naturalia',
     'Local Campaign',
-    ContentType.motionDesign,
+    CategoryType.motionDesign,
     '/assets/img/home/naturalia.png',
     'naturalia');
 
   static entryButtonOpel: EntryButtonModel = new EntryButtonModel('Opel',
     '360 Communication',
-    ContentType.motionDesign,
+    CategoryType.motionDesign,
     '/assets/img/home/opel.png',
     'opel');
 
   static entryButtonPlantaFin: EntryButtonModel = new EntryButtonModel('Planta Fin',
     '',
-    ContentType.motionDesign,
+    CategoryType.motionDesign,
     '/assets/img/home/planta-fin.png',
     'planta-fin');
 
   static entryButtonCaisseEpargneParis2024: EntryButtonModel = new EntryButtonModel('Caisse d\'Épargne',
     'Paris 2024',
-    ContentType.motionDesign,
+    CategoryType.motionDesign,
     '/assets/img/home/caisse-epargne-paris-2024.png',
     'caisse-epargne-paris-2024');
 
   static entryButtonMaxiCashChristmas: EntryButtonModel = new EntryButtonModel('Maxi Cash',
     'Christmas 2022',
-    ContentType.postersAndMotionDesign,
+    CategoryType.postersAndMotionDesign,
     '/assets/img/home/maxi_cash_joy_of_giving.png',
     'maxi-cash-christmas');
 
   static entryButtonMaxiCashPaynow: EntryButtonModel = new EntryButtonModel('Maxi Cash',
     'Paynow',
-    ContentType.motionDesign,
+    CategoryType.motionDesign,
     '/assets/img/home/maxi_cash_paynow_video.png',
     'maxi-cash-paynow');
 
   static entryButtonPTC: EntryButtonModel = new EntryButtonModel('PTC',
     'Fare Increase',
-    ContentType.motionDesign,
+    CategoryType.motionDesign,
     '/assets/img/home/PTC_video_fare_increase.png',
     'ptc');
 
   static entryButtonPhilips: EntryButtonModel = new EntryButtonModel('Philips',
     'A4 Tent Cards',
-    ContentType.retail,
+    CategoryType.retail,
     '/assets/img/home/philips.png',
     'philips');
 
   static entryButtonRare: EntryButtonModel = new EntryButtonModel('Rare',
     'Light Up for Rare',
-    ContentType.motionDesign,
+    CategoryType.motionDesign,
     '/assets/img/home/rare_video.png',
     'rare');
 
   static entryButtonSPC: EntryButtonModel = new EntryButtonModel('SPC',
     'New Mineral Water',
-    ContentType.poster,
+    CategoryType.poster,
     '/assets/img/home/spc.png',
     'spc');
 
   static entryButtonNyc: EntryButtonModel = new EntryButtonModel('NYC',
     'Young ChangeMakers Grant',
-    ContentType.poster,
+    CategoryType.poster,
     '/assets/img/home/nyc.png',
     'nyc');
 
   static entryButtonWSG: EntryButtonModel = new EntryButtonModel('WSG',
     'WSG-SSG-Joint undergraduate scholarship',
-    ContentType.postersAndMotionDesign,
+    CategoryType.postersAndMotionDesign,
     '/assets/img/home/wsg.png',
     'wsg');
 
   static entryButtonXepa: EntryButtonModel = new EntryButtonModel('Xepa',
     'Cough Solutions',
-    ContentType.tvCommercial,
+    CategoryType.tvCommercial,
     '/assets/img/home/xepa.png',
     'xepa');
 
   static entryButtonAnaisAntoine: EntryButtonModel = new EntryButtonModel('Anais and Antoine',
     '',
-    ContentType.announcement,
+    CategoryType.announcement,
     '/assets/img/home/faire-part-antoine-anais.png',
     'anais-antoine');
 

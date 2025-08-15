@@ -1,4 +1,4 @@
-export enum ContentType {
+export enum CategoryType {
   edition = 'Publishing',
   motionDesign = 'Motion Design',
   tvCommercial = 'TV Commercial',
