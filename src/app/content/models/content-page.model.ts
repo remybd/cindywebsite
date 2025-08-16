@@ -1,4 +1,3 @@
-import {ContentImageModel} from "./content-image.model";
 import {ContentBlockModel} from './content-block.model';
 
 export class ContentPageModel{

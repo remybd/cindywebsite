@@ -20,7 +20,11 @@ const routes: Routes = [
       {
         path: 'social-media', component: HomeComponent, title: environment.titleBase + 'Social Media',
         children: [
-          {path: ':key', component: ScPostComponent},
+          {path: 'content', component: SocialMediaComponent,
+            children: [
+              {path: ':key', component: ScPostComponent},
+            ]
+          },
           {path: '', component: SocialMediaComponent}
         ]
       },

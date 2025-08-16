@@ -1,54 +1,55 @@
 import {ContentPageModel} from "../content/models/content-page.model";
 import {ContentSocialMediaModel} from "../content/models/content-social-media.model";
+import {ContentImageCommentModel} from "../content/models/content-image-comment.model";
 
 export class SocialMediaDataMock {
   public static contentSocialMediaPath = '/category/Social Media/';
 
   static caringSgMusic: ContentSocialMediaModel = new ContentSocialMediaModel(
-    'Caisse d\'épargne - official supporter of the French Handball team',
-    'Poster design for the men\'s and women\'s handball world cup',
-    'Agency: Altmann + Pacreau / Copywriter : Jeanne Teissier / Jersey Photograph : David Meignan / Woman Photograph : Etienne Garnier',
-    [],
+    'Caring SG Commuters - Tuning into acts of care',
+    '',
+    'Agency: Adred Creative',
+    [new ContentImageCommentModel('/assets/img/social-media/caring-sg/music.gif', '/assets/img/social-media/caring-sg/music_comments.png')],
     '/assets/img/social-media/caring-sg/music.gif',
     'music'
   );
   static caringSgTree: ContentSocialMediaModel = new ContentSocialMediaModel(
-    'Caisse d\'épargne - official supporter of the French Handball team',
-    'Poster design for the men\'s and women\'s handball world cup',
-    'Agency: Altmann + Pacreau / Copywriter : Jeanne Teissier / Jersey Photograph : David Meignan / Woman Photograph : Etienne Garnier',
-    [],
+    'Caring SG Commuters - Celebrate the Festive season',
+    '',
+    'Agency: Adred Creative',
+    [new ContentImageCommentModel('/assets/img/social-media/caring-sg/tree.gif', '/assets/img/social-media/caring-sg/tree_comments.png')],
     '/assets/img/social-media/caring-sg/tree.gif',
     'tree'
   );
   static caringSgWalk: ContentSocialMediaModel = new ContentSocialMediaModel(
-    'Caisse d\'épargne - official supporter of the French Handball team',
-    'Poster design for the men\'s and women\'s handball world cup',
-    'Agency: Altmann + Pacreau / Copywriter : Jeanne Teissier / Jersey Photograph : David Meignan / Woman Photograph : Etienne Garnier',
-    [],
+    'Caring SG Commuters -  Give a hand and make a difference',
+    '',
+    'Agency: Adred Creative',
+    [new ContentImageCommentModel('/assets/img/social-media/caring-sg/walk.gif', '/assets/img/social-media/caring-sg/walk_comments.png')],
     '/assets/img/social-media/caring-sg/walk.gif',
     'walk'
   );
 
   static baushLombHydrating: ContentSocialMediaModel = new ContentSocialMediaModel(
     'Caisse d\'épargne - official supporter of the French Handball team',
-    'Poster design for the men\'s and women\'s handball world cup',
-    'Agency: Altmann + Pacreau / Copywriter : Jeanne Teissier / Jersey Photograph : David Meignan / Woman Photograph : Etienne Garnier',
+    '',
+    'Agency: Adred Creative',
     [],
     '/assets/img/social-media/baush-lomb/hydrating.png',
     'hydrating'
   );
   static baushLombLightweight: ContentSocialMediaModel = new ContentSocialMediaModel(
     'Caisse d\'épargne - official supporter of the French Handball team',
-    'Poster design for the men\'s and women\'s handball world cup',
-    'Agency: Altmann + Pacreau / Copywriter : Jeanne Teissier / Jersey Photograph : David Meignan / Woman Photograph : Etienne Garnier',
+    '',
+    'Agency: Adred Creative',
     [],
     '/assets/img/social-media/baush-lomb/lightweight.png',
     'lightweight'
   );
   static baushLombProtective: ContentSocialMediaModel = new ContentSocialMediaModel(
     'Caisse d\'épargne - official supporter of the French Handball team',
-    'Poster design for the men\'s and women\'s handball world cup',
-    'Agency: Altmann + Pacreau / Copywriter : Jeanne Teissier / Jersey Photograph : David Meignan / Woman Photograph : Etienne Garnier',
+    '',
+    'Agency: Adred Creative',
     [],
     '/assets/img/social-media/baush-lomb/protective.png',
     'protective'

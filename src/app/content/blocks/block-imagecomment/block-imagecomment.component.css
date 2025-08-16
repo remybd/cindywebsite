@@ -1,0 +1,18 @@
+:host {
+  display: flex;
+}
+
+.content-image,
+.content-comment {
+  height: 70vh;
+}
+
+/* mobile */
+@media screen and (max-width: 992px) {
+  :host {
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--background-main);
+    gap: 8px;
+  }
+}

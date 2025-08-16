@@ -1,10 +1,9 @@
 import {ChangeDetectionStrategy, Component, inject, OnInit} from '@angular/core';
-import {Dialog, DIALOG_DATA, DialogRef} from "@angular/cdk/dialog";
+import {Dialog, DialogRef} from "@angular/cdk/dialog";
 import {ScPostDialogComponent} from "../sc-post-dialog/sc-post-dialog.component";
-import {Router} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 import {SocialMediaDataMock} from "../../datas/social-media.mock";
-import {HomeDataMock} from "../../datas/home-data.mock";
-import {CategoryType} from "../../datas/category";
+import {environment} from "../../../environments/environment";
 
 @Component({
   selector: 'app-sc-post',
@@ -13,18 +12,34 @@ import {CategoryType} from "../../datas/category";
   standalone: false,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ScPostComponent implements OnInit{
+export class ScPostComponent implements OnInit {
   dialog = inject(Dialog);
   router = inject(Router);
+  route = inject(ActivatedRoute);
 
   ngOnInit(): void {
-    this.openDialog();
+    this.getContentFromUrl();
+
   }
 
-  openDialog(): void {
-    const dialogRef: DialogRef = this.dialog.open<string>(ScPostDialogComponent);
+  getContentFromUrl(): void {
+    this.route.paramMap.subscribe(params => {
+      console.log(params);
+      const key = params.get('key');
+      if (!key || !(key in SocialMediaDataMock.socialMediaDic)) {
+        return;
+      }
+      this.openDialog(key);
+    });
+  }
+
+  openDialog(key: string): void {
+    const dialogRef: DialogRef = this.dialog.open<string>(ScPostDialogComponent, {
+      data: {key: key.toString()},
+    });
+
     dialogRef.closed.subscribe(result => {
-      this.router.navigateByUrl(HomeDataMock.categoryPagePath + CategoryType.socialMedia);
+      this.router.navigateByUrl('/social-media');
     });
   }
 }

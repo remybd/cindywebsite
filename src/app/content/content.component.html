@@ -1,26 +1,14 @@
-<div *ngIf="content" class="content-container" (swipeRight)="swipeRight()" (swipeLeft)="swipeLeft()">
+@if(content) {
+  <div class="content-container" (swipeRight)="swipeRight()" (swipeLeft)="swipeLeft()">
+    @if(content.lock && !(passwordStorage.validPassword$ | async)){
+      <app-unlock-form ></app-unlock-form>
+    }
 
-  <app-unlock-form *ngIf="content.lock && !(passwordStorage.validPassword$ | async)"></app-unlock-form>
-
-  <div class="content-list-blocks" [class.locked]="content.lock && !(passwordStorage.validPassword$ | async)">
-    <app-content-block-creation [blockList]="content.blockList"></app-content-block-creation>
-  </div>
-
-  <footer class="content-footer">
-    <app-header-logo></app-header-logo>
-
-    <div class="content-footer-text">
-      <h1 *ngIf="content.title" class="content-title">
-        {{content.title}}
-      </h1>
-      <h2 *ngIf="content.subtitle" class="content-subtitle">
-        {{content.subtitle}}
-      </h2>
-      <p *ngIf="content.credits" class="content-credits">
-        {{content.credits}}
-      </p>
+    <div class="content-list-blocks" [class.locked]="content.lock && !(passwordStorage.validPassword$ | async)">
+      <app-content-block-creation [blockList]="content.blockList"></app-content-block-creation>
     </div>
 
-    <app-header-nav></app-header-nav>
-  </footer>
-</div>
+    <app-content-footer [content]="content"></app-content-footer>
+  </div>
+
+}

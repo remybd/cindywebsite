@@ -1,1 +1,11 @@
-<p>sc-post-dialog works!</p>
+@if (content && content.posts.length > 0) {
+  <!--  <div class="content-container" (swipeRight)="swipeRight()" (swipeLeft)="swipeLeft()">-->
+  <div class="content-container">
+    <div class="content-list-blocks">
+      <app-block-imagecomment [post]="content.posts[0]"></app-block-imagecomment>
+    </div>
+
+    <app-content-footer [content]="content"></app-content-footer>
+  </div>
+}
+

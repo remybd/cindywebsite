@@ -1,6 +1,6 @@
-:host {
-  height: 600px;
-  width: 1000px;
-  background-color: #4f5bd5;
-  display: block;
+.content-list-blocks {
+  margin-bottom: calc(12vh);
+}
+
+@media screen and (max-width: 992px) {
 }

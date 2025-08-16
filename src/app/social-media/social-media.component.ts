@@ -10,6 +10,4 @@ import {SocialMediaDataMock} from "../datas/social-media.mock";
 })
 export class SocialMediaComponent {
   socialMedias = Object.values(SocialMediaDataMock.socialMediaDic);
-  contentSocialMediaPath = SocialMediaDataMock.contentSocialMediaPath;
-
 }

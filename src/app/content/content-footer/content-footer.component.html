@@ -1,0 +1,27 @@
+@if(content){
+  <footer class="content-footer">
+    <app-header-logo></app-header-logo>
+
+    <div class="content-footer-text">
+      @if (content.title) {
+        <h1 class="content-title">
+          {{ content.title }}
+        </h1>
+      }
+
+      @if (content.subtitle) {
+        <h2 class="content-subtitle">
+          {{ content.subtitle }}
+        </h2>
+      }
+
+      @if (content.credits) {
+        <p class="content-credits">
+          {{ content.credits }}
+        </p>
+      }
+    </div>
+
+    <app-header-nav></app-header-nav>
+  </footer>
+}

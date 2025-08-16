@@ -28,6 +28,8 @@ import {DialogModule} from "@angular/cdk/dialog";
 import {ScPostDialogComponent} from "./social-media/sc-post-dialog/sc-post-dialog.component";
 import {FiltersComponent} from "./home/filters/filters.component";
 import {FilteredContentListComponent} from "./home/filtered-content-list/filtered-content-list.component";
+import {BlockImagecommentComponent} from "./content/blocks/block-imagecomment/block-imagecomment.component";
+import {ContentFooterComponent} from "./content/content-footer/content-footer.component";
 
 @NgModule({
   declarations: [
@@ -51,7 +53,9 @@ import {FilteredContentListComponent} from "./home/filtered-content-list/filtere
     SocialMediaComponent,
     ScPostComponent,
     ScPostDialogComponent,
-    FilteredContentListComponent
+    FilteredContentListComponent,
+    BlockImagecommentComponent,
+    ContentFooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,18 +1,18 @@
-import {ContentBlockModel} from './content-block.model';
+import {ContentImageCommentModel} from "./content-image-comment.model";
 
 export class ContentSocialMediaModel {
-  title: string = "";
-  subtitle: string = "";
-  credits: string = "";
-  blockList: ContentBlockModel[] = [];
-  homeImageUrl: string = '';
-  key: string = '';
+  title = '';
+  subtitle = '';
+  credits = '';
+  posts: ContentImageCommentModel[] = [];
+  homeImageUrl = '';
+  key = '';
 
-  constructor(title: string, subtitle: string, credits: string, blockList: ContentBlockModel[], homeImageUrl: string, key: string) {
+  constructor(title: string, subtitle: string, credits: string, posts: ContentImageCommentModel[], homeImageUrl: string, key: string) {
     this.title = title;
     this.subtitle = subtitle;
     this.credits = credits;
-    this.blockList = blockList;
+    this.posts = posts;
     this.homeImageUrl = homeImageUrl;
     this.key = key;
   }
