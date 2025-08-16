@@ -22,12 +22,12 @@ export class HomeDataMock {
     'pompidou');
 
   static entryButtonCaisseEpargneHandball: EntryButtonModel = new EntryButtonModel('Caisse d\'Épargne', 'Handball',
-    [],
+    [CategoryType.campaign360],
     '/assets/img/home/caisseEpargneHandball@2x.png',
     'caisse-epargne-handball');
 
   static entryButtonCaisseEpargneSecuriteRoutiere: EntryButtonModel = new EntryButtonModel('Caisse d\'Épargne', 'Safety road',
-    [],
+    [CategoryType.campaign360],
     '/assets/img/home/ce-pre-vention-routie-re-img@2x.png',
     'caisse-epargne-securite-routiere');
 
@@ -59,7 +59,7 @@ export class HomeDataMock {
 
   static entryButtonAbbePierre: EntryButtonModel = new EntryButtonModel('Fondation Abbé Pierre',
     'Les Pics D\'or',
-    [CategoryType.motionDesign],
+    [CategoryType.campaign360, CategoryType.motionDesign],
     '/assets/img/home/abbe-pierre@2x.png',
     'abbe-pierre');
 
@@ -85,31 +85,31 @@ export class HomeDataMock {
 
   static entryButtonCroixRouge: EntryButtonModel = new EntryButtonModel('French Red Cross',
     'Call for donations',
-    [],
+    [CategoryType.campaign360,],
     '/assets/img/home/croix-rouge@2x.png',
     'croix-rouge');
 
   static entryButtonFranceGalop: EntryButtonModel = new EntryButtonModel('France Galop',
     '2019 Campaign',
-    [CategoryType.motionDesign],
+    [CategoryType.campaign360, CategoryType.motionDesign],
     '/assets/img/home/france-galop@2x.png',
     'france-galop');
 
   static entryButtonPetitNavire: EntryButtonModel = new EntryButtonModel('Petit Navire',
     '2020 Campaign',
-    [CategoryType.motionDesign],
+    [CategoryType.campaign360, CategoryType.motionDesign],
     '/assets/img/home/petit_navire.png',
     'petit-navire');
 
   static entryButtonLapeyrePro: EntryButtonModel = new EntryButtonModel('Lapeyre Pro',
     '360 Communication',
-    [CategoryType.motionDesign],
+    [CategoryType.campaign360],
     '/assets/img/home/lapeyre-pro@2x.png',
     'lapeyre-pro');
 
   static entryButtonLapeyre: EntryButtonModel = new EntryButtonModel('Lapeyre',
     '360 Communication',
-    [CategoryType.motionDesign],
+    [CategoryType.campaign360, CategoryType.motionDesign],
     '/assets/img/home/lapeyre@2x.png',
     'lapeyre');
 
@@ -163,7 +163,7 @@ export class HomeDataMock {
 
   static entryButtonPhilips: EntryButtonModel = new EntryButtonModel('Philips',
     'A4 Tent Cards',
-    [],
+    [CategoryType.campaign360,],
     '/assets/img/home/philips.png',
     'philips');
 
@@ -175,25 +175,25 @@ export class HomeDataMock {
 
   static entryButtonSPC: EntryButtonModel = new EntryButtonModel('SPC',
     'New Mineral Water',
-    [],
+    [CategoryType.campaign360,],
     '/assets/img/home/spc.png',
     'spc');
 
   static entryButtonNyc: EntryButtonModel = new EntryButtonModel('NYC',
     'Young ChangeMakers Grant',
-    [],
+    [CategoryType.campaign360,],
     '/assets/img/home/nyc.png',
     'nyc');
 
   static entryButtonWSG: EntryButtonModel = new EntryButtonModel('WSG',
     'WSG-SSG-Joint undergraduate scholarship',
-    [CategoryType.motionDesign],
+    [CategoryType.campaign360, CategoryType.motionDesign],
     '/assets/img/home/wsg.png',
     'wsg');
 
   static entryButtonXepa: EntryButtonModel = new EntryButtonModel('Xepa',
     'Cough Solutions',
-    [],
+    [CategoryType.motionDesign],
     '/assets/img/home/xepa.png',
     'xepa');
 
