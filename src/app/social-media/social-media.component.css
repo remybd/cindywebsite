@@ -12,3 +12,17 @@
 .button-image {
   width: 25vw;
 }
+
+/* mobile */
+@media screen and (max-width: 992px) {
+  .social-medias {
+    padding: 24px;
+    gap: 2px 4px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .button-image {
+    width: 90vw;
+  }
+}

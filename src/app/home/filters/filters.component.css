@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 40px;
   padding: 16px 0px;
 }
 
@@ -17,4 +17,14 @@
   cursor: pointer;
 }
 
+/* mobile */
+@media screen and (max-width: 992px) {
+  .filters {
+    gap: 24px;
+  }
 
+  .filter {
+    font-size: 16px ;
+  }
+
+}
