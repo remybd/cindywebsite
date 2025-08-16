@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, inject, OnInit} from '@angular/core';
 import {NextPreviousPageService} from '../structure/services/next-previous-page-management/next-previous-page.service';
 
 @Component({
@@ -8,12 +8,9 @@ import {NextPreviousPageService} from '../structure/services/next-previous-page-
   standalone: false
 })
 export class HomeComponent implements OnInit {
-  constructor(private nextPreviousPageService: NextPreviousPageService) {
-  }
+  nextPreviousPageService: NextPreviousPageService = inject(NextPreviousPageService);
 
   ngOnInit() {
     this.nextPreviousPageService.currentPageKey = null;
   }
-
-
 }

@@ -21,12 +21,13 @@ import {CustomHammerConfig} from './hammer-gesture.config';
 import {AboutComponent} from './about/about.component';
 import {UnlockFormComponent} from './content/unlock-form/unlock-form.component';
 import {FormsModule} from "@angular/forms";
-import {CategoryComponent} from "./home/category/category.component";
-import {SocialMediaComponent} from "./social-media/social-media.component";
+import {SocialMediaComponent} from './social-media/social-media.component';
 import {NgOptimizedImage} from "@angular/common";
 import {ScPostComponent} from "./social-media/sc-post/sc-post.component";
 import {DialogModule} from "@angular/cdk/dialog";
 import {ScPostDialogComponent} from "./social-media/sc-post-dialog/sc-post-dialog.component";
+import {FiltersComponent} from "./home/filters/filters.component";
+import {FilteredContentListComponent} from "./home/filtered-content-list/filtered-content-list.component";
 
 @NgModule({
   declarations: [
@@ -47,10 +48,10 @@ import {ScPostDialogComponent} from "./social-media/sc-post-dialog/sc-post-dialo
     ContentBlockCreationComponent,
     AboutComponent,
     UnlockFormComponent,
-    CategoryComponent,
     SocialMediaComponent,
     ScPostComponent,
-    ScPostDialogComponent
+    ScPostDialogComponent,
+    FilteredContentListComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +59,8 @@ import {ScPostDialogComponent} from "./social-media/sc-post-dialog/sc-post-dialo
     HammerModule,
     FormsModule,
     NgOptimizedImage,
-    DialogModule
+    DialogModule,
+    FiltersComponent
   ],
   providers: [
     {

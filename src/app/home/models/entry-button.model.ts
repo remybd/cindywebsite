@@ -3,19 +3,19 @@ import {CategoryType} from '../../datas/category';
 export class EntryButtonModel{
   title: string = "";
   subtitle: string = "";
-  type: CategoryType = CategoryType.empty;
+  categories: CategoryType[] = [];
   imageUrl: string = "";
   key: string = "";
   lock: boolean = false;
 
-  constructor(title: string = "", subtitle : string = "", type : CategoryType = CategoryType.empty,
+  constructor(title: string = "", subtitle : string = "", categories : CategoryType[] = [],
               imageUrl : string = "", key : string = "", lock: boolean = false) {
     this.title = title;
     this.subtitle = subtitle;
-    this.type = type;
+    this.categories = categories;
     this.imageUrl = imageUrl;
     this.key = key;
-    this.lock = lock
+    this.lock = lock;
   }
 
 }

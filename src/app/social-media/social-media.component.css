@@ -1,7 +1,14 @@
 .social-medias {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+
   margin: 0 auto;
-  width: 1115px;
   gap: 4px 8px;
+  padding: 40px;
+
+}
+
+.button-image {
+  width: 25vw;
 }

@@ -1,12 +1,7 @@
-<h2 class="main-title">
-  Social Media
-</h2>
-
-
 <div class="social-medias">
   @for (socialMedia of socialMedias; track socialMedia.key) {
     <a [routerLink]="contentSocialMediaPath + socialMedia.key" class="social-media-button">
-      <img class="button-image" [src]="socialMedia.homeImageUrl" [alt]="socialMedia.key" height="456" width="365">
+      <img class="button-image" [src]="socialMedia.homeImageUrl" [alt]="socialMedia.key" >
     </a>
   }
 </div>

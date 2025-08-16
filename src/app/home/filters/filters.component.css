@@ -1,0 +1,20 @@
+.filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 16px 0px;
+}
+
+.filter {
+  background-color: inherit;
+  border: inherit;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.filter:hover {
+  cursor: pointer;
+}
+
+
