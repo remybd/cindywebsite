@@ -8,6 +8,7 @@ import {AboutComponent} from './about/about.component';
 import {environment} from "../environments/environment";
 import {CategoryComponent} from "./home/category/category.component";
 import {SocialMediaComponent} from "./social-media/social-media.component";
+import {ScPostComponent} from "./social-media/sc-post/sc-post.component";
 
 const routes: Routes = [
 
@@ -20,7 +21,11 @@ const routes: Routes = [
         path: 'category',
         component: HomeComponent,
         children: [
-          { path: 'Social Media', component: SocialMediaComponent },
+          { path: 'Social Media', component: SocialMediaComponent,
+            children: [
+              {path: ':key', component: ScPostComponent}
+            ]
+          },
           { path: ':category', component: CategoryComponent }
         ]
       },
@@ -46,6 +51,7 @@ const routes: Routes = [
       },
     ]
   },
+
 
 
   { path: '**', redirectTo: '/home' },

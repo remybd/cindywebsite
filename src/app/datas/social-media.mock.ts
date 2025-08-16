@@ -2,7 +2,7 @@ import {ContentPageModel} from "../content/models/content-page.model";
 import {ContentSocialMediaModel} from "../content/models/content-social-media.model";
 
 export class SocialMediaDataMock {
-  public static contentSocialMediaPath = '/social-media/';
+  public static contentSocialMediaPath = '/category/Social Media/';
 
   static caringSgMusic: ContentSocialMediaModel = new ContentSocialMediaModel(
     'Caisse d\'épargne - official supporter of the French Handball team',
