@@ -4,7 +4,7 @@
 true}">Overall</a>
   @for (category of categories; track category) {
     @if(category === categoryType.socialMedia) {
-      <a routerLink="/social-media" class="filter link-text-underline" [routerLinkActive]="['active']" >{{ category }}</a>
+      <a routerLink="/home/social-media" class="filter link-text-underline" [routerLinkActive]="['active']" >{{ category }}</a>
     }
     @else {
       <a [routerLink]="'/home/' + category" class="filter link-text-underline" [routerLinkActive]="['active']">{{ category }}</a>

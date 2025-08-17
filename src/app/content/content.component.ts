@@ -1,6 +1,6 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {ContentDataMock} from '../datas/content-data.mock';
+import {ContentDataMock} from '../data/content-data.mock';
 import {ContentPageModel} from './models/content-page.model';
 import {NextPreviousPageService} from '../structure/services/next-previous-page-management/next-previous-page.service';
 import {environment} from '../../environments/environment';

@@ -7,8 +7,8 @@ import {LayoutHomePageComponent} from './structure/layouts/home-page/layout-home
 import {AboutComponent} from './about/about.component';
 import {environment} from "../environments/environment";
 import {SocialMediaComponent} from "./social-media/social-media.component";
-import {ScPostComponent} from "./social-media/sc-post/sc-post.component";
 import {FilteredContentListComponent} from "./home/filtered-content-list/filtered-content-list.component";
+import {ScPostContentComponent} from "./social-media/sc-post-content/sc-post-content.component";
 
 const routes: Routes = [
 
@@ -18,19 +18,9 @@ const routes: Routes = [
     component: LayoutLogoComponent,
     children: [
       {
-        path: 'social-media', component: HomeComponent, title: environment.titleBase + 'Social Media',
-        children: [
-          {path: 'content', component: SocialMediaComponent,
-            children: [
-              {path: ':key', component: ScPostComponent},
-            ]
-          },
-          {path: '', component: SocialMediaComponent}
-        ]
-      },
-      {
         path: 'home', component: HomeComponent, title: environment.titleBase + 'Home',
         children: [
+          {path: 'social-media', component: SocialMediaComponent},
           {path: ':category', component: FilteredContentListComponent},
           {path: '', component: FilteredContentListComponent}
         ]
@@ -48,9 +38,8 @@ const routes: Routes = [
     path: '',
     component: LayoutHomePageComponent,
     children: [
-      {
-        path: 'content/:key', component: ContentComponent
-      },
+      {path: 'content/:key', component: ContentComponent},
+      {path: 'social-media/:key', component: ScPostContentComponent}
     ]
   },
 

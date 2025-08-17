@@ -1,4 +1,4 @@
-import {CategoryType} from '../../datas/category';
+import {CategoryType} from '../../data/category';
 
 export class EntryButtonModel{
   title: string = "";

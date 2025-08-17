@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {SocialMediaDataMock} from "../datas/social-media.mock";
+import {SocialMediaDataMock} from "../data/social-media.mock";
 
 
 @Component({

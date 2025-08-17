@@ -1,5 +1,5 @@
 import {Component, inject} from '@angular/core';
-import {CategoryType} from "../../datas/category";
+import {CategoryType} from "../../data/category";
 import {Router, RouterModule} from "@angular/router";
 
 @Component({

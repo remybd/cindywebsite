@@ -1,6 +1,6 @@
 import {Component, inject, OnInit} from '@angular/core';
-import {HomeDataMock} from "../../datas/home-data.mock";
-import {CategoryType} from "../../datas/category";
+import {HomeDataMock} from "../../data/home-data.mock";
+import {CategoryType} from "../../data/category";
 import {ActivatedRoute, Router} from "@angular/router";
 
 

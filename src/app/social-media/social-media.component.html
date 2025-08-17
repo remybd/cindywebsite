@@ -1,6 +1,6 @@
 <div class="social-medias">
   @for (socialMedia of socialMedias; track socialMedia.key) {
-    <a [routerLink]="'/social-media/content/' + socialMedia.key" class="social-media-button">
+    <a [routerLink]="'/social-media/' + socialMedia.key" class="social-media-button">
       <img class="button-image" [src]="socialMedia.homeImageUrl" [alt]="socialMedia.key" >
     </a>
   }
