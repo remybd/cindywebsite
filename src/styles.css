@@ -3,8 +3,6 @@
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @import url(https://use.fontawesome.com/releases/v5.8.1/css/all.css);
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
-@import '@angular/cdk/overlay-prebuilt.css';
-
 
 :root {
   --background-main: #000000;

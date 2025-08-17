@@ -23,7 +23,6 @@ import {UnlockFormComponent} from './content/unlock-form/unlock-form.component';
 import {FormsModule} from "@angular/forms";
 import {SocialMediaComponent} from './social-media/social-media.component';
 import {NgOptimizedImage} from "@angular/common";
-import {DialogModule} from "@angular/cdk/dialog";
 import {FiltersComponent} from "./home/filters/filters.component";
 import {FilteredContentListComponent} from "./home/filtered-content-list/filtered-content-list.component";
 import {BlockImagecommentComponent} from "./content/blocks/block-imagecomment/block-imagecomment.component";
@@ -61,7 +60,6 @@ import {ScPostContentComponent} from "./social-media/sc-post-content/sc-post-con
     HammerModule,
     FormsModule,
     NgOptimizedImage,
-    DialogModule,
     FiltersComponent,
   ],
   providers: [
