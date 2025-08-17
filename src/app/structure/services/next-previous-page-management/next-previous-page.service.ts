@@ -21,6 +21,7 @@ export class NextPreviousPageService {
   previousPage$ = this._previousPageKeySubject.asObservable();
   keyList: Key[] = HomeDataMock.entryButtonArray;
   routePrefix = HomeDataMock.contentPagePath;
+  backRoute = '/';
 
   router = inject(Router);
 

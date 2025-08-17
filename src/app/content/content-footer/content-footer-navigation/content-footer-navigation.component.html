@@ -1,0 +1,21 @@
+<nav class="header-links">
+  <a class="header-link icon" href="https://www.instagram.com/_cindy_tang" target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <!--  <a class="header-link link-text-underline" routerLink="/about">-->
+  <!--    About-->
+  <!--  </a>-->
+  <a class="header-link link-text-underline" [routerLink]='backRoute'>
+    Back
+  </a>
+  @if(previousPage$ | async) {
+    <a (click)="previous()" class="header-link link-text-underline previous">
+      <i class="fas fa-chevron-left"></i>
+    </a>
+  }
+  @if(nextPage$ | async){
+    <a (click)="next()" class="header-link link-text-underline next">
+      <i class="fas fa-chevron-right"></i>
+    </a>
+  }
+</nav>

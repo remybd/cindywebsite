@@ -28,6 +28,9 @@ import {FilteredContentListComponent} from "./home/filtered-content-list/filtere
 import {BlockImagecommentComponent} from "./content/blocks/block-imagecomment/block-imagecomment.component";
 import {ContentFooterComponent} from "./content/content-footer/content-footer.component";
 import {ScPostContentComponent} from "./social-media/sc-post-content/sc-post-content.component";
+import {
+  ContentFooterNavigationComponent
+} from "./content/content-footer/content-footer-navigation/content-footer-navigation.component";
 
 @NgModule({
   declarations: [
@@ -52,7 +55,8 @@ import {ScPostContentComponent} from "./social-media/sc-post-content/sc-post-con
     ScPostContentComponent,
     FilteredContentListComponent,
     BlockImagecommentComponent,
-    ContentFooterComponent
+    ContentFooterComponent,
+    ContentFooterNavigationComponent
   ],
   imports: [
     BrowserModule,

@@ -245,9 +245,4 @@ export class HomeDataMock {
     HomeDataMock.entryButtonEnMouvement,
     HomeDataMock.entryButtonCentrePompidou
   ];
-
-  static setupNextPreviousService(nextPreviousPageService: NextPreviousPageService) {
-    nextPreviousPageService.routePrefix = HomeDataMock.contentPagePath;
-    nextPreviousPageService.keyList = HomeDataMock.entryButtonArray;
-  }
 }

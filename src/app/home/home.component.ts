@@ -14,6 +14,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.nextPreviousPageService.currentPageKey = null;
-    HomeDataMock.setupNextPreviousService(this.nextPreviousPageService);
+    this.nextPreviousPageService.routePrefix = HomeDataMock.contentPagePath;
+    this.nextPreviousPageService.keyList = HomeDataMock.entryButtonArray;
   }
 }

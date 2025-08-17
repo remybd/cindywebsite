@@ -10,4 +10,5 @@ import {ContentPageModel} from "../models/content-page.model";
 })
 export class ContentFooterComponent {
   @Input() content: ContentPageModel | ContentSocialMediaModel;
+  @Input() backRoute = '/';
 }

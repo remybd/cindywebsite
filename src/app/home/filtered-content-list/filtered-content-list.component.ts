@@ -41,6 +41,7 @@ export class FilteredContentListComponent implements OnInit {
         return;
       }
 
+      this.nextPreviousPageService.backRoute = '/home/' + category;
       this.category = category as CategoryType;
       this.filterBy(this.category);
     });
@@ -53,6 +54,7 @@ export class FilteredContentListComponent implements OnInit {
 
   reset() {
     this.category = undefined;
+    this.nextPreviousPageService.backRoute = '/';
     this.entryButtonArray = [...HomeDataMock.entryButtonArray];
     this.nextPreviousPageService.keyList = this.entryButtonArray;
   }

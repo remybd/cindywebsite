@@ -24,7 +24,7 @@ export class ContentComponent implements OnInit {
   }
 
   ngOnInit() {
-    HomeDataMock.setupNextPreviousService(this.nextPreviousPageService);
+    this.nextPreviousPageService.routePrefix = HomeDataMock.contentPagePath;
     this.getContentFromUrl();
   }
 
@@ -51,5 +51,9 @@ export class ContentComponent implements OnInit {
 
   swipeLeft() {
     this.nextPreviousPageService.nextPage();
+  }
+
+  getBackRoute() {
+    return this.nextPreviousPageService.backRoute;
   }
 }
