@@ -4,6 +4,10 @@
 
 /* mobile */
 @media screen and (max-width: 992px) {
+  :host{
+    order: 2;
+  }
+
   .next, .previous {
     display: none;
   }
