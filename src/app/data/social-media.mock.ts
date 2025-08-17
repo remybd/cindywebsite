@@ -7,6 +7,7 @@ import {HomeDataMock} from "./home-data.mock";
 export class SocialMediaDataMock {
   static rootAssets = '/assets/img/social-media/';
 
+  // caring
   static caringSgMusic: ContentSocialMediaModel = new ContentSocialMediaModel(
     'Caring SG Commuters - Tuning into acts of care',
     '',
@@ -32,6 +33,34 @@ export class SocialMediaDataMock {
     'walk'
   );
 
+
+  static caringSgElderly: ContentSocialMediaModel = new ContentSocialMediaModel(
+    'CARING SG COMMUTERS - No dry seats',
+    '',
+    'Agency: Adred Creative',
+    [new ContentImageCommentModel(this.rootAssets + 'caring-sg/elderly.png', this.rootAssets + 'caring-sg/elderly_comments.png')],
+    this.rootAssets + 'caring-sg/elderly.png',
+    'elderly'
+  );
+  static caringSgWheelChair: ContentSocialMediaModel = new ContentSocialMediaModel(
+    'CARING SG COMMUTERS - Give Thanks',
+    '',
+    'Agency: Adred Creative',
+    [new ContentImageCommentModel(this.rootAssets + 'caring-sg/wheel_chair.png', this.rootAssets + 'caring-sg/wheel_chair_comments.png')],
+    this.rootAssets + 'caring-sg/wheel_chair.png',
+    'wheel-chair'
+  );
+  static caringSgGivingWay: ContentSocialMediaModel = new ContentSocialMediaModel(
+    'CARING SG COMMUTERS - Giving Way',
+    '',
+    'Agency: Adred Creative',
+    [new ContentImageCommentModel(this.rootAssets + 'caring-sg/giving_way.png', this.rootAssets + 'caring-sg/giving_way_comments.png')],
+    this.rootAssets + 'caring-sg/giving_way.png',
+    'giving-way'
+  );
+
+
+  // baush and lomb
   static baushLombHydrating: ContentSocialMediaModel = new ContentSocialMediaModel(
     'BAUSCH & LOMB - Ultra One Day',
     '',
@@ -57,6 +86,51 @@ export class SocialMediaDataMock {
     'protective'
   );
 
+
+  static baushLombEyesOnYou: ContentSocialMediaModel = new ContentSocialMediaModel(
+    'BAUSCH & LOMB - Lacelle',
+    '',
+    'Agency: Adred Creative',
+    [new ContentImageCommentModel(this.rootAssets + 'baush-lomb/eyes_on_you.jpg', this.rootAssets + 'baush-lomb/eyes_on_you_comments.png')],
+    this.rootAssets + 'baush-lomb/eyes_on_you.jpg',
+    'eyes-on-you'
+  );
+  static baushLombCatchEye: ContentSocialMediaModel = new ContentSocialMediaModel(
+    'BAUSCH & LOMB - Lacelle',
+    '',
+    'Agency: Adred Creative',
+    [new ContentImageCommentModel(this.rootAssets + 'baush-lomb/catch_eye.jpg', this.rootAssets + 'baush-lomb/catch_eye_comments.png')],
+    this.rootAssets + 'baush-lomb/catch_eye.jpg',
+    'catch-eye'
+  );
+  static baushLombSing: ContentSocialMediaModel = new ContentSocialMediaModel(
+    'BAUSCH & LOMB - Lacelle',
+    '',
+    'Agency: Adred Creative',
+    [new ContentImageCommentModel(this.rootAssets + 'baush-lomb/sing.jpg', this.rootAssets + 'baush-lomb/sing_comments.png')],
+    this.rootAssets + 'baush-lomb/sing.jpg',
+    'sing'
+  );
+
+
+  // heart-foundation
+  static heartFoundationLove: ContentSocialMediaModel = new ContentSocialMediaModel(
+    'SINGAPORE HEART FOUNDATION - Love trend',
+    '',
+    'Agency: Adred Creative',
+    [new ContentImageCommentModel(this.rootAssets + 'heart-foundation/love.jpg', this.rootAssets + 'heart-foundation/love_comments.png')],
+    this.rootAssets + 'heart-foundation/love.jpg',
+    'love'
+  );
+  static heartFoundationPump: ContentSocialMediaModel = new ContentSocialMediaModel(
+    'BAUSCH & LOMB - Lacelle',
+    '',
+    'Agency: Adred Creative',
+    [new ContentImageCommentModel(this.rootAssets + 'heart-foundation/pump.jpg', this.rootAssets + 'heart-foundation/pump_comments.png')],
+    this.rootAssets + 'heart-foundation/pump.jpg',
+    'pump'
+  );
+
   static socialMediaDic = {
     'music': SocialMediaDataMock.caringSgMusic,
     'tree': SocialMediaDataMock.caringSgTree,
@@ -64,6 +138,12 @@ export class SocialMediaDataMock {
     'hydrating': SocialMediaDataMock.baushLombHydrating,
     'protective': SocialMediaDataMock.baushLombProtective,
     'lightweight': SocialMediaDataMock.baushLombLightweight,
+    'elderly': SocialMediaDataMock.caringSgElderly,
+    'wheel-chair': SocialMediaDataMock.caringSgWheelChair,
+    'giving-way': SocialMediaDataMock.caringSgGivingWay,
+    'eyes-on-you': SocialMediaDataMock.baushLombEyesOnYou,
+    'catch-eye': SocialMediaDataMock.baushLombCatchEye,
+    'sing': SocialMediaDataMock.baushLombSing,
   };
 
   static getKeysFromSocialMediaDic() {

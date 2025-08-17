@@ -199,11 +199,17 @@ export class HomeDataMock {
     this.rootAssets + 'xepa.png',
     'xepa');
 
-  static entryButtonAnaisAntoine: EntryButtonModel = new EntryButtonModel('Anais and Antoine',
+  static entryButtonAnaisAntoine: EntryButtonModel = new EntryButtonModel('Anais & Antoine',
     '',
     [],
     this.rootAssets + 'faire-part-antoine-anais.png',
     'anais-antoine');
+
+  static entryButtonPetroleum: EntryButtonModel = new EntryButtonModel('SPC',
+    'National Day Parade 2024',
+    [CategoryType.campaign360],
+    this.rootAssets + 'petroleum.png',
+    'petroleum');
 
   static entryButtonArray = [
     HomeDataMock.entryButtonFranceGalop,
@@ -214,6 +220,7 @@ export class HomeDataMock {
     HomeDataMock.entryButtonLapeyrePro,
     HomeDataMock.entryButtonAbbePierre,
     HomeDataMock.entryButtonXepa,
+    HomeDataMock.entryButtonPetroleum,
     HomeDataMock.entryButtonNyc,
     HomeDataMock.entryButtonSPC,
     HomeDataMock.entryButtonWSG,

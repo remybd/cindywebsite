@@ -18,9 +18,11 @@
           </h3>
         }
         @if (entryButton.categories) {
-          <h3 class="entry-button-type">
-            <span>{{ entryButton.categories }}</span>
-          </h3>
+          @for (category of entryButton.categories; track category) {
+            <h3 class="entry-button-type">
+              <span>{{ category }}</span>
+            </h3>
+          }
         }
         @if (entryButton.lock) {
           <i class="material-icons lock">lock</i>
