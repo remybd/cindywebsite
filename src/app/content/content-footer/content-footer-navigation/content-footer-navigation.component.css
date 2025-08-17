@@ -1,3 +1,9 @@
+:host{
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .previous:not(:last-child) {
   margin-right: 24px;
 }
