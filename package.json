@@ -1,6 +1,9 @@
 {
   "name": "cindy-website",
   "version": "2.0.0",
+  "engines": {
+    "node": ">= 22.18.0"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
