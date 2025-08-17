@@ -8,6 +8,7 @@
   --background-main: #000000;
   --font-color-main: #fff;
   --font-color-hover-main: #fffc00;
+  --font-color-hover-main-transparent: rgb(255,252,0,0.2);
   --font-color-legend: #858585;
   --content-max-width: 1920px;
 }

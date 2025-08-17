@@ -9,6 +9,19 @@
 
 }
 
+.social-media-button {
+  position: relative;
+}
+.social-media-button:hover:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--font-color-hover-main-transparent);
+}
+
 .button-image {
   width: 25vw;
 }

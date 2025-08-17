@@ -86,4 +86,12 @@ export class NextPreviousPageService {
     return this.keyList[pagePosition - 1]?.key;
   }
 
+  public keyEvent(event: KeyboardEvent) {
+    const eventFunction = NextPreviousPageService.eventBinding[event.key];
+    if (!eventFunction) {
+      return;
+    }
+    eventFunction(this);
+  }
+
 }

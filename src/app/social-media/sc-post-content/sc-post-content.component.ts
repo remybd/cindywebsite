@@ -14,7 +14,7 @@ import {ActivatedRoute, Router} from "@angular/router";
   styleUrls: ['../../content/content.component.css', './sc-post-content.component.css'],
   standalone: false
 })
-export class ScPostContentComponent implements OnInit{
+export class ScPostContentComponent implements OnInit {
   nextPreviousPageService = inject(NextPreviousPageService);
   titleService = inject(Title);
   router = inject(Router);
@@ -46,7 +46,7 @@ export class ScPostContentComponent implements OnInit{
 
   @HostListener('window:keyup', ['$event'])
   keyEvent(event: KeyboardEvent) {
-    NextPreviousPageService.eventBinding[event.key](this.nextPreviousPageService);
+    this.nextPreviousPageService.keyEvent(event);
   }
 
   swipeRight() {

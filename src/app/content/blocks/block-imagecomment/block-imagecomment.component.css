@@ -1,19 +1,27 @@
 :host {
   display: flex;
+  justify-content: center;
+  height: 70vh;
+  overflow: hidden;
+  background-color: var(--background-main);
 }
 
-.content-image,
+.content-image {
+  z-index: 10;
+}
 .content-comment {
-  height: 70vh;
+  scale: 1.02;
+  z-index: 9;
 }
 
 /* mobile */
 @media screen and (max-width: 992px) {
   :host {
     flex-wrap: wrap;
-    justify-content: center;
-    background-color: var(--background-main);
     gap: 0px;
+    height: auto;
+    width: 70vw;
+    overflow: hidden;
   }
 
   .content-image,
