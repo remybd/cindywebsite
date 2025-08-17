@@ -2,6 +2,9 @@ import {Component, inject, OnInit} from '@angular/core';
 import {HomeDataMock} from "../../data/home-data.mock";
 import {CategoryType} from "../../data/category";
 import {ActivatedRoute, Router} from "@angular/router";
+import {
+  NextPreviousPageService
+} from "../../structure/services/next-previous-page-management/next-previous-page.service";
 
 
 @Component({
@@ -17,8 +20,10 @@ export class FilteredContentListComponent implements OnInit {
 
   router = inject(Router);
   route: ActivatedRoute = inject(ActivatedRoute);
+  nextPreviousPageService: NextPreviousPageService = inject(NextPreviousPageService);
 
   ngOnInit() {
+    this.nextPreviousPageService.currentPageKey = null;
     this.getContentFromUrl();
   }
 
@@ -42,10 +47,12 @@ export class FilteredContentListComponent implements OnInit {
 
   filterBy(category: CategoryType) {
     this.entryButtonArray = HomeDataMock.entryButtonArray.filter(entryButton => entryButton.categories.includes(category));
+    this.nextPreviousPageService.keyList = this.entryButtonArray;
   }
 
   reset() {
     this.category = undefined;
     this.entryButtonArray = [...HomeDataMock.entryButtonArray];
+    this.nextPreviousPageService.keyList = this.entryButtonArray;
   }
 }

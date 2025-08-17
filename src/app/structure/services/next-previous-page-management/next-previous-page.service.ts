@@ -1,13 +1,34 @@
-import {Injectable} from '@angular/core';
-import {HomeDataMock} from '../../../data/home-data.mock';
+import {inject, Injectable} from '@angular/core';
 import {EntryButtonModel} from '../../../home/models/entry-button.model';
 import {Router} from '@angular/router';
 import {BehaviorSubject} from 'rxjs';
+import {HomeDataMock} from "../../../data/home-data.mock";
 
 @Injectable({
   providedIn: 'root'
 })
 export class NextPreviousPageService {
+  static eventBinding = {
+    ArrowRight: NextPreviousPageService?.nextPageStatic,
+    ArrowLeft: NextPreviousPageService?.previousPageStatic
+  };
+
+  private _currentPageKey = '';
+  private _nextPageKeySubject = new BehaviorSubject<string | null>(null);
+  nextPage$ = this._nextPageKeySubject.asObservable();
+  private _previousPageKeySubject = new BehaviorSubject<string | null>(null);
+  previousPage$ = this._previousPageKeySubject.asObservable();
+  keyList = HomeDataMock.entryButtonArray;
+
+  router = inject(Router);
+
+  static previousPageStatic(instance) {
+    instance.previousPage();
+  }
+
+  static nextPageStatic(instance) {
+    instance.nextPage();
+  }
 
   set currentPageKey(value: string) {
     if (!value) {
@@ -17,29 +38,6 @@ export class NextPreviousPageService {
     this._currentPageKey = value;
     this.setNextInHomePage();
     this.setPreviousInHomePage();
-  }
-
-  constructor(private router: Router) {
-  }
-  static eventBinding = {
-    ArrowRight: NextPreviousPageService?.nextPageStatic,
-    ArrowLeft: NextPreviousPageService?.previousPageStatic
-  };
-
-  private _currentPageKey = '';
-
-  private _nextPageKeySubject = new BehaviorSubject<string | null>(null);
-  nextPage$ = this._nextPageKeySubject.asObservable();
-
-  private _previousPageKeySubject = new BehaviorSubject<string | null>(null);
-  previousPage$ = this._previousPageKeySubject.asObservable();
-
-  static previousPageStatic(instance) {
-    instance.previousPage();
-  }
-
-  static nextPageStatic(instance) {
-    instance.nextPage();
   }
 
   private reset() {
@@ -73,17 +71,17 @@ export class NextPreviousPageService {
 
 
   private findPositionPageInHomePageList(currentPageKey: string): number {
-    return HomeDataMock.entryButtonArray.findIndex((entryButton: EntryButtonModel, index, obj) => {
-      return entryButton.key == currentPageKey;
+    return this.keyList.findIndex((entryButton: {key: string}, index, obj) => {
+      return entryButton.key === currentPageKey;
     });
   }
 
   private findNextPage(pagePosition: number = 0): EntryButtonModel {
-    return HomeDataMock.entryButtonArray[pagePosition + 1];
+    return this.keyList[pagePosition + 1];
   }
 
-  private findPreviousPage(pagePosition: number = HomeDataMock.entryButtonArray.length - 1): EntryButtonModel {
-    return HomeDataMock.entryButtonArray[pagePosition - 1];
+  private findPreviousPage(pagePosition: number = this.keyList.length - 1): EntryButtonModel {
+    return this.keyList[pagePosition - 1];
   }
 
 }

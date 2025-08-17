@@ -1,4 +1,4 @@
-import {Component, inject, OnInit} from '@angular/core';
+import {Component, HostListener, inject, OnInit} from '@angular/core';
 import {
   NextPreviousPageService
 } from "../../structure/services/next-previous-page-management/next-previous-page.service";
@@ -43,16 +43,16 @@ export class ScPostContentComponent implements OnInit{
     this.nextPreviousPageService.currentPageKey = this.contentKey;
   }
 
-  // @HostListener('window:keyup', ['$event'])
-  // keyEvent(event: KeyboardEvent) {
-  //   NextPreviousPageService.eventBinding[event.key](this.nextPreviousPageService);
-  // }
-  //
-  // swipeRight() {
-  //   this.nextPreviousPageService.previousPage();
-  // }
-  //
-  // swipeLeft() {
-  //   this.nextPreviousPageService.nextPage();
-  // }
+  @HostListener('window:keyup', ['$event'])
+  keyEvent(event: KeyboardEvent) {
+    NextPreviousPageService.eventBinding[event.key](this.nextPreviousPageService);
+  }
+
+  swipeRight() {
+    this.nextPreviousPageService.previousPage();
+  }
+
+  swipeLeft() {
+    this.nextPreviousPageService.nextPage();
+  }
 }
