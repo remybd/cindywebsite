@@ -33,26 +33,26 @@ export class SocialMediaDataMock {
   );
 
   static baushLombHydrating: ContentSocialMediaModel = new ContentSocialMediaModel(
-    'Caisse d\'épargne - official supporter of the French Handball team',
+    'BAUSCH & LOMB - Ultra One Day',
     '',
     'Agency: Adred Creative',
-    [],
+    [new ContentImageCommentModel(this.rootAssets + 'baush-lomb/hydrating.png', this.rootAssets + 'baush-lomb/hydrating_comments.png')],
     this.rootAssets + 'baush-lomb/hydrating.png',
     'hydrating'
   );
   static baushLombLightweight: ContentSocialMediaModel = new ContentSocialMediaModel(
-    'Caisse d\'épargne - official supporter of the French Handball team',
+    'BAUSCH & LOMB - Ultra One Day',
     '',
     'Agency: Adred Creative',
-    [],
+    [new ContentImageCommentModel(this.rootAssets + 'baush-lomb/lightweight.png', this.rootAssets + 'baush-lomb/lightweight_comments.png')],
     this.rootAssets + 'baush-lomb/lightweight.png',
     'lightweight'
   );
   static baushLombProtective: ContentSocialMediaModel = new ContentSocialMediaModel(
-    'Caisse d\'épargne - official supporter of the French Handball team',
+    'BAUSCH & LOMB - Ultra One Day',
     '',
     'Agency: Adred Creative',
-    [],
+    [new ContentImageCommentModel(this.rootAssets + 'baush-lomb/protective.png', this.rootAssets + 'baush-lomb/protective_comments.png')],
     this.rootAssets + 'baush-lomb/protective.png',
     'protective'
   );
@@ -62,8 +62,8 @@ export class SocialMediaDataMock {
     'tree': SocialMediaDataMock.caringSgTree,
     'walk': SocialMediaDataMock.caringSgWalk,
     'hydrating': SocialMediaDataMock.baushLombHydrating,
-    'lightweight': SocialMediaDataMock.baushLombLightweight,
     'protective': SocialMediaDataMock.baushLombProtective,
+    'lightweight': SocialMediaDataMock.baushLombLightweight,
   };
 
   static getKeysFromSocialMediaDic() {
