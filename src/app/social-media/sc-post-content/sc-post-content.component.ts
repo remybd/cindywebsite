@@ -23,6 +23,7 @@ export class ScPostContentComponent implements OnInit{
   content: ContentSocialMediaModel;
 
   ngOnInit(): void {
+    SocialMediaDataMock.setupNextPreviousService(this.nextPreviousPageService);
     this.getContentFromUrl();
   }
 

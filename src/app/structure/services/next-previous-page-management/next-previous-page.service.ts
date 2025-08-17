@@ -3,6 +3,7 @@ import {EntryButtonModel} from '../../../home/models/entry-button.model';
 import {Router} from '@angular/router';
 import {BehaviorSubject} from 'rxjs';
 import {HomeDataMock} from "../../../data/home-data.mock";
+import {Key} from "../../model/key";
 
 @Injectable({
   providedIn: 'root'
@@ -18,7 +19,8 @@ export class NextPreviousPageService {
   nextPage$ = this._nextPageKeySubject.asObservable();
   private _previousPageKeySubject = new BehaviorSubject<string | null>(null);
   previousPage$ = this._previousPageKeySubject.asObservable();
-  keyList = HomeDataMock.entryButtonArray;
+  keyList: Key[] = HomeDataMock.entryButtonArray;
+  routePrefix = HomeDataMock.contentPagePath;
 
   router = inject(Router);
 
@@ -48,40 +50,40 @@ export class NextPreviousPageService {
 
   nextPage() {
     if (this._nextPageKeySubject.getValue()) {
-      this.router.navigateByUrl('/content/' + this._nextPageKeySubject.getValue());
+      this.router.navigateByUrl(this.routePrefix + this._nextPageKeySubject.getValue());
     }
   }
 
   previousPage() {
     if (this._previousPageKeySubject.getValue()) {
-      this.router.navigateByUrl('/content/' + this._previousPageKeySubject.getValue());
+      this.router.navigateByUrl(this.routePrefix + this._previousPageKeySubject.getValue());
     }
   }
 
 
   private setNextInHomePage() {
     const pagePosition = this.findPositionPageInHomePageList(this._currentPageKey);
-    this._nextPageKeySubject.next(this.findNextPage(pagePosition)?.key);
+    this._nextPageKeySubject.next(this.findNextPage(pagePosition));
   }
 
   private setPreviousInHomePage() {
     const pagePosition = this.findPositionPageInHomePageList(this._currentPageKey);
-    this._previousPageKeySubject.next(this.findPreviousPage(pagePosition)?.key);
+    this._previousPageKeySubject.next(this.findPreviousPage(pagePosition));
   }
 
 
   private findPositionPageInHomePageList(currentPageKey: string): number {
-    return this.keyList.findIndex((entryButton: {key: string}, index, obj) => {
+    return this.keyList.findIndex((entryButton: Key, index, obj) => {
       return entryButton.key === currentPageKey;
     });
   }
 
-  private findNextPage(pagePosition: number = 0): EntryButtonModel {
-    return this.keyList[pagePosition + 1];
+  private findNextPage(pagePosition: number = 0): string {
+    return this.keyList[pagePosition + 1]?.key;
   }
 
-  private findPreviousPage(pagePosition: number = this.keyList.length - 1): EntryButtonModel {
-    return this.keyList[pagePosition - 1];
+  private findPreviousPage(pagePosition: number = this.keyList.length - 1): string {
+    return this.keyList[pagePosition - 1]?.key;
   }
 
 }

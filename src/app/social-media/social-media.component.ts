@@ -1,5 +1,7 @@
-import {Component} from '@angular/core';
+import {Component, inject, OnInit} from '@angular/core';
 import {SocialMediaDataMock} from "../data/social-media.mock";
+import {HomeDataMock} from "../data/home-data.mock";
+import {NextPreviousPageService} from "../structure/services/next-previous-page-management/next-previous-page.service";
 
 
 @Component({
@@ -8,6 +10,15 @@ import {SocialMediaDataMock} from "../data/social-media.mock";
   styleUrl: './social-media.component.css',
   standalone: false
 })
-export class SocialMediaComponent {
+export class SocialMediaComponent implements OnInit{
   socialMedias = Object.values(SocialMediaDataMock.socialMediaDic);
+  socialMediaPath = HomeDataMock.socialMediaPath;
+  nextPreviousPageService: NextPreviousPageService = inject(NextPreviousPageService);
+
+  ngOnInit() {
+    this.nextPreviousPageService.currentPageKey = null;
+    SocialMediaDataMock.setupNextPreviousService(this.nextPreviousPageService);
+  }
+
+
 }

@@ -24,6 +24,7 @@ export class FilteredContentListComponent implements OnInit {
 
   ngOnInit() {
     this.nextPreviousPageService.currentPageKey = null;
+    this.nextPreviousPageService.routePrefix = HomeDataMock.contentPagePath;
     this.getContentFromUrl();
   }
 

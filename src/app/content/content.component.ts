@@ -6,6 +6,7 @@ import {NextPreviousPageService} from '../structure/services/next-previous-page-
 import {environment} from '../../environments/environment';
 import {Title} from '@angular/platform-browser';
 import {PasswordStorageService} from "../structure/services/password-storage.service";
+import {HomeDataMock} from "../data/home-data.mock";
 
 @Component({
     selector: 'app-content',
@@ -23,6 +24,7 @@ export class ContentComponent implements OnInit {
   }
 
   ngOnInit() {
+    HomeDataMock.setupNextPreviousService(this.nextPreviousPageService);
     this.getContentFromUrl();
   }
 

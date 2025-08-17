@@ -1,32 +1,34 @@
 import {ContentPageModel} from "../content/models/content-page.model";
 import {ContentSocialMediaModel} from "../content/models/content-social-media.model";
 import {ContentImageCommentModel} from "../content/models/content-image-comment.model";
+import {NextPreviousPageService} from "../structure/services/next-previous-page-management/next-previous-page.service";
+import {HomeDataMock} from "./home-data.mock";
 
 export class SocialMediaDataMock {
-  public static contentSocialMediaPath = '/category/Social Media/';
+  static rootAssets = '/assets/img/social-media/';
 
   static caringSgMusic: ContentSocialMediaModel = new ContentSocialMediaModel(
     'Caring SG Commuters - Tuning into acts of care',
     '',
     'Agency: Adred Creative',
-    [new ContentImageCommentModel('/assets/img/social-media/caring-sg/music.gif', '/assets/img/social-media/caring-sg/music_comments.png')],
-    '/assets/img/social-media/caring-sg/music.gif',
+    [new ContentImageCommentModel(this.rootAssets + 'caring-sg/music.gif', this.rootAssets + 'caring-sg/music_comments.png')],
+    this.rootAssets + 'caring-sg/music.gif',
     'music'
   );
   static caringSgTree: ContentSocialMediaModel = new ContentSocialMediaModel(
     'Caring SG Commuters - Celebrate the Festive season',
     '',
     'Agency: Adred Creative',
-    [new ContentImageCommentModel('/assets/img/social-media/caring-sg/tree.gif', '/assets/img/social-media/caring-sg/tree_comments.png')],
-    '/assets/img/social-media/caring-sg/tree.gif',
+    [new ContentImageCommentModel(this.rootAssets + 'caring-sg/tree.gif', this.rootAssets + 'caring-sg/tree_comments.png')],
+    this.rootAssets + 'caring-sg/tree.gif',
     'tree'
   );
   static caringSgWalk: ContentSocialMediaModel = new ContentSocialMediaModel(
     'Caring SG Commuters -  Give a hand and make a difference',
     '',
     'Agency: Adred Creative',
-    [new ContentImageCommentModel('/assets/img/social-media/caring-sg/walk.gif', '/assets/img/social-media/caring-sg/walk_comments.png')],
-    '/assets/img/social-media/caring-sg/walk.gif',
+    [new ContentImageCommentModel(this.rootAssets + 'caring-sg/walk.gif', this.rootAssets + 'caring-sg/walk_comments.png')],
+    this.rootAssets + 'caring-sg/walk.gif',
     'walk'
   );
 
@@ -35,7 +37,7 @@ export class SocialMediaDataMock {
     '',
     'Agency: Adred Creative',
     [],
-    '/assets/img/social-media/baush-lomb/hydrating.png',
+    this.rootAssets + 'baush-lomb/hydrating.png',
     'hydrating'
   );
   static baushLombLightweight: ContentSocialMediaModel = new ContentSocialMediaModel(
@@ -43,7 +45,7 @@ export class SocialMediaDataMock {
     '',
     'Agency: Adred Creative',
     [],
-    '/assets/img/social-media/baush-lomb/lightweight.png',
+    this.rootAssets + 'baush-lomb/lightweight.png',
     'lightweight'
   );
   static baushLombProtective: ContentSocialMediaModel = new ContentSocialMediaModel(
@@ -51,7 +53,7 @@ export class SocialMediaDataMock {
     '',
     'Agency: Adred Creative',
     [],
-    '/assets/img/social-media/baush-lomb/protective.png',
+    this.rootAssets + 'baush-lomb/protective.png',
     'protective'
   );
 
@@ -63,4 +65,13 @@ export class SocialMediaDataMock {
     'lightweight': SocialMediaDataMock.baushLombLightweight,
     'protective': SocialMediaDataMock.baushLombProtective,
   };
+
+  static getKeysFromSocialMediaDic() {
+    return Object.keys(SocialMediaDataMock.socialMediaDic).map((key) => ({'key': key}));
+  }
+
+  static setupNextPreviousService(nextPreviousPageService: NextPreviousPageService) {
+    nextPreviousPageService.routePrefix = HomeDataMock.socialMediaPath;
+    nextPreviousPageService.keyList = SocialMediaDataMock.getKeysFromSocialMediaDic();
+  }
 }
