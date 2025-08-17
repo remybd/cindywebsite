@@ -1,11 +1,12 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {ContentDataMock} from '../datas/content-data.mock';
+import {ContentDataMock} from '../data/content-data.mock';
 import {ContentPageModel} from './models/content-page.model';
 import {NextPreviousPageService} from '../structure/services/next-previous-page-management/next-previous-page.service';
 import {environment} from '../../environments/environment';
 import {Title} from '@angular/platform-browser';
 import {PasswordStorageService} from "../structure/services/password-storage.service";
+import {HomeDataMock} from "../data/home-data.mock";
 
 @Component({
     selector: 'app-content',
@@ -23,6 +24,7 @@ export class ContentComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.nextPreviousPageService.routePrefix = HomeDataMock.contentPagePath;
     this.getContentFromUrl();
   }
 
@@ -40,7 +42,7 @@ export class ContentComponent implements OnInit {
 
   @HostListener('window:keyup', ['$event'])
   keyEvent(event: KeyboardEvent) {
-    NextPreviousPageService.eventBinding[event.key](this.nextPreviousPageService);
+    this.nextPreviousPageService.keyEvent(event);
   }
 
   swipeRight() {
@@ -49,5 +51,9 @@ export class ContentComponent implements OnInit {
 
   swipeLeft() {
     this.nextPreviousPageService.nextPage();
+  }
+
+  getBackRoute() {
+    return this.nextPreviousPageService.backRoute;
   }
 }

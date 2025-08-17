@@ -1,30 +1,11 @@
 <div class="logo-container">
-  <img class="logo" alt="cindy-tang-logo" src="/assets/img/logo/logo_with_title.gif" >
+  <img class="logo" alt="cindy-tang-logo" src="/assets/img/logo/logo_with_title.gif">
 </div>
 
 <h1 class="main-title">
-  Graphic design & art direction.
+  ART DIRECTION & MOTION DESIGN
 </h1>
 
-<div class="entry-button-container">
-  <a *ngFor="let entryButton of entryButtonArray"
-     [routerLink]="preCurrentPagePath + entryButton.key" class="entry-button">
+<app-filters></app-filters>
 
-    <app-button-moving-dashes [imageUrl]="entryButton.imageUrl">
-      <h2 *ngIf="entryButton.title" class="entry-button-title">
-        {{ entryButton.title }}
-      </h2>
-      <h3 *ngIf="entryButton.subtitle" class="entry-button-subtitle">
-        {{ entryButton.subtitle }}
-      </h3>
-      <h3 *ngIf="(entryButton.title || entryButton.subtitle) && entryButton.type" class="entry-button-separator">
-        -
-      </h3>
-      <h3 *ngIf="entryButton.type" class="entry-button-type">
-        <span>{{ entryButton.type }}</span>
-      </h3>
-      <i *ngIf="entryButton.lock" class="material-icons lock">lock</i>
-    </app-button-moving-dashes>
-
-  </a>
-</div>
+<router-outlet></router-outlet>

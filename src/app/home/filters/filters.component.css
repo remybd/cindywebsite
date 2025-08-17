@@ -1,0 +1,30 @@
+.filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 16px 0px;
+}
+
+.filter {
+  background-color: inherit;
+  border: inherit;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.filter:hover {
+  cursor: pointer;
+}
+
+/* mobile */
+@media screen and (max-width: 992px) {
+  .filters {
+    gap: 24px;
+  }
+
+  .filter {
+    font-size: 16px ;
+  }
+
+}

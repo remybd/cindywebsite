@@ -2,7 +2,7 @@ import {TestBed} from '@angular/core/testing';
 
 import {NextPreviousPageService} from './next-previous-page.service';
 import {EntryButtonModel} from '../../../home/models/entry-button.model';
-import {HomeDataMock} from '../../../datas/home-data.mock';
+import {HomeDataMock} from '../../../data/home-data.mock';
 import {RouterTestingModule} from '@angular/router/testing';
 
 const entryButtonArrayForTest = [

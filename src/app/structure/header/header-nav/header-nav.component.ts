@@ -5,29 +5,12 @@ import {Observable} from 'rxjs';
 
 
 @Component({
-    selector: 'app-header-nav',
-    templateUrl: './header-nav.component.html',
-    styleUrls: ['./header-nav.component.css'],
-    standalone: false
+  selector: 'app-header-nav',
+  templateUrl: './header-nav.component.html',
+  styleUrls: ['./header-nav.component.css'],
+  standalone: false
 })
-export class HeaderNavComponent implements OnInit {
-  nextPage$: Observable<string | null>;
-  previousPage$: Observable<string | null>;
-
-  constructor(private nextPreviousPageService: NextPreviousPageService) {}
-
-  ngOnInit() {
-    this.nextPage$ = this.nextPreviousPageService.nextPage$
-    this.previousPage$ = this.nextPreviousPageService.previousPage$
-  }
-
-  next() {
-    this.nextPreviousPageService.nextPage();
-  }
-
-  previous() {
-    this.nextPreviousPageService.previousPage();
-  }
+export class HeaderNavComponent {
 
 
 }

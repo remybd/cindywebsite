@@ -1,0 +1,20 @@
+:host{
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.previous:not(:last-child) {
+  margin-right: 24px;
+}
+
+/* mobile */
+@media screen and (max-width: 992px) {
+  :host{
+    order: 2;
+  }
+
+  .next, .previous {
+    display: none;
+  }
+}

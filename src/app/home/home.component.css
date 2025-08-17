@@ -9,48 +9,11 @@
 }
 
 .main-title {
-  margin: 88px 0px;
+  margin: 8px 0px 16px 0px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 36px;
-  letter-spacing: 2.9px;
-}
-
-.entry-button-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.entry-button {
-  margin: 40px;
-}
-
-.entry-button .entry-button-title, .entry-button .entry-button-subtitle,
-.entry-button .entry-button-separator, .entry-button .entry-button-type {
-  margin: 0px;
-  font-size: 22px;
-}
-
-.entry-button-title, .entry-button-subtitle {
-  text-transform: uppercase;
-}
-
-.entry-button-title {
-  font-weight: 900;
-}
-
-.entry-button-subtitle, .entry-button-separator, .entry-button-type {
-  font-weight: 300;
-}
-
-.entry-button-type {
-  font-style: italic;
-}
-
-.lock {
-  margin-top: 32px;
+  font-size: 29px;
+  letter-spacing: 1.2px;
 }
 
 
@@ -73,12 +36,8 @@
   }
 
   .main-title {
-    margin: 32px;
-    margin-top: 16px;
-    font-size: 24px;
+    margin: 16px;
+    font-size: 23px;
   }
 
-  .entry-button {
-    margin: 24px;
-  }
 }

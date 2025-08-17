@@ -8,6 +8,7 @@
   --background-main: #000000;
   --font-color-main: #fff;
   --font-color-hover-main: #fffc00;
+  --font-color-hover-main-transparent: rgb(255,252,0,0.2);
   --font-color-legend: #858585;
   --content-max-width: 1920px;
 }
@@ -26,6 +27,10 @@ a:visited {
 }
 
 
+.link-text-underline {
+  color: var(--font-color-main);
+}
+
 .link-text-underline:after {
   content: "";
   height: 1px;
@@ -34,12 +39,14 @@ a:visited {
   background-color: var(--font-color-hover-main);
 }
 
-.link-text-underline:hover:after {
+.link-text-underline:hover:after,
+.link-text-underline.active:after {
   transition: width ease 0.5s;
   width: 100%;
 }
 
-.link-text-underline:hover {
+.link-text-underline:hover,
+.link-text-underline.active {
   transition: width ease 0.5s;
   color: var(--font-color-hover-main);
 }
@@ -79,5 +86,13 @@ a:visited {
 .input:focus-visible {
   outline: none;
 }
+
+
+/* angular material cdk */
+/*  overlay  */
+.cdk-overlay-backdrop {
+  backdrop-filter: blur(8px);
+}
+
 
 

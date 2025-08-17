@@ -1,0 +1,13 @@
+<div class="filters">
+  <a routerLink="/home" class="filter link-text-underline" [routerLinkActive]="['active']"
+     [routerLinkActiveOptions]="{exact:
+true}">Overall</a>
+  @for (category of categories; track category) {
+    @if(category === categoryType.socialMedia) {
+      <a routerLink="/home/social-media" class="filter link-text-underline" [routerLinkActive]="['active']" >{{ category }}</a>
+    }
+    @else {
+      <a [routerLink]="'/home/' + category" class="filter link-text-underline" [routerLinkActive]="['active']">{{ category }}</a>
+    }
+  }
+</div>

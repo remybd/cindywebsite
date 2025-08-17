@@ -1,0 +1,41 @@
+.social-medias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin: 0 auto;
+  gap: 4px 8px;
+  padding: 40px;
+
+}
+
+.social-media-button {
+  position: relative;
+}
+.social-media-button:hover:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--font-color-hover-main-transparent);
+}
+
+.button-image {
+  width: 25vw;
+}
+
+/* mobile */
+@media screen and (max-width: 992px) {
+  .social-medias {
+    padding: 24px;
+    gap: 2px 4px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .button-image {
+    width: 90vw;
+  }
+}

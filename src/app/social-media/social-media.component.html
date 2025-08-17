@@ -1,0 +1,10 @@
+<div class="social-medias">
+  @for (socialMedia of socialMedias; track socialMedia.key) {
+    <a [routerLink]="socialMediaPath + socialMedia.key" class="social-media-button">
+      <img class="button-image" [src]="socialMedia.homeImageUrl" [alt]="socialMedia.key" >
+    </a>
+  }
+</div>
+
+<router-outlet></router-outlet>
+
