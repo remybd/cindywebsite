@@ -3,6 +3,7 @@ import {ContentSocialMediaModel} from "../content/models/content-social-media.mo
 import {ContentImageCommentModel} from "../content/models/content-image-comment.model";
 import {NextPreviousPageService} from "../structure/services/next-previous-page-management/next-previous-page.service";
 import {HomeDataMock} from "./home-data.mock";
+import {ContentVideoCommentModel} from "../content/models/content-video-comment.model";
 
 export class SocialMediaDataMock {
   static rootAssets = '/assets/img/social-media/';
@@ -118,32 +119,109 @@ export class SocialMediaDataMock {
     'SINGAPORE HEART FOUNDATION - Love trend',
     '',
     'Agency: Adred Creative',
-    [new ContentImageCommentModel(this.rootAssets + 'heart-foundation/love.jpg', this.rootAssets + 'heart-foundation/love_comments.png')],
-    this.rootAssets + 'heart-foundation/love.jpg',
+    [new ContentVideoCommentModel(this.rootAssets + 'heart-foundation/love.mp4', this.rootAssets + 'heart-foundation/love_comments.png')],
+    this.rootAssets + 'heart-foundation/love_comments.png',
     'love'
   );
   static heartFoundationPump: ContentSocialMediaModel = new ContentSocialMediaModel(
-    'BAUSCH & LOMB - Lacelle',
+    'SINGAPORE HEART FOUNDATION - Hugo Pump Challenge',
     '',
     'Agency: Adred Creative',
-    [new ContentImageCommentModel(this.rootAssets + 'heart-foundation/pump.jpg', this.rootAssets + 'heart-foundation/pump_comments.png')],
-    this.rootAssets + 'heart-foundation/pump.jpg',
+    [new ContentVideoCommentModel(this.rootAssets + 'heart-foundation/pump.mp4', this.rootAssets + 'heart-foundation/pump_comments.png')],
+    this.rootAssets + 'heart-foundation/pump_comments.png',
     'pump'
+  );
+
+
+  // workforce singapore
+  static workforceSingapore: ContentSocialMediaModel = new ContentSocialMediaModel(
+    'WORKFORCE SINGAPORE - SSG-WSG Joint Undergraduate Scholarship',
+    '',
+    'Agency: Adred Creative',
+    [new ContentVideoCommentModel('/assets/img/content/wsg/D15759 - SSG-WSG SCHOLARSHIP TIKTOK VIDEO - FA.mp4', this.rootAssets + 'workforce-singapore/workforce-singapore_comments.png')],
+    this.rootAssets + 'workforce-singapore/workforce-singapore_comments.png',
+    'workforce'
+  );
+
+
+  // polytechnic alumni
+  static polytechnicEveryW: ContentSocialMediaModel = new ContentSocialMediaModel(
+    'SINGAPORE POLYTECHNIC ALUMNI - Take every W',
+    '',
+    'Agency: Adred Creative',
+    [new ContentImageCommentModel(this.rootAssets + 'polytechnic/every_w.png', this.rootAssets + 'polytechnic/every_w_comments.png')],
+    this.rootAssets + 'polytechnic/every_w.png',
+    'every_w'
+  );
+  static polytechnicDeepavali: ContentSocialMediaModel = new ContentSocialMediaModel(
+    'SINGAPORE POLYTECHNIC ALUMNI - Take every W',
+    '',
+    'Agency: Adred Creative',
+    [new ContentImageCommentModel(this.rootAssets + 'polytechnic/deepavali.png', this.rootAssets + 'polytechnic/deepavali_comments.png')],
+    this.rootAssets + 'polytechnic/deepavali.png',
+    'deepavali'
+  );
+  static polytechnicDellaPearce: ContentSocialMediaModel = new ContentSocialMediaModel(
+    'SINGAPORE POLYTECHNIC ALUMNI - Della Pearce Spotlight',
+    '',
+    'Agency: Adred Creative',
+    [new ContentImageCommentModel(this.rootAssets + 'polytechnic/della_pearce.png', this.rootAssets + 'polytechnic/della_pearce_comments.png')],
+    this.rootAssets + 'polytechnic/della_pearce.png',
+    'della_pearce'
+  );
+  static polytechnicNightmares: ContentSocialMediaModel = new ContentSocialMediaModel(
+    'SINGAPORE POLYTECHNIC ALUMNI - Workplace Culture Nightmares',
+    '',
+    'Agency: Adred Creative',
+    [new ContentImageCommentModel(this.rootAssets + 'polytechnic/nightmares.png', this.rootAssets + 'polytechnic/nightmares_comments.png')],
+    this.rootAssets + 'polytechnic/nightmares.png',
+    'nightmares'
+  );
+  static polytechnicUnrelatedStudies: ContentSocialMediaModel = new ContentSocialMediaModel(
+    'SINGAPORE POLYTECHNIC ALUMNI - New job',
+    '',
+    'Agency: Adred Creative',
+    [new ContentImageCommentModel(this.rootAssets + 'polytechnic/unrelated_studies.png', this.rootAssets + 'polytechnic/unrelated_studies_comments.png')],
+    this.rootAssets + 'polytechnic/unrelated_studies.png',
+    'unrelated_studies'
+  );
+  static polytechnicDigitalFootprint: ContentSocialMediaModel = new ContentSocialMediaModel(
+    'SINGAPORE POLYTECHNIC ALUMNI - Digital footprint',
+    '',
+    'Agency: Adred Creative',
+    [new ContentImageCommentModel(this.rootAssets + 'polytechnic/digital_footprint.png', this.rootAssets + 'polytechnic/digital_footprint_comments.png')],
+    this.rootAssets + 'polytechnic/digital_footprint.png',
+    'digital_footprint'
   );
 
   static socialMediaDic = {
     'music': SocialMediaDataMock.caringSgMusic,
     'tree': SocialMediaDataMock.caringSgTree,
     'walk': SocialMediaDataMock.caringSgWalk,
+
     'hydrating': SocialMediaDataMock.baushLombHydrating,
     'protective': SocialMediaDataMock.baushLombProtective,
     'lightweight': SocialMediaDataMock.baushLombLightweight,
+
+    'love': SocialMediaDataMock.heartFoundationLove,
+    'pump': SocialMediaDataMock.heartFoundationPump,
+    'worforce': SocialMediaDataMock.workforceSingapore,
+
     'elderly': SocialMediaDataMock.caringSgElderly,
     'wheel-chair': SocialMediaDataMock.caringSgWheelChair,
     'giving-way': SocialMediaDataMock.caringSgGivingWay,
+
     'eyes-on-you': SocialMediaDataMock.baushLombEyesOnYou,
     'catch-eye': SocialMediaDataMock.baushLombCatchEye,
     'sing': SocialMediaDataMock.baushLombSing,
+
+    'every_w': SocialMediaDataMock.polytechnicEveryW,
+    'deepavali': SocialMediaDataMock.polytechnicDeepavali,
+    'della_pearce': SocialMediaDataMock.polytechnicDellaPearce,
+
+    'nightmares': SocialMediaDataMock.polytechnicNightmares,
+    'unrelated_studies': SocialMediaDataMock.polytechnicUnrelatedStudies,
+    'digital_footprint': SocialMediaDataMock.polytechnicDigitalFootprint,
   };
 
   static getKeysFromSocialMediaDic() {

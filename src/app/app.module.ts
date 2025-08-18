@@ -25,12 +25,13 @@ import {SocialMediaComponent} from './social-media/social-media.component';
 import {NgOptimizedImage} from "@angular/common";
 import {FiltersComponent} from "./home/filters/filters.component";
 import {FilteredContentListComponent} from "./home/filtered-content-list/filtered-content-list.component";
-import {BlockImagecommentComponent} from "./content/blocks/block-imagecomment/block-imagecomment.component";
+import {BlockImageCommentComponent} from "./content/blocks/block-image-comment/block-image-comment.component";
 import {ContentFooterComponent} from "./content/content-footer/content-footer.component";
 import {ScPostContentComponent} from "./social-media/sc-post-content/sc-post-content.component";
 import {
   ContentFooterNavigationComponent
 } from "./content/content-footer/content-footer-navigation/content-footer-navigation.component";
+import {BlockVideoCommentComponent} from "./content/blocks/block-video-comment/block-video-comment.component";
 
 @NgModule({
   declarations: [
@@ -54,9 +55,10 @@ import {
     SocialMediaComponent,
     ScPostContentComponent,
     FilteredContentListComponent,
-    BlockImagecommentComponent,
+    BlockImageCommentComponent,
     ContentFooterComponent,
-    ContentFooterNavigationComponent
+    ContentFooterNavigationComponent,
+    BlockVideoCommentComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,12 @@
+@if(post && post.video && post.comment) {
+  <video preload="metadata"
+         class="content-video"
+         controls
+         [loop]="true" [autoplay]="true"
+         [muted]="true"
+  >
+    <source [src]="post.video"  [type]="post.type">
+    Sorry, your browser doesn't support embedded videos.
+  </video>
+  <img class="content-comment" [src]="post.comment" alt="comments for the image">
+}

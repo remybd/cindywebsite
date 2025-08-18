@@ -1,4 +1,4 @@
-import {Component, HostListener, inject, OnInit} from '@angular/core';
+import {Component, HostListener, inject, OnDestroy, OnInit} from '@angular/core';
 import {
   NextPreviousPageService
 } from "../../structure/services/next-previous-page-management/next-previous-page.service";
@@ -7,6 +7,10 @@ import {SocialMediaDataMock} from "../../data/social-media.mock";
 import {environment} from "../../../environments/environment";
 import {ContentSocialMediaModel} from "../../content/models/content-social-media.model";
 import {ActivatedRoute, Router} from "@angular/router";
+import {ContentImageModel} from "../../content/models/content-image.model";
+import {ContentVideoModel} from "../../content/models/content-video.model";
+import {ContentImageCommentModel} from "../../content/models/content-image-comment.model";
+import {ContentVideoCommentModel} from "../../content/models/content-video-comment.model";
 
 @Component({
   selector: 'app-sc-post-content',
@@ -21,6 +25,9 @@ export class ScPostContentComponent implements OnInit {
   route = inject(ActivatedRoute);
   contentKey = '';
   content: ContentSocialMediaModel;
+
+  imageBlockType = ContentImageCommentModel.blockName;
+  videoBlockType = ContentVideoCommentModel.blockName;
 
   ngOnInit(): void {
     SocialMediaDataMock.setupNextPreviousService(this.nextPreviousPageService);
