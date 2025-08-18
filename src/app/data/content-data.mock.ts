@@ -19,7 +19,7 @@ export class ContentDataMock {
       'Poster for women victory'),
   ];
   static caisseEpargneHandball: ContentPageModel = new ContentPageModel(
-    'Caisse d\'épargne - official supporter of the French Handball team',
+    'CAISSE D\'ÉPARGNE - official supporter of the French Handball team',
     'Poster design for the men\'s and women\'s handball world cup',
     'Agency: Altmann + Pacreau / Copywriter : Jeanne Teissier / Jersey Photograph : David Meignan / Woman Photograph : Etienne Garnier',
     ContentDataMock.caisseEpargneHandballBlocks
@@ -30,7 +30,7 @@ export class ContentDataMock {
     new ContentImageModel(this.rootAssets + 'caisse-epargne/ce-pre-vention-routie-803x1073.png')
   ];
   static caisseEpargneSecuriteRoutiere: ContentPageModel = new ContentPageModel(
-    'Caisse d\'épargne - Road safety',
+    'CAISSE D\'ÉPARGNE - Road safety',
     '',
     'Agency: Altmann + Pacreau / Copywriter : Cédric Ferrand  / Photograph : Ronan Mérot ',
     ContentDataMock.caisseEpargneSecuriteRoutiereBlocks
@@ -46,7 +46,7 @@ export class ContentDataMock {
   ];
 
   static caisseEpargneParis2024: ContentPageModel = new ContentPageModel(
-    'Caisse d\'épargne - Paris 2024',
+    'CAISSE D\'ÉPARGNE - Paris 2024',
     '',
     'Agency: Altmann + Pacreau',
     ContentDataMock.caisseEpargneParis2024Blocks
@@ -66,7 +66,7 @@ export class ContentDataMock {
     new ContentSearchModel(ContentDataMock.nikonSearchSearchImages, 'Research')
   ];
   static nikon: ContentPageModel = new ContentPageModel(
-    'Nikon - Illustration for tote bag',
+    'NIKON - Illustration for tote bag',
     '',
     'Agency: Altmann + Pacreau',
     ContentDataMock.nikonBlocks
@@ -87,7 +87,7 @@ export class ContentDataMock {
       'Video teaser 2019'),
   ];
   static abbePierre: ContentPageModel = new ContentPageModel(
-    'FONDATION ABBÉ PIERRE - les pics d’or',
+    'FONDATION ABBÉ PIERRE - Les pics d’or',
     '',
     'Agency: Altmann + Pacreau',
     ContentDataMock.abbePierreBlocks
@@ -150,7 +150,7 @@ export class ContentDataMock {
     new ContentVideoModel(this.rootAssets + 'fondation-de-france/FDF-COVID19.mp4'),
   ];
   static fondationDeFranceCovid: ContentPageModel = new ContentPageModel(
-    'FONDATION DE FRANCE - COVID 19',
+    'FONDATION DE FRANCE - Covid 19',
     '',
     'Agency: Altmann + Pacreau',
     ContentDataMock.fdfCovidBlocks
@@ -182,7 +182,7 @@ export class ContentDataMock {
     new ContentImageModel(this.rootAssets + 'pompidou/page-4-636x447.png')
   ];
   static pompidou: ContentPageModel = new ContentPageModel(
-    'CENTRE POMPIDOU - BROCHURE',
+    'CENTRE POMPIDOU - Brochure',
     '',
     'ECV',
     ContentDataMock.pompidouBlocks
@@ -202,7 +202,7 @@ export class ContentDataMock {
     new ContentImageModel(this.rootAssets + '3xj-dentifrice/brosse-a-dent-836x587.png'),
   ];
   static dentifrice3xj: ContentPageModel = new ContentPageModel(
-    '3x/j - Dental first kid\'s kit',
+    '3X/J - Dental first kid\'s kit',
     '',
     'UQÀM',
     ContentDataMock.dentifrice3xjBlocks
@@ -245,7 +245,7 @@ export class ContentDataMock {
   ];
 
   static franceGalop: ContentPageModel = new ContentPageModel(
-    'FRANCE GALOP - 2019 CAMPAIGN',
+    'FRANCE GALOP - 2019 campaign',
     '',
     'Agency: Altmann + Pacreau / Photograph : Benjamin Schmuck',
     ContentDataMock.franceGalopBlocks);
@@ -260,7 +260,7 @@ export class ContentDataMock {
   ];
 
   static petitNavire: ContentPageModel = new ContentPageModel(
-    'PETIT NAVIRE - 2020 CAMPAIGN',
+    'PETIT NAVIRE - 2020 campaign',
     '',
     'Agency: Altmann + Pacreau',
     ContentDataMock.petitNavireBlocks
@@ -299,7 +299,7 @@ export class ContentDataMock {
 
 
   static lapeyrePro: ContentPageModel = new ContentPageModel(
-    'LAPEYRE PRO - 360 COMMUNICATION',
+    'LAPEYRE PRO - 360 communication',
     '',
     'Agency: Altmann + Pacreau',
     ContentDataMock.lapeyreProBlocks
@@ -329,7 +329,7 @@ export class ContentDataMock {
 
 
   static lapeyre: ContentPageModel = new ContentPageModel(
-    'LAPEYRE 2018/2019 - 360 COMMUNICATION',
+    'LAPEYRE 2018/2019 - 360 communication',
     '',
     'Agency: Altmann + Pacreau',
     ContentDataMock.lapeyreBlocks
@@ -355,7 +355,7 @@ export class ContentDataMock {
   ];
 
   static naturalia: ContentPageModel = new ContentPageModel(
-    'NATURALIA - LOCAL CAMPAIGN ADAPTATION',
+    'NATURALIA - Local campaign adaptation',
     '',
     'Agency: Altmann + Pacreau',
     ContentDataMock.naturaliaBlocks
@@ -368,7 +368,7 @@ export class ContentDataMock {
   ];
 
   static opel: ContentPageModel = new ContentPageModel(
-    'OPEL - 360 COMMUNICATION',
+    'OPEL - 360 communication',
     '',
     'Agency: Altmann + Pacreau',
     ContentDataMock.opelBlocks
@@ -382,7 +382,7 @@ export class ContentDataMock {
   ];
 
   static plantaFin: ContentPageModel = new ContentPageModel(
-    'PLANTA FIN - SOCIAL MEDIA',
+    'PLANTA FIN - Social media',
     '',
     'Agency: Altmann + Pacreau',
     ContentDataMock.plantaFinBlocks
@@ -441,7 +441,7 @@ export class ContentDataMock {
   ];
 
   static philips: ContentPageModel = new ContentPageModel(
-    'Philips - A4 Tent Cards',
+    'PHILIPS - A4 Tent Cards',
     '',
     'Agency: Adred Creative',
     ContentDataMock.philipsBlocks
@@ -461,7 +461,7 @@ export class ContentDataMock {
   ];
 
   static rare: ContentPageModel = new ContentPageModel(
-    'Rare - Light Up for Rare',
+    'RARE - Light Up for Rare',
     '',
     'Agency: Adred Creative',
     ContentDataMock.rareBlocks
@@ -479,7 +479,7 @@ export class ContentDataMock {
   ];
 
   static wsg: ContentPageModel = new ContentPageModel(
-    'Workforce Singapore',
+    'WORKFORCE SINGAPORE',
     'WSG - SSG - Joint undergraduate scholarship',
     'Agency: Adred Creative',
     ContentDataMock.wsgBlock
@@ -496,7 +496,7 @@ export class ContentDataMock {
   ];
 
   static nyc: ContentPageModel = new ContentPageModel(
-    'National youth council - young changemakers grant campaign',
+    'NATIONAL YOUTH COUNCIL - Young changemakers grant campaign',
     '',
     'Agency: Adred Creative',
     ContentDataMock.nycBlock
@@ -509,10 +509,25 @@ export class ContentDataMock {
   ];
 
   static spc: ContentPageModel = new ContentPageModel(
-    'Singapore Petroleum Company',
+    'SINGAPORE PETROLEUM COMPANY',
     'Poster to promote their new mineral water recycled bottle',
     'Agency: Adred Creative',
     ContentDataMock.spcBlock
+  );
+
+  // petroleum
+  static petroleumBlocks: ContentBlockModel[] = [
+    new ContentImageModel(this.rootAssets + 'petroleum/scp_main.png'),
+    new ContentImageModel(this.rootAssets + 'petroleum/hanging.png'),
+    new ContentImageModel(this.rootAssets + 'petroleum/cover.png'),
+    new ContentImageModel(this.rootAssets + 'petroleum/desktop.png')
+  ];
+
+  static petroleum: ContentPageModel = new ContentPageModel(
+    'SINGAPORE PETROLEUM COMPANY - National Day Parade 2024',
+    '',
+    'Agency: Adred Creative',
+    ContentDataMock.petroleumBlocks
   );
 
 
@@ -540,29 +555,12 @@ export class ContentDataMock {
   ];
 
   static anaisAntoine: ContentPageModel = new ContentPageModel(
-    'Anais & Antoine Announcement',
+    'ANAIS & ANTOINE ANNOUNCEMENT',
     'Logo, pattern and Announcement',
     '',
     ContentDataMock.anaisAntoineBlock
   );
 
-
-
-
-  // petroleum
-  static petroleumBlocks: ContentBlockModel[] = [
-    new ContentImageModel(this.rootAssets + 'petroleum/scp_main.png'),
-    new ContentImageModel(this.rootAssets + 'petroleum/hanging.png'),
-    new ContentImageModel(this.rootAssets + 'petroleum/cover.png'),
-    new ContentImageModel(this.rootAssets + 'petroleum/desktop.png')
-  ];
-
-  static petroleum: ContentPageModel = new ContentPageModel(
-    'Singapore Petroleum Company - National Day Parade 2024',
-    '',
-    'Agency: Adred Creative',
-    ContentDataMock.petroleumBlocks
-  );
 
 
 

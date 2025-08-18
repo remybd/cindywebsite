@@ -10,7 +10,7 @@ export class SocialMediaDataMock {
 
   // caring
   static caringSgMusic: ContentSocialMediaModel = new ContentSocialMediaModel(
-    'Caring SG Commuters - Tuning into acts of care',
+    'CARING SG COMMUTERS - Tuning into acts of care',
     '',
     'Agency: Adred Creative',
     [new ContentImageCommentModel(this.rootAssets + 'caring-sg/music.gif', this.rootAssets + 'caring-sg/music_comments.png')],
@@ -18,7 +18,7 @@ export class SocialMediaDataMock {
     'music'
   );
   static caringSgTree: ContentSocialMediaModel = new ContentSocialMediaModel(
-    'Caring SG Commuters - Celebrate the Festive season',
+    'CARING SG COMMUTERS - Celebrate the Festive season',
     '',
     'Agency: Adred Creative',
     [new ContentImageCommentModel(this.rootAssets + 'caring-sg/tree.gif', this.rootAssets + 'caring-sg/tree_comments.png')],
@@ -26,7 +26,7 @@ export class SocialMediaDataMock {
     'tree'
   );
   static caringSgWalk: ContentSocialMediaModel = new ContentSocialMediaModel(
-    'Caring SG Commuters -  Give a hand and make a difference',
+    'CARING SG COMMUTERS -  Give a hand and make a difference',
     '',
     'Agency: Adred Creative',
     [new ContentImageCommentModel(this.rootAssets + 'caring-sg/walk.gif', this.rootAssets + 'caring-sg/walk_comments.png')],
@@ -60,6 +60,31 @@ export class SocialMediaDataMock {
     'giving-way'
   );
 
+
+  static caringSgSheldon: ContentSocialMediaModel = new ContentSocialMediaModel(
+    'CARING SG COMMUTERS - Commuting with Sheldon',
+    '',
+    'Agency: Adred Creative',
+    [new ContentVideoCommentModel(this.rootAssets + 'caring-sg/sheldon.mp4', this.rootAssets + 'caring-sg/sheldon_comments.png')],
+    this.rootAssets + 'caring-sg/sheldon.png',
+    'sheldon'
+  );
+  static caringSgWheelFatherSon: ContentSocialMediaModel = new ContentSocialMediaModel(
+    'CARING SG COMMUTERS - Like father, like son',
+    '',
+    'Agency: Adred Creative',
+    [new ContentVideoCommentModel(this.rootAssets + 'caring-sg/father_son.mp4', this.rootAssets + 'caring-sg/father_son_comments.png')],
+    this.rootAssets + 'caring-sg/father_son.png',
+    'father_son'
+  );
+  static caringSgTransportFares: ContentSocialMediaModel = new ContentSocialMediaModel(
+    'PUBLIC TRANSPORT COUNCIL - FRE explainer',
+    '',
+    'Agency: Adred Creative',
+    [new ContentVideoCommentModel(this.rootAssets + 'caring-sg/transport_fares.mp4', this.rootAssets + 'caring-sg/transport_fares_comments.png')],
+    this.rootAssets + 'caring-sg/transport_fares.png',
+    'transport_fares'
+  );
 
   // baush and lomb
   static baushLombHydrating: ContentSocialMediaModel = new ContentSocialMediaModel(
@@ -120,7 +145,7 @@ export class SocialMediaDataMock {
     '',
     'Agency: Adred Creative',
     [new ContentVideoCommentModel(this.rootAssets + 'heart-foundation/love.mp4', this.rootAssets + 'heart-foundation/love_comments.png')],
-    this.rootAssets + 'heart-foundation/love_comments.png',
+    this.rootAssets + 'heart-foundation/love.png',
     'love'
   );
   static heartFoundationPump: ContentSocialMediaModel = new ContentSocialMediaModel(
@@ -128,7 +153,7 @@ export class SocialMediaDataMock {
     '',
     'Agency: Adred Creative',
     [new ContentVideoCommentModel(this.rootAssets + 'heart-foundation/pump.mp4', this.rootAssets + 'heart-foundation/pump_comments.png')],
-    this.rootAssets + 'heart-foundation/pump_comments.png',
+    this.rootAssets + 'heart-foundation/pump.png',
     'pump'
   );
 
@@ -139,8 +164,8 @@ export class SocialMediaDataMock {
     '',
     'Agency: Adred Creative',
     [new ContentVideoCommentModel('/assets/img/content/wsg/D15759 - SSG-WSG SCHOLARSHIP TIKTOK VIDEO - FA.mp4', this.rootAssets + 'workforce-singapore/workforce-singapore_comments.png')],
-    this.rootAssets + 'workforce-singapore/workforce-singapore_comments.png',
-    'workforce'
+    this.rootAssets + 'workforce-singapore/workforce-singapore.png',
+    'workforce-singapore'
   );
 
 
@@ -205,11 +230,15 @@ export class SocialMediaDataMock {
 
     'love': SocialMediaDataMock.heartFoundationLove,
     'pump': SocialMediaDataMock.heartFoundationPump,
-    'worforce': SocialMediaDataMock.workforceSingapore,
+    'workforce-singapore': SocialMediaDataMock.workforceSingapore,
 
     'elderly': SocialMediaDataMock.caringSgElderly,
     'wheel-chair': SocialMediaDataMock.caringSgWheelChair,
     'giving-way': SocialMediaDataMock.caringSgGivingWay,
+
+    'sheldon': SocialMediaDataMock.caringSgSheldon,
+    'father_son': SocialMediaDataMock.caringSgWheelFatherSon,
+    'transport_fares': SocialMediaDataMock.caringSgTransportFares,
 
     'eyes-on-you': SocialMediaDataMock.baushLombEyesOnYou,
     'catch-eye': SocialMediaDataMock.baushLombCatchEye,
