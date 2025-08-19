@@ -532,7 +532,7 @@ export class ContentDataMock {
 
   // polytechnics
   static spHcdBlocks: ContentBlockModel[] = [
-    new ContentVideoModel(this.rootAssets + 'polytechnics/sp_hcd.mp4', 'sp polytechnics video', 'video/mp4', true),
+    new ContentVideoModel(this.rootAssets + 'polytechnics/sp_hcd.mp4', '', 'video/mp4', true),
   ];
 
   static spHCD: ContentPageModel = new ContentPageModel(
