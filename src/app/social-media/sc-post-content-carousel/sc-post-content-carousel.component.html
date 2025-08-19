@@ -1,0 +1,28 @@
+@if (showCarousel && posts.length > 1) {
+  <c-carousel [interval]="5000" transition="slide" pause="hover">
+    <c-carousel-indicators/>
+    <c-carousel-inner>
+      @for (post of posts; track (post["video"] + post["image"])) {
+        <c-carousel-item>
+          @if (post.blockName === imageBlockType) {
+            <app-block-image-comment [post]="post"></app-block-image-comment>
+          }
+          @if (post.blockName === videoBlockType) {
+            <app-block-video-comment [post]="post"></app-block-video-comment>
+          }
+        </c-carousel-item>
+      }
+    </c-carousel-inner>
+    <c-carousel-control [routerLink] caption="Previous" direction="prev"/>
+    <c-carousel-control [routerLink] caption="Next" direction="next"/>
+  </c-carousel>
+} @else {
+  @for (post of posts; track (post["video"] + post["image"])) {
+    @if (post.blockName === imageBlockType) {
+      <app-block-image-comment [post]="post"></app-block-image-comment>
+    }
+    @if (post.blockName === videoBlockType) {
+      <app-block-video-comment [post]="post"></app-block-video-comment>
+    }
+  }
+}

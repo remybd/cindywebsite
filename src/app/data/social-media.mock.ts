@@ -5,6 +5,7 @@ import {NextPreviousPageService} from "../structure/services/next-previous-page-
 import {HomeDataMock} from "./home-data.mock";
 import {ContentVideoCommentModel} from "../content/models/content-video-comment.model";
 
+// tslint:disable:max-line-length
 export class SocialMediaDataMock {
   static rootAssets = '/assets/img/social-media/';
 
@@ -55,8 +56,13 @@ export class SocialMediaDataMock {
     'CARING SG COMMUTERS - Giving Way',
     '',
     'Agency: Adred Creative',
-    [new ContentImageCommentModel(this.rootAssets + 'caring-sg/giving_way.png', this.rootAssets + 'caring-sg/giving_way_comments.png')],
-    this.rootAssets + 'caring-sg/giving_way.png',
+    [
+      new ContentImageCommentModel(this.rootAssets + 'caring-sg/giving_way1.png', this.rootAssets + 'caring-sg/giving_way_comments.png'),
+      new ContentImageCommentModel(this.rootAssets + 'caring-sg/giving_way2.png', this.rootAssets + 'caring-sg/giving_way_comments.png'),
+      new ContentImageCommentModel(this.rootAssets + 'caring-sg/giving_way3.png', this.rootAssets + 'caring-sg/giving_way_comments.png'),
+      new ContentImageCommentModel(this.rootAssets + 'caring-sg/giving_way4.png', this.rootAssets + 'caring-sg/giving_way_comments.png')
+    ],
+    this.rootAssets + 'caring-sg/giving_way1.png',
     'giving-way'
   );
 
@@ -190,32 +196,52 @@ export class SocialMediaDataMock {
     'SINGAPORE POLYTECHNIC ALUMNI - Della Pearce Spotlight',
     '',
     'Agency: Adred Creative',
-    [new ContentImageCommentModel(this.rootAssets + 'polytechnic/della_pearce.png', this.rootAssets + 'polytechnic/della_pearce_comments.png')],
-    this.rootAssets + 'polytechnic/della_pearce.png',
+    [
+      new ContentImageCommentModel(this.rootAssets + 'polytechnic/della_pearce1.png', this.rootAssets + 'polytechnic/della_pearce_comments.png'),
+      new ContentImageCommentModel(this.rootAssets + 'polytechnic/della_pearce2.png', this.rootAssets + 'polytechnic/della_pearce_comments.png'),
+      new ContentImageCommentModel(this.rootAssets + 'polytechnic/della_pearce3.png', this.rootAssets + 'polytechnic/della_pearce_comments.png'),
+      new ContentImageCommentModel(this.rootAssets + 'polytechnic/della_pearce4.png', this.rootAssets + 'polytechnic/della_pearce_comments.png'),
+    ],
+    this.rootAssets + 'polytechnic/della_pearce1.png',
     'della_pearce'
   );
   static polytechnicNightmares: ContentSocialMediaModel = new ContentSocialMediaModel(
     'SINGAPORE POLYTECHNIC ALUMNI - Workplace Culture Nightmares',
     '',
     'Agency: Adred Creative',
-    [new ContentImageCommentModel(this.rootAssets + 'polytechnic/nightmares.png', this.rootAssets + 'polytechnic/nightmares_comments.png')],
-    this.rootAssets + 'polytechnic/nightmares.png',
+    [
+      new ContentImageCommentModel(this.rootAssets + 'polytechnic/nightmares1.png', this.rootAssets + 'polytechnic/nightmares_comments.png'),
+      new ContentImageCommentModel(this.rootAssets + 'polytechnic/nightmares2.png', this.rootAssets + 'polytechnic/nightmares_comments.png'),
+      new ContentImageCommentModel(this.rootAssets + 'polytechnic/nightmares3.png', this.rootAssets + 'polytechnic/nightmares_comments.png'),
+      new ContentImageCommentModel(this.rootAssets + 'polytechnic/nightmares4.png', this.rootAssets + 'polytechnic/nightmares_comments.png'),
+    ],
+    this.rootAssets + 'polytechnic/nightmares1.png',
     'nightmares'
   );
   static polytechnicUnrelatedStudies: ContentSocialMediaModel = new ContentSocialMediaModel(
     'SINGAPORE POLYTECHNIC ALUMNI - New job',
     '',
     'Agency: Adred Creative',
-    [new ContentImageCommentModel(this.rootAssets + 'polytechnic/unrelated_studies.png', this.rootAssets + 'polytechnic/unrelated_studies_comments.png')],
-    this.rootAssets + 'polytechnic/unrelated_studies.png',
+    [
+      new ContentImageCommentModel(this.rootAssets + 'polytechnic/unrelated_studies1.png', this.rootAssets + 'polytechnic/unrelated_studies_comments.png'),
+      new ContentImageCommentModel(this.rootAssets + 'polytechnic/unrelated_studies2.png', this.rootAssets + 'polytechnic/unrelated_studies_comments.png'),
+      new ContentImageCommentModel(this.rootAssets + 'polytechnic/unrelated_studies3.png', this.rootAssets + 'polytechnic/unrelated_studies_comments.png'),
+      new ContentImageCommentModel(this.rootAssets + 'polytechnic/unrelated_studies4.png', this.rootAssets + 'polytechnic/unrelated_studies_comments.png')
+    ],
+    this.rootAssets + 'polytechnic/unrelated_studies1.png',
     'unrelated_studies'
   );
   static polytechnicDigitalFootprint: ContentSocialMediaModel = new ContentSocialMediaModel(
     'SINGAPORE POLYTECHNIC ALUMNI - Digital footprint',
     '',
     'Agency: Adred Creative',
-    [new ContentImageCommentModel(this.rootAssets + 'polytechnic/digital_footprint.png', this.rootAssets + 'polytechnic/digital_footprint_comments.png')],
-    this.rootAssets + 'polytechnic/digital_footprint.png',
+    [
+      new ContentImageCommentModel(this.rootAssets + 'polytechnic/digital_footprint1.png', this.rootAssets + 'polytechnic/digital_footprint_comments.png'),
+      new ContentImageCommentModel(this.rootAssets + 'polytechnic/digital_footprint2.png', this.rootAssets + 'polytechnic/digital_footprint_comments.png'),
+      new ContentImageCommentModel(this.rootAssets + 'polytechnic/digital_footprint3.png', this.rootAssets + 'polytechnic/digital_footprint_comments.png'),
+      new ContentImageCommentModel(this.rootAssets + 'polytechnic/digital_footprint4.png', this.rootAssets + 'polytechnic/digital_footprint_comments.png'),
+    ],
+    this.rootAssets + 'polytechnic/digital_footprint1.png',
     'digital_footprint'
   );
 

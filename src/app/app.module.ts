@@ -32,6 +32,11 @@ import {
   ContentFooterNavigationComponent
 } from "./content/content-footer/content-footer-navigation/content-footer-navigation.component";
 import {BlockVideoCommentComponent} from "./content/blocks/block-video-comment/block-video-comment.component";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {CarouselModule} from "@coreui/angular";
+import {
+  ScPostContentCarouselComponent
+} from "./social-media/sc-post-content-carousel/sc-post-content-carousel.component";
 
 @NgModule({
   declarations: [
@@ -58,7 +63,8 @@ import {BlockVideoCommentComponent} from "./content/blocks/block-video-comment/b
     BlockImageCommentComponent,
     ContentFooterComponent,
     ContentFooterNavigationComponent,
-    BlockVideoCommentComponent
+    BlockVideoCommentComponent,
+    ScPostContentCarouselComponent
   ],
   imports: [
     BrowserModule,
@@ -67,6 +73,8 @@ import {BlockVideoCommentComponent} from "./content/blocks/block-video-comment/b
     FormsModule,
     NgOptimizedImage,
     FiltersComponent,
+    BrowserAnimationsModule,
+    CarouselModule
   ],
   providers: [
     {

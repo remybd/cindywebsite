@@ -1,4 +1,13 @@
-import {Component, HostListener, inject, OnDestroy, OnInit} from '@angular/core';
+import {
+  AfterViewChecked,
+  Component,
+  ElementRef,
+  HostListener,
+  inject,
+  OnDestroy,
+  OnInit,
+  ViewChild
+} from '@angular/core';
 import {
   NextPreviousPageService
 } from "../../structure/services/next-previous-page-management/next-previous-page.service";
@@ -6,11 +15,12 @@ import {Title} from "@angular/platform-browser";
 import {SocialMediaDataMock} from "../../data/social-media.mock";
 import {environment} from "../../../environments/environment";
 import {ContentSocialMediaModel} from "../../content/models/content-social-media.model";
-import {ActivatedRoute, Router} from "@angular/router";
+import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
 import {ContentImageModel} from "../../content/models/content-image.model";
 import {ContentVideoModel} from "../../content/models/content-video.model";
 import {ContentImageCommentModel} from "../../content/models/content-image-comment.model";
 import {ContentVideoCommentModel} from "../../content/models/content-video-comment.model";
+import {filter, map, Observable} from "rxjs";
 
 @Component({
   selector: 'app-sc-post-content',
@@ -25,9 +35,7 @@ export class ScPostContentComponent implements OnInit {
   route = inject(ActivatedRoute);
   contentKey = '';
   content: ContentSocialMediaModel;
-
-  imageBlockType = ContentImageCommentModel.blockName;
-  videoBlockType = ContentVideoCommentModel.blockName;
+  carouselIndex = 0;
 
   ngOnInit(): void {
     SocialMediaDataMock.setupNextPreviousService(this.nextPreviousPageService);
@@ -49,6 +57,7 @@ export class ScPostContentComponent implements OnInit {
     this.titleService.setTitle(environment.titleBase + this.content.title);
 
     this.nextPreviousPageService.currentPageKey = this.contentKey;
+    this.carouselIndex = 0;
   }
 
   @HostListener('window:keyup', ['$event'])
@@ -63,4 +72,5 @@ export class ScPostContentComponent implements OnInit {
   swipeLeft() {
     this.nextPreviousPageService.nextPage();
   }
+
 }

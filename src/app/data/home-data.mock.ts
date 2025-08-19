@@ -211,6 +211,12 @@ export class HomeDataMock {
     this.rootAssets + 'petroleum.png',
     'petroleum');
 
+  static entryButtonSpHCD: EntryButtonModel = new EntryButtonModel('Singapore Polytechnic',
+    'Video intro for HCD+',
+    [CategoryType.motionDesign],
+    this.rootAssets + 'sp_hcd.png',
+    'sp-hcd');
+
   static entryButtonArray = [
     HomeDataMock.entryButtonFranceGalop,
     HomeDataMock.entryButtonPetitNavire,
@@ -223,6 +229,7 @@ export class HomeDataMock {
     HomeDataMock.entryButtonPetroleum,
     HomeDataMock.entryButtonNyc,
     HomeDataMock.entryButtonSPC,
+    HomeDataMock.entryButtonSpHCD,
     HomeDataMock.entryButtonWSG,
     HomeDataMock.entryButtonMaxiCashChristmas,
     HomeDataMock.entryButtonMaxiCashPaynow,

@@ -515,12 +515,11 @@ export class ContentDataMock {
     ContentDataMock.spcBlock
   );
 
-  // petroleum
   static petroleumBlocks: ContentBlockModel[] = [
-    new ContentImageModel(this.rootAssets + 'petroleum/scp_main.png'),
-    new ContentImageModel(this.rootAssets + 'petroleum/hanging.png'),
-    new ContentImageModel(this.rootAssets + 'petroleum/cover.png'),
-    new ContentImageModel(this.rootAssets + 'petroleum/desktop.png')
+    new ContentImageModel(this.rootAssets + 'spc/scp_main.png'),
+    new ContentImageModel(this.rootAssets + 'spc/hanging.png'),
+    new ContentImageModel(this.rootAssets + 'spc/cover.png'),
+    new ContentImageModel(this.rootAssets + 'spc/desktop.png')
   ];
 
   static petroleum: ContentPageModel = new ContentPageModel(
@@ -528,6 +527,19 @@ export class ContentDataMock {
     '',
     'Agency: Adred Creative',
     ContentDataMock.petroleumBlocks
+  );
+
+
+  // polytechnics
+  static spHcdBlocks: ContentBlockModel[] = [
+    new ContentVideoModel(this.rootAssets + 'polytechnics/sp_hcd.mp4', 'sp polytechnics video', 'video/mp4', true),
+  ];
+
+  static spHCD: ContentPageModel = new ContentPageModel(
+    'Singapore Polytechnic -  Video intro for humanity-centred design+',
+    '',
+    'Agency: Adred Creative',
+    ContentDataMock.spHcdBlocks
   );
 
 
@@ -599,7 +611,8 @@ export class ContentDataMock {
     spc: ContentDataMock.spc,
     xepa: ContentDataMock.xepa,
     'anais-antoine': ContentDataMock.anaisAntoine,
-    petroleum: ContentDataMock.petroleum
+    petroleum: ContentDataMock.petroleum,
+    'sp-hcd': ContentDataMock.spHCD
   };
 
 }

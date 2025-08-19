@@ -1,17 +1,9 @@
 @if (content && content.posts.length > 0) {
   <div class="content-container" (swipeRight)="swipeRight()" (swipeLeft)="swipeLeft()">
     <div class="content-list-blocks">
-      @for(post of content.posts; track post.comment){
-        @if (post.blockName === imageBlockType) {
-          <app-block-image-comment [post]="post"></app-block-image-comment>
-        }
-        @if (post.blockName === videoBlockType) {
-          <app-block-video-comment [post]="post"></app-block-video-comment>
-        }
-      }
+      <app-sc-post-content-carousel [posts]="content.posts"></app-sc-post-content-carousel>
     </div>
 
     <app-content-footer [content]="content" backRoute="/home/social-media"></app-content-footer>
   </div>
 }
-
