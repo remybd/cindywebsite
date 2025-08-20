@@ -180,12 +180,12 @@ export class SocialMediaDataMock {
     'SINGAPORE POLYTECHNIC ALUMNI - Take every W',
     '',
     'Agency: Adred Creative',
-    [new ContentImageCommentModel(this.rootAssets + 'polytechnic/every_w.png', this.rootAssets + 'polytechnic/every_w_comments.png')],
-    this.rootAssets + 'polytechnic/every_w.png',
+    [new ContentImageCommentModel(this.rootAssets + 'polytechnic/every_w.gif', this.rootAssets + 'polytechnic/every_w_comments.png')],
+    this.rootAssets + 'polytechnic/every_w.gif',
     'every_w'
   );
   static polytechnicDeepavali: ContentSocialMediaModel = new ContentSocialMediaModel(
-    'SINGAPORE POLYTECHNIC ALUMNI - Take every W',
+    'SINGAPORE POLYTECHNIC ALUMNI - Happy Deepavali',
     '',
     'Agency: Adred Creative',
     [new ContentImageCommentModel(this.rootAssets + 'polytechnic/deepavali.png', this.rootAssets + 'polytechnic/deepavali_comments.png')],
